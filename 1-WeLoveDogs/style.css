@@ -42,6 +42,15 @@ nav a {
     font-weight: 700;
     line-height: 65.37px;
     color: black;
+    transition: 300ms;
+}
+
+.logo .love {
+    color: #7ED321;
+}
+
+.logo:hover {
+    font-size: 52px;;
 }
 
 .nav-items li {
@@ -61,17 +70,22 @@ nav a {
     display: flex;
     align-items: center;
     padding: 9px 32px;
+    border-radius: 15px;
+    transition: 300ms;
 }
 
 .nav-items .sub-button a {
     color: #1C4701;
     background: #7ED32166;
-    border-radius: 15px;
-    transition: 300ms;
+}
+
+.nav-items li a:hover {
+    background-color: rgb(0, 0, 0, 0.1);
+    transform: translateY(-8px)
 }
 
 .nav-items .sub-button a:hover {
-    transform: translateY(-8px)
+    background: rgba(121, 177, 62, 0.69);
 }
 
 
