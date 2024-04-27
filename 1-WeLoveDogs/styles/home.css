@@ -25,16 +25,22 @@
 }
 
 .mainContentButton{
+    display: flex;
+    align-items: center;
+    justify-content: center;
     width: 220px;
     height: 51px;
-    gap: 0px;
     border-radius: 15px;
-    opacity: 0px;
     background-color: #7ED321;
     border: none;
     font-size: 18px;
     font-weight: 700;
     line-height: 24.51px;
     cursor: pointer;
+    color: #000;
+    transition: all 0.3s ease;
+}
 
+.mainContentButton:hover{
+    transform: scale(1.1);
 }

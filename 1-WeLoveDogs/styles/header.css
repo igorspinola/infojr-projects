@@ -11,6 +11,11 @@
     gap: 35px;
 }
 
+.backToHome{
+    text-decoration: none;
+    color: #000000;
+}
+
 .headerTitle{
     font-size: 3rem;
     font-weight: 700;
@@ -39,8 +44,13 @@
     opacity: 0px;   
     border:none;
     background-color: #7ED32166;
+    transition: all 0.3s ease;
 }
 
 .subscribeHeaderButton a{
     color:  #1C4701;
+}
+
+.subscribeHeaderButton:hover{
+    transform: scale(1.1); 
 }
