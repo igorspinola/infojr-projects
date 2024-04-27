@@ -10,12 +10,12 @@ body {
 /* Header */
 .nav-container {
     background: #ffff;
-    box-shadow: 0px 8px 24px rgb(0, 0, 0, 0.1);
+    box-shadow: 0px 10px 24px rgb(0, 0, 0, 0.1);
     height: 120px;
 }
 
 .wrapper {
-    max-width: 1200px;
+    width: 1100px;
     margin: 0 auto;
 }
 
@@ -53,8 +53,51 @@ nav a {
 
 .nav-items li a {
     color: black;
-    font-family: 'Open Sans';
     font-size: 16px;
     font-weight: 700;
     line-height: 21.79px;
+}
+
+.nav-items .sub-button a {
+    color: #1C4701;
+    background: #7ED32166;
+    border-radius: 15px;
+    padding: 9px 32px
+}
+
+
+/* Main */
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.main-container {
+    background: #ffff;
+    display: flex;
+    align-items: center;
+}
+
+header p {
+    width: 340px;
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 65.37px;
+    text-align: left;
+    color: black;
+    margin-bottom: 24px;
+}
+
+.main-content a {
+    text-decoration: none;
+    color: #1C4701;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 24.51px;
+    text-align: left;
+
+    background: #7ED321;
+    border-radius: 15px;
+    padding: 13px 50px;
 }
