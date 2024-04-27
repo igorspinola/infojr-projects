@@ -117,3 +117,16 @@ header a {
 header a:hover {
     transform: translateY(-8px)
 }
+
+header  .main-image {
+    display: flex;
+    position: relative;    
+}
+
+header .main-image img {
+    transition: 300ms;
+}
+
+header .main-image img:hover {
+    transform: rotate(-6deg);
+}
