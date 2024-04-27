@@ -1,0 +1,40 @@
+.mainSection{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 60px;
+    margin-top: 2rem;
+}
+
+.mainContent{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 65.37px;
+    text-align: left;
+    width: 371px;
+    gap: 25px;
+}
+
+.mainContent p {
+    width: 340px;
+    opacity: 0px;
+}
+
+.mainContentButton{
+    width: 220px;
+    height: 51px;
+    gap: 0px;
+    border-radius: 15px;
+    opacity: 0px;
+    background-color: #7ED321;
+    border: none;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 24.51px;
+    cursor: pointer;
+
+}

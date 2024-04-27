@@ -1,0 +1,46 @@
+.headerHome{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem;
+}
+.navHome{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 35px;
+}
+
+.headerTitle{
+    font-size: 3rem;
+    font-weight: 700;
+    line-height: 65.37px;
+    text-align: left;
+    display: flex;
+
+}
+
+.navHome a{
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 21.79px;
+    text-align: left;
+    color: #000000;
+}
+
+#greenText{
+    color: #7ED321;
+}
+
+.subscribeHeaderButton{
+    width: 151px;
+    height: 40px;
+    border-radius: 15px;
+    opacity: 0px;   
+    border:none;
+    background-color: #7ED32166;
+}
+
+.subscribeHeaderButton a{
+    color:  #1C4701;
+}
