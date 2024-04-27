@@ -46,7 +46,7 @@ nav a {
 
 .nav-items li {
     list-style: none;
-    margin-right: 100px;
+    margin-right: 20px;
 }
 
 .nav-items LI:nth-last-of-type(1) {
@@ -58,13 +58,20 @@ nav a {
     font-size: 16px;
     font-weight: 700;
     line-height: 21.79px;
+    display: flex;
+    align-items: center;
+    padding: 9px 32px;
 }
 
 .nav-items .sub-button a {
     color: #1C4701;
     background: #7ED32166;
     border-radius: 15px;
-    padding: 9px 32px
+    transition: 300ms;
+}
+
+.nav-items .sub-button a:hover {
+    transform: translateY(-8px)
 }
 
 
@@ -89,10 +96,10 @@ header p {
     line-height: 65.37px;
     text-align: left;
     color: black;
-    margin-bottom: 24px;
+    margin-bottom: 40px;
 }
 
-.main-content a {
+header a {
     text-decoration: none;
     color: #1C4701;
     font-size: 18px;
@@ -103,4 +110,10 @@ header p {
     background: #7ED321;
     border-radius: 15px;
     padding: 13px 50px;
+    display: inline-block;
+    transition: 300ms;
+}
+
+header a:hover {
+    transform: translateY(-8px)
 }
