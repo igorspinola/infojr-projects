@@ -89,3 +89,29 @@
 .submitButton:hover { 
     transform: scale(1.1); 
 }
+
+@media only screen and (max-width: 1000px){
+	.formHandler{
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .labelHandler{
+        flex-direction: column;
+        gap: 10px;
+        align-items: center;
+    }
+    .form{
+        align-items: center;
+    }
+    .form img{
+        max-width: 20rem;
+    }
+
+    .form input{
+        width: 21rem;
+    }
+    .largeInputText{
+        width: 21rem;
+    }
+}

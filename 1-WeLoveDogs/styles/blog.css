@@ -36,3 +36,19 @@
     flex-direction: column;
     gap: 25px;
 }
+
+@media only screen and (max-width: 768px){
+	.post img{
+        width: 24rem;
+    }
+    .post{
+        flex-direction: column;
+        gap: 40px;
+    }
+    .textPost{
+        width: 90%;
+    }
+    .contentPost{
+        align-items: center;
+    }
+}

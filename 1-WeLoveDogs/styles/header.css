@@ -54,3 +54,10 @@
 .subscribeHeaderButton:hover{
     transform: scale(1.1); 
 }
+
+@media only screen and (max-width: 768px){
+	.headerHome{
+        flex-direction: column;
+        gap: 20px;
+    }
+}

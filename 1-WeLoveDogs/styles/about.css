@@ -21,3 +21,9 @@
     width: 687px;
 
 }
+
+@media only screen and (max-width: 768px){
+	.textAbout{
+        width: 90%;
+    }
+}
