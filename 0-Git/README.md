@@ -1,6 +1,6 @@
 # Atividade de Núcleo
 
-- **Orientadores:** Turma  [Fábio Santos Matos de Oliveira](https://gitlab.com/Fabio-Matos1303) | Turma  [Djair Maykon](https://gitlab.com/djairmaykon) | Turma  [Márcio R. Júnior m](https://gitlab.com/marciojunior2109) 
+- **Orientadores:** Turma  [Fábio Santos Matos de Oliveira](https://gitlab.com/Fabio-Matos1303) | Turma  [Djair Maykon](https://gitlab.com/djairmaykon) | Turma  [Márcio R. Júnior m](https://gitlab.com/marciojunior2109)
 - **Coorientadores gerais:** [Raissa Luna](https://gitlab.com/raissalunana) | [Lucas Júlio](https://gitlab.com/LucasJulio)
 
 ## Descrição da atividade
@@ -8,7 +8,7 @@
 - Clone este repositório e crie uma branch própia para vocês (que futuramente servirá para o resto das atividades). O nome da sua branch deverá seguir o modelo "numero-da-sua-turma"-"seu-nome", por exemplo, se José for da turma 1 ele deve nomear sua branch de "1-jose".
 - Coloque o nome de vocês na lista.
 - Faça o commit na sua mudança.
-- Façam um pull para a main para evitar conflitos e se tiver tudo certo fazer um merge request no GitLab. 
+- Façam um pull para a main para evitar conflitos e se tiver tudo certo fazer um merge request no GitLab.
 
 ## Materiais de apoio
 
