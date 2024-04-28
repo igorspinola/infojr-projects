@@ -19,13 +19,10 @@ header{
     
 }
 
-<<<<<<< HEAD
 .logo > a {
     text-decoration: none;
     color: var(--black);
 }
-=======
->>>>>>> bb090774f914c1dc45aae36c1c07870ec4c6d080
 .logo h2{
     font-family: "Open Sans", sans-serif;
     font-weight: bold;
@@ -64,9 +61,13 @@ ol > li:nth-child(3) a {
     padding: 8px 32px;
     text-decoration: none;
     color: inherit; 
-<<<<<<< HEAD
 }
 
+ol > li:nth-child(3):hover{
+    transform: scale(1.05);
+    transition-duration: 0.2s;
+    transition-timing-function: ease-in-out;
+}
 .pageone-container{
     display: flex;
     justify-content: space-around;
@@ -97,6 +98,9 @@ ol > li:nth-child(3) a {
 
 .container-text button:hover{
     cursor: pointer;
+    transform: scale(1.05);
+    transition-duration: 0.2s;
+    transition-timing-function: ease-in;
 }
 
 .container-img > img {
@@ -104,6 +108,4 @@ ol > li:nth-child(3) a {
     max-height:520px;
     width: auto;
     height: auto
-=======
->>>>>>> bb090774f914c1dc45aae36c1c07870ec4c6d080
 }
