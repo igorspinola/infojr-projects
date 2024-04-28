@@ -155,6 +155,7 @@ header h1 {
     border: solid #9F9F9F 1px;
     margin-bottom: 20px;
     padding: 10px;
+    text-align: justify;
 }
 
 .input textarea::placeholder {
