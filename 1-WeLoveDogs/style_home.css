@@ -1,0 +1,19 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
+.navegacao {
+    background: #3ebc94;
+    height: 100px;
+    width: 100%;
+}
+
+.itens{
+    max-width: 1200px;
+    margin: 0 auto;
+}
