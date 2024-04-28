@@ -4,7 +4,7 @@
     --text-color: #000000;
     --nav-btn-bg: rgba(126, 211, 33, 0.4);
     --btn-text: rgba(28, 71, 1, 1);
-    --main-btn-bg: rgba(126, 211, 33, 1);
+    --main-btn-bg: #7ed321;
     --field-color: rgba(159, 159, 159, 1);
 }
 
@@ -53,16 +53,44 @@ body nav ul li {
     font-size: 16px;
     font-weight: bold;
     border-radius: 14px;
+    position: relative;
+    padding: 10px 0px;
 }
+
+body nav ul .nav_item::after {
+    content: "";
+    width: 0;
+    height: 2px;
+    position: absolute;
+    left: 0;
+    bottom: 0; 
+    background-color: var(--main-btn-bg);
+    transition: width .8s;
+}
+
+body nav ul .nav_item:hover::after{
+    width: 100%;
+    background-color: var(--main-btn-bg);
+}
+
+
+body nav ul .nav_item_background {
+    background-color: var(--nav-btn-bg);
+    color: var(--btn-text);
+    padding: 10px 30px;
+    transition: background .5s, border .5s;
+    border: solid 2px transparent;
+}
+
+body nav ul .nav_item_background:hover{
+    background-color: transparent;
+    border: solid 2px var(--main-btn-bg);
+
+}
+
 
 body nav ul li a {
     color: var(--text-color);
     font-size: 16px;
     font-weight: bold;
-}
-
-body nav ul li:last-child {
-    background-color: var(--nav-btn-bg);
-    color: var(--btn-text);
-    padding: 10px 30px;
 }
