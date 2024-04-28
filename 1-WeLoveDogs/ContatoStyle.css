@@ -137,11 +137,32 @@ header h1 {
     border-radius: 7px;
     border: solid #9F9F9F 1px;
     margin-bottom: 20px;
+    text-indent: 10px;
 }
 
-.input input:last-child {
+.main-content .input input::placeholder {
+    font-family: 'Open Sans';
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 19.07px;
+    text-align: left;
+}
+
+.input textarea {
+    width: 419px;
     height: 160px;
-    text-align: start;
+    border-radius: 7px;
+    border: solid #9F9F9F 1px;
+    margin-bottom: 20px;
+    padding: 10px;
+}
+
+.input textarea::placeholder {
+    font-family: 'Open Sans';
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 19.07px;
+    text-align: left;
 }
 
 header  .main-image {

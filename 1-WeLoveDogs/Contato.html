@@ -6,6 +6,11 @@
     <title>Inscrever</title>
     <link rel="stylesheet" href="ContatoStyle.css">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,300" rel="stylesheet">
+    <style>
+        textarea {
+          resize: none;
+        }
+    </style>
 </head>
 <body>
     <div class="nav-container">
@@ -48,9 +53,9 @@
 
                     <div class="input">
                         <input type="text" placeholder="Seu nome">
-                        <input type="number" placeholder=18>
+                        <input type="number" min="0" placeholder=18>
                         <input type="email" placeholder=exemplo@exemplo>
-                        <input type="text" placeholder="Mensagem">
+                        <textarea placeholder="Mensagem" name="paragraph_text" cols="50" rows="10"></textarea>
                     </div>
 
                     <div class="main-image">
