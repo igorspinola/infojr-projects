@@ -1,5 +1,7 @@
 # Atividade de Núcleo
 
+3 - Mauricio Matchal Pinheiro Passos
+
 - **Orientadores:** Turma  [Fábio Santos Matos de Oliveira](https://gitlab.com/Fabio-Matos1303) | Turma  [Djair Maykon](https://gitlab.com/djairmaykon) | Turma  [Márcio R. Júnior m](https://gitlab.com/marciojunior2109) 
 - **Coorientadores gerais:** [Raissa Luna](https://gitlab.com/raissalunana) | [Lucas Júlio](https://gitlab.com/LucasJulio)
 
@@ -27,3 +29,4 @@ Git Básico
 5. Para saber se finalizou a atividade, verifique cuidadosamente se todos os requisitos foram cumpridos
 6. Após finalizar a atividade, faça um merge request com o padrão de título: `[número da atividade]` - `[nome da atividade]` (por exemplo: 2 - Coffee Shop)
 7. Esteja pronto para apresentar o que você fez na próxima RN (Reunião de Núcleo)
+
