@@ -1,0 +1,78 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
+
+header{
+    font-family: "Open Sans";
+}
+
+.cabeçalho{
+    width: 1440px;
+    height: 120px;
+    gap: 0px;
+    opacity: 0px;
+    background: rgba(255, 255, 255, 1);
+}
+
+.wrapper{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+nav{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    
+
+}
+
+nav ul{
+    display: flex;
+}
+
+
+.logo{
+    width: 281px;
+    height: 65px;
+    top: 27px;
+    left: 15px;
+    gap: 0px;
+    opacity: 0px;
+
+}
+.cabecalho-itens li{
+    list-style: none;
+    margin-right:100px;
+}
+
+
+.cabecalho-itens li:nth-child(1) a {
+    font-family: Open Sans;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 21.79px;
+    text-align: left;
+
+    width: 45px;
+    height: 22px;
+    top: 49px;
+    left: 1194px;
+    gap: 0px;
+    opacity: 0px;
+
+
+}
+
+
+.cabecalho-itens li:nth-child(2) a {
+   
+}
+
+
+.cabecalho-itens li:nth-child(3) a {
+    
+}
+
+
