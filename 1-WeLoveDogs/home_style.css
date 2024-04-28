@@ -6,8 +6,6 @@ body {
   font-weight: 700;
   font-size: 16px;
   line-height: 21.79px;
-  /* justify-content: center;
-  align-items: center; */
 }
 
 button {
@@ -76,12 +74,6 @@ aside {
   gap: 25px;
 }
 
-/* #test {
-  background-color: blueviolet;
-  width: 640px;
-  height: 480px;
-} */
-
 .ins-aside {
   height: 51px;
   width: 220px;
@@ -101,7 +93,6 @@ section {
   margin-top: 30px;
   gap: 60px;
 }
-
 
 main {
   height: 904px;
