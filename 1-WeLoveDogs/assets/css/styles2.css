@@ -13,7 +13,7 @@
     
 }
 body {
-    font-family: 'Open Sans', sans-serif;
+    font-family: "Open Sans", sans-serif;
     font-size: 16px;
     font-weight: 700;
     line-height: 21.79px;
@@ -22,29 +22,6 @@ body {
 a{
     text-decoration: none;
 }
-.btn {
-    
-    height: 40px;
-    color: var(--cor-3); 
-    background:var(--cor-3); 
-    border-radius: 15px;
-    padding: 12px 40px; 
-    text-decoration: none; 
-}
-
-.btn:hover {
-    background: var(--cor-verde); 
-}
-
-.btn:focus {
-    outline: none;
-}
-
-
-.btn span {
-   color: var(--cor-2);
-}
-
 
 /* Navigation */
 .nav-container {
@@ -53,9 +30,10 @@ a{
     height: 120px;
 }
 
-.wrapper {
+.wrapper2 {
     max-width: 1440px;
     margin: 0 auto;
+    
 }
 
 nav {
@@ -127,49 +105,62 @@ nav span{
     opacity: 0px;
 
 }
+.btn {
+    
+    height: 40px;
+    color: var(--cor-3); 
+    background:var(--cor-3); 
+    border-radius: 15px;
+    padding: 12px 40px; 
+    text-decoration: none; 
+}
 
-/* Header */
-.header-container {
+.btn:hover {
+    background: var(--cor-verde); 
+}
+
+.btn:focus {
+    outline: none;
+}
+
+
+.btn span {
+   color: var(--cor-2);
+}
+
+header{
     display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
-}
-header {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+    flex-direction: column;
+   
+
 }
 
 header h1{
-    width: 371px;
-    height: auto;
-    top: -28px;
-    gap: 0px;
-    opacity: 0px;
+    height: 65px;
+    gap: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
-    
-   
-    gap: 0px;
-    opacity: 0px;
     font-family: Open Sans;
     font-size: 48px;
     font-weight: 700;
     line-height: 65.37px;
     text-align: left;
 
-    margin-bottom: 24px;
-}
-
-header a {
-    color: var(--cor-2);
-    background: var(--cor-verde);
-    border-radius: 8px;
-    padding: 12px 48px;
-    display: inline-block;
-    transition:300ms;
 
 }
-header a:hover {
-    transform: translate(-8px);
+header p{
+    width: 687px;
+    height: 176px;
+    font-family: Open Sans;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 21.79px;
+    text-align: justify;
+    
+
+
 }
