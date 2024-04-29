@@ -122,6 +122,8 @@ main {
     transition: background .5s, border .5s;
     border: solid 2px transparent;
     border-radius: 16px;
+    font-weight: bold;
+    font-size: 18px;
 }
 
 .main_section .main_section_btn:hover {
@@ -131,8 +133,4 @@ main {
 
 
 
-.main_section .main_section_btn a {
-    color: var(--btn-text);
-    font-size: 18px;
-    font-weight: bold;
-}
+    
