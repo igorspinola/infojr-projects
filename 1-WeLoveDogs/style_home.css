@@ -52,7 +52,7 @@ body {
 }
 
 .menu a:hover{
-    color: #365d0c;
+    color: #7ED321;
 }
 .botao-inscrever {
     background-color: #7ED32166;
@@ -63,4 +63,48 @@ body {
     cursor: pointer; /* Muda o cursor para indicar interatividade */
     font-size: 16px; /
     
+}
+
+p{
+    color: black;
+    position: absolute;/* Define a posição absoluta */
+    width: 340px;
+    height: 234px;
+    top: 235px;
+    left: 300px;
+    gap: 0px;
+    opacity: 0px;
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 65.37px;
+    text-align: left;
+}
+
+img{
+    position: absolute;/* Define a posição absoluta */
+    width: 640px;
+    height: 480px;
+    top: 150px;
+    left: 700px;
+    
+}
+
+.bot-ins{
+    position: absolute;/* Define a posição absoluta */
+    width: 220px;
+    height: 51px;
+    top: 500px;
+    left: 300px;
+    gap: 0px;
+    opacity: 0px;
+    text-align: center;
+    background-color: #7ED32166;
+    color: #1C4701;  
+    padding: 15px 30px; /* Espaçamento interno */
+    border: none; /* Remove a borda padrão */
+    border-radius: 15px; /* Raio de borda para arredondar */
+    cursor: pointer;
+    font-size: 18px; /
+    
+
 }
