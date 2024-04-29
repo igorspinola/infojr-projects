@@ -1,0 +1,36 @@
+.inscrevercontato {
+  width: 151px;
+  height: 40px;
+  color: rgba(28, 71, 1, 1);
+  background: rgba(126, 211, 33, 1);
+
+  font-family: 'Open Sans';
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 21.79px;
+}
+
+.formlayout {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  align-items: center;
+  margin-top: 61px;
+}
+
+.formtitle {
+  margin: 0px;
+  font-family: Open Sans;
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 65.37px;
+  text-align: left;
+  width: 216px;
+  height: 65px;
+}
+
+.formcontents {
+  display: flex;
+  flex-direction: row;
+  gap: 1px;
+}
