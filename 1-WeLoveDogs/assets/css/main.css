@@ -12,7 +12,7 @@
     margin: 0;
     font-family: "Open Sans", sans-serif;
     text-decoration: none;
-    overflow-y: hidden;
+    overflow: hidden;
 }
 
 
@@ -51,7 +51,6 @@ nav ul li {
     color: var(--text-color);
     font-size: 16px;
     font-weight: bold;
-    border-radius: 14px;
     position: relative;
     padding: 10px 0px;
 }
@@ -77,6 +76,7 @@ nav ul .nav_item_background {
     padding: 10px 30px;
     transition: background .5s, border .5s;
     border: solid 2px transparent;
+    border-radius: 14px;
 }
 
 nav ul .nav_item_background:hover {
