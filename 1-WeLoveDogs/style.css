@@ -3,15 +3,14 @@
     margin: 0;
 }
 
-
 /* Cabeçalho */
 header {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 10px 20px;
+    margin-top: 15px;
 }   
-
 
 nav ul {
     display: flex; 
@@ -24,7 +23,8 @@ nav a {
     text-decoration: none;
     
 }
-.corDiferente{
+
+.corLove{
     color: greenyellow;
 }
 
@@ -39,4 +39,5 @@ nav a {
     align-items: center;
 
 }
+/* Fim Cabeçalho */
 
