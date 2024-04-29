@@ -3,37 +3,43 @@
     margin: 0;
 }
 
+/* HEADER */
+
 header{
-    font-family: "Open Sans";
+    font-family: "Open Sans", sans-serif;
+    
 }
 
 .cabeçalho{
-    width: 1440px;
-    height: 120px;
-    gap: 0px;
-    opacity: 0px;
-    background: rgba(255, 255, 255, 1);
+    display: flex;
+    align-items: center;
+    
 }
 
 .wrapper{
+    display: flex;
+    align-items: center;
     max-width: 1200px;
     margin: 0 auto;
 }
 
-nav{
+nav {
     display:flex;
     justify-content: space-between;
     align-items: center;
-    
-
+    width: 1440px;
+    height: 120px;
+    background: rgba(255, 255, 255, 1);
 }
 
 nav ul{
     display: flex;
+    flex-direction: row;
 }
 
 
-.logo{
+.logo a{
+    
     width: 281px;
     height: 65px;
     top: 27px;
@@ -41,19 +47,69 @@ nav ul{
     gap: 0px;
     opacity: 0px;
 
-}
-.cabecalho-itens li{
+    font-family: "Open Sans", sans-serif;
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 65.37px;
+    text-align: left;
+
+    color: rgba(0, 0, 0, 1);
+
+    text-decoration: none;
     list-style: none;
-    margin-right:100px;
+}
+
+.verde{
+    font-family: "Open Sans", sans-serif;
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 65.37px;
+    text-align: left;    
+
+    color: rgba(126, 211, 33, 1);
+    ;
+}
+
+
+.cabecalho-itens li{
+    display: flex;
+    list-style: none;
+    margin-right:67px;
+    justify-content: space-around;
+    align-items: center;
+    
+}
+
+
+.cabecalho-itens li a {
+    font-family: "Open Sans", sans-serif;
+    font-size: 16px;
+    text-align: left;
+    text-decoration: none;
+    
 }
 
 
 .cabecalho-itens li:nth-child(1) a {
-    font-family: Open Sans;
+
+    width: 112px;
+    height: 22px;
+    top: 49px;
+    left: 1047px;
+    gap: 0px;
+    opacity: 0px;
+
+    font-family: "Open Sans", sans-serif;
     font-size: 16px;
     font-weight: 700;
     line-height: 21.79px;
     text-align: left;
+
+    color: rgba(0, 0, 0, 1);  
+}
+
+
+.cabecalho-itens li:nth-child(2) a {
 
     width: 45px;
     height: 22px;
@@ -62,17 +118,144 @@ nav ul{
     gap: 0px;
     opacity: 0px;
 
+    font-family: "Open Sans", sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 21.79px;
+    text-align: left;
 
+    color: rgba(0, 0, 0, 1);  
 }
-
-
-.cabecalho-itens li:nth-child(2) a {
-   
-}
-
 
 .cabecalho-itens li:nth-child(3) a {
-    
+
+    width: 87px;
+    height: 22px;
+    top: 49px;
+    left: 1306px;
+    gap: 0px;
+    opacity: 0px;
+
+
+    font-family: "Open Sans", sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 21.79px;
+    text-align: left;
+
+    color: rgba(28, 71, 1, 1);
+
+
 }
 
 
+.botao1 {
+
+    width: 151px;
+    height: 40px;
+    top: 40px;
+    left: 1274px;
+    gap: 0px;
+    border-radius: 15px 15px 15px 15px;
+    opacity: 0px;
+
+    background: rgba(126, 211, 33, 0.4);
+
+
+}
+
+
+/* MAIN */
+
+.page{
+
+    width: 1440px;
+    height: 904px;
+    top: 120px;
+    gap: 0px;
+    opacity: 0px;
+}
+
+.paragrafo{
+    position: absolute;
+    width: 340px;
+    height: 234px;
+    top: 235px;
+    left: 200px;
+    gap: 0px;
+    opacity: 0px;
+}
+
+.texto{
+
+    width: 371px;
+    height: 351px;
+    top: -28px;
+    gap: 0px;
+    opacity: 0px;
+
+    font-family: "Open Sans", sans-serif;
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 65.37px;
+    text-align: left;
+
+    color:rgba(0, 0, 0, 1);
+
+}
+
+
+.botaoinscrever{
+    position:absolute;
+
+    width: 220px;
+    height: 51px;
+    top: 494px;
+    left: 200px;
+    gap: 0px;
+    opacity: 0px;
+
+}
+
+.botao2{
+
+    position: relative;
+    width: 220px;
+    height: 51px;
+    border-radius: 15px 15px 15px 15px;
+
+    background: rgba(126, 211, 33, 1);
+
+}
+
+.frame1 a{
+
+    width: 110px;
+    height: 25px;
+    top: 13px;
+    left: 55px;
+    gap: 0px;
+    opacity: 0px;
+
+    font-family: "Open Sans", sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 24.51px;
+    text-align: left;
+
+    color:rgba(28, 71, 1, 1);
+    text-decoration:none;
+
+}
+
+.imagem1{
+
+    position: absolute;
+    width: 640px;
+    height: 480px;
+    top: 150px;
+    left: 600px;
+    padding: 0px 46.25px 20px 0px;
+    
+
+}
