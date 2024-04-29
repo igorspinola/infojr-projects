@@ -1,0 +1,67 @@
+body {
+    font-family: Open Sans;
+    font-weight: 700;
+    text-align: left;
+
+}
+
+/* header */
+
+#background-top-btn {
+    background: #7ED32166;
+
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 1em
+}
+
+#top {
+    display: flex;
+    flex-direction: column;
+}
+
+
+span {
+    color: #7ED321;
+}
+
+#links > * {
+    margin-left: 2em;
+}
+
+a {
+    font-size: 0.8em;
+}
+
+#links {
+    display: flex;
+    align-items: center;
+}
+
+/* main */
+
+main {
+    display: flex;
+    justify-content: center;
+}
+
+#left-text {
+    display: flex;
+    flex-direction: column;
+}
+
+.btn-sign-in {
+    display: flex;
+    color: #1C4701;
+    background-color: #7ED321;
+    border-radius: 0.5em;
+    width: 9.2em;
+    height: 2em;
+    align-items: center;
+    justify-content: center;
+}
+
