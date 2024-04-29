@@ -24,10 +24,6 @@ main{
     flex-direction: column;
 }
 
-main h1{
-
-}
-
 main .content{
     display: flex;
     padding: 10px;
