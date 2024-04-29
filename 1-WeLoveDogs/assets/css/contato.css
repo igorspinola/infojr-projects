@@ -78,6 +78,7 @@ form #btnSubmit{
     border: solid 2px transparent;
     border-radius: 8px;
     font-weight: bold;
+    font-size: 14px;
 }
 
 form #btnSubmit:hover{
