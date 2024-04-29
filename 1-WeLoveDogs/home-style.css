@@ -1,0 +1,107 @@
+body{
+    background-color: white;
+}
+
+
+#love{
+    color:rgba(126, 211, 33, 1);
+}
+
+.header{
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 80px ;
+}
+
+.title{
+    display: flex;
+    flex-direction: row;
+    width: 281px;
+    height: 65px;
+    font-weight: 700;
+    top: 27px;
+    left: 15px;
+    font-size: 48px;
+    align-items:center;
+    font-family: "OpenSans";
+
+
+
+}
+.navigation{
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 21.79px;
+    font-family: "OpenSans";
+    gap: 4em;
+    justify-content: end;
+    align-items:center;
+    display: flex;
+    flex-direction: row;
+    margin-top: 15px;
+    gap: 35px;
+  
+
+
+}
+
+.quemsomos, .blog{
+   text-decoration:none;
+   color: black;
+} 
+
+.inscrever{
+
+width: 151px;
+height: 40px;
+background: rgba(126, 211, 33, 0.4);
+border-color: rgba(126, 211, 33, 0.4) ;
+font-family: 'Open Sans';
+font-weight: 700;
+font-size: 16px;
+border-radius: 15px;
+border-width: 0cap;
+
+}
+.main{
+    display: flex;
+    align-items:end;
+    justify-content: center;
+    gap: 60px;
+}
+
+.logo{
+    display: flex;
+    align-items: baseline;
+    justify-content: center;
+}
+
+.texto{
+
+width: 340px;
+height: 234px;
+left: 200px;
+top: 180px;
+font-family: 'Open Sans';
+font-weight: 700;
+font-size: 48px;
+line-height: 65px;
+}
+
+.inscrever2{
+
+width: 220px;
+height: 51px;
+border-radius: 15px;
+border-color: #7ED321;
+background: #7ED321;
+font-family: 'Open Sans';
+font-weight: 700;
+font-size: 18px;
+line-height: 25px;
+color: #1C4701;
+border-width: 0cap;
+}
+
