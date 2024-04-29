@@ -72,7 +72,6 @@ nav ul .nav_item:hover::after {
 
 nav ul .nav_item_background {
     background-color: var(--nav-btn-bg);
-    padding: 10px 30px;
     transition: background .5s, border .5s;
     border: solid 2px transparent;
     border-radius: 14px;
@@ -86,6 +85,8 @@ nav ul .nav_item_background:hover {
 
 nav ul .nav_item_background a {
     color: var(--btn-text);
+    padding: 10px 30px;
+    border-radius: 14px;
 }
 
 nav ul li a {

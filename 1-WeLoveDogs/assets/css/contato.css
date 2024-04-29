@@ -1,5 +1,24 @@
 @import 'main.css';/*Importando estilos da nav do arquivo main, pois, a estrutura e os estilos são os mesmos*/
 
+nav ul .nav_item_background {
+    background-color: var(--main-btn-bg);
+    transition: background .5s, border .5s;
+    border: solid 2px transparent;
+    border-radius: 14px;
+}
+
+nav ul .nav_item_background:hover {
+    background-color: transparent;
+    border: solid 2px var(--main-btn-bg);
+
+}
+
+nav ul .nav_item_background a {
+    color: var(--btn-text);
+    padding: 10px 30px;
+    border-radius: 14px;
+}
+
 main{
     display: flex;
     flex-direction: column;
