@@ -39,14 +39,14 @@ nav h1 span {
     color: var(--main-btn-bg);
 }
 
-nav ul {
+nav .nav_container {
     display: flex;
     align-items: center;
     gap: 35px;
     list-style: none;
 }
 
-nav ul li {
+nav .nav_container a {
     color: var(--text-color);
     font-size: 16px;
     font-weight: bold;
@@ -54,7 +54,7 @@ nav ul li {
     padding: 10px 0px;
 }
 
-nav ul .nav_item::after {
+nav .nav_container .nav_item::after {
     content: "";
     width: 0;
     height: 2px;
@@ -65,28 +65,24 @@ nav ul .nav_item::after {
     transition: width .8s;
 }
 
-nav ul .nav_item:hover::after {
+nav .nav_container .nav_item:hover::after {
     width: 100%;
 }
 
 
-nav ul .nav_item_background {
+nav .nav_container .nav_item_link {
     background-color: var(--nav-btn-bg);
     transition: background .5s, border .5s;
     border: solid 2px transparent;
     border-radius: 14px;
+    color: var(--btn-text);
+    padding: 10px 30px;
 }
 
-nav ul .nav_item_background:hover {
+nav .nav_container .nav_item_link:hover {
     background-color: transparent;
     border: solid 2px var(--main-btn-bg);
 
-}
-
-nav ul .nav_item_background a {
-    color: var(--btn-text);
-    padding: 10px 30px;
-    border-radius: 14px;
 }
 
 nav ul li a {
