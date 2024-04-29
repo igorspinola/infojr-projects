@@ -1,16 +1,13 @@
 @import 'main.css';/*Importando estilos da nav do arquivo main, pois, a estrutura e os estilos são os mesmos*/
 
-nav ul .nav_item_background {
+nav .nav_container .nav_item_link{
     background-color: var(--main-btn-bg);
-    transition: background .5s, border .5s;
-    border: solid 2px transparent;
-    border-radius: 14px;
 }
 
-nav ul .nav_item_background:hover {
+
+nav  .nav_container .nav_item_link:hover {
     background-color: transparent;
     border: solid 2px var(--main-btn-bg);
-
 }
 
 nav ul .nav_item_background a {
