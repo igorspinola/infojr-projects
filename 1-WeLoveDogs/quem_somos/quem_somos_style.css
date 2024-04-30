@@ -4,8 +4,6 @@ body {
     text-align: left;
 }
 
-/* header */
-
 #background-top-btn {
     background: #7ED32166;
 
@@ -14,6 +12,7 @@ body {
 #top {
     display: flex;
     flex-direction: column;
+
     
 }
 
@@ -44,38 +43,30 @@ a {
     align-items: center;
 }
 
-/* main */
-
-main {
-    display: flex;
-    justify-content: center;
-}
-
-#left-text {
-    display: flex;
-    flex-direction: column;
-    margin-left: .5em;
-    
-}
-
-#left-text, object {
-    transform: scale(1.12);
-    transform-origin: 0 0;
-}
-
 .btn-sign-in {
     display: flex;
     color: #1C4701;
     background-color: #7ED321;
-    border-radius: 0.7em;
+    border-radius: 0.5em;
     width: 7em;
     height: 2em;
     align-items: center;
     justify-content: center;
 }
 
-#bottom-btn {
-    width: 9.2em;
-    height: 2.3em;
+/* main */
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+p {
+    font-weight: 500;
+    text-align: justify;
+    width: 43em;
+   
 }
 
