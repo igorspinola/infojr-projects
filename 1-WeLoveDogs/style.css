@@ -1,0 +1,28 @@
+body
+{
+    font-family:'Open Sans', sans-serif;
+    font-size: 16px;
+}
+h1 
+{
+    font-size: 3em;
+}
+h2
+{
+    font-size: 2em;
+}
+label
+{
+    font-weight: 700;
+    font-size: 18px;
+}
+.input-default
+{
+    font-weight: 700;
+    font-size: 14px;
+    font-family: 'Open Sans';
+}
+header
+{
+    font-weight: 700;
+}
