@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
 * {
     margin: 0;
     padding: 0;
@@ -128,40 +129,62 @@ nav span{
    color: var(--cor-2);
 }
 
-header{
+header {
+    width: auto;
+    height:65px;
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: column;
-   
-
 }
 
-header h1{
-    height: 65px;
-    gap: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-    font-family: Open Sans;
-    font-size: 48px;
-    font-weight: 700;
-    line-height: 65.37px;
-    text-align: left;
-
-
-}
-header p{
-    margin-top: 1rem;
-    width: 687px;
-    height: 176px;
+p{
+    width: 778px;
+    height: 185px;
+    gap: 0px;
+    opacity: 0px;
     font-family: Open Sans;
     font-size: 16px;
     font-weight: 400;
     line-height: 21.79px;
     text-align: justify;
+
     
 
+}
+
+h1{ 
+    font-family: Open Sans;
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 65.37px;
+    text-align: left;
+    
+
+    margin-top: 2rem ;
+    height: 8.5rem;
 
 }
+h2{
+    height: 64px;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 43.58px;
+    text-align: left;
+    font-family: Open Sans;
+    
+}
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 1084px; 
+    margin: 0 auto;
+}
+.texto-imagem{
+    width: 780px;
+}
+
+.space {
+    height: 2rem;
+}
+
