@@ -1,0 +1,112 @@
+body * {
+  box-sizing: border-box;
+}
+
+.home {
+  background: white;
+  font-family: Open Sans;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.top-nav {
+  width: 100%;
+  height: 120px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-content: center;
+  flex-wrap: wrap;
+  padding: 0 0.94rem;
+}
+
+.logo {
+  height:auto;
+  color: black;
+  font-size: 3rem;
+  font-family: Open Sans;
+  font-weight: bold;
+}
+
+#green-lettering {
+  color: #7ED321;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-content: center;
+  padding: 0;
+}
+
+nav li {
+  padding: 0 1rem;
+  font-weight: bold;
+  line-height: normal;
+}
+
+li a {
+  color: #000;
+  text-decoration: none;
+}
+
+#nav-btn {
+  background: rgba(126, 211, 33, 0.40);
+  border-radius: 0.938rem;
+  border-width: 0;
+  padding: 0.56rem 2rem;
+}
+
+.main-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap-reverse;
+  justify-content: space-around;
+  align-items: center;
+  width: 90vw;
+  height: 100%;
+}
+
+.main-frame {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.main-frame p {
+  font-weight: bold;
+  font-size: 3rem;
+  text-wrap: pretty;
+  max-width: 25rem;
+  margin: 0;
+  flex: 1 1 content;
+}
+
+#sub-btn {
+  background: #7ED321;
+  color: #1C4701;
+  font-weight: bold;
+  text-decoration: none;
+  border-radius: 0.938rem;
+  border-width: 0;
+  padding: 1rem 3.5rem;
+  align-self: flex-start;
+  flex-shrink: 0;
+  margin-top: 1rem;
+}
+
+.vector-dog {
+  flex: 1 1 content;
+  max-width: 90vw;
+  min-width: 300px;
+}
+
+#invisible {
+  visibility: hidden;
+}
