@@ -25,6 +25,10 @@ nav a {
     
 }
 
+h1{
+    font-size: 40px;
+}
+
 .corLove{
     color: greenyellow;
 }
@@ -33,7 +37,7 @@ nav a {
     width: 151px;
     height: 40px;
     background-color: greenyellow;
-    margin: -6px ;
+    margin: -10px ;
     border-radius: 30px;
     display: flex;
     justify-content: center;
@@ -45,6 +49,7 @@ iframe{
     height: 120px;
     scolling: "no";
     scrollbar-width: none;
+    max-width: 100%;
 }
 /* END HEADER */
 
@@ -55,13 +60,14 @@ iframe{
 .mainHome{
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
+    position: relative;
 }
 
 .pHome{
     font-weight: bold;
-    font-size: 40px;
-    margin-top: 100px;
+    font-size: 37px;
+    margin-top: 30px;
 }
 
 .inscHome{
@@ -74,4 +80,8 @@ iframe{
     display: flex;
     justify-content: center;
     align-items: center;
+}
+img{
+    width: 450px;
+    height: 350px;  
 }
