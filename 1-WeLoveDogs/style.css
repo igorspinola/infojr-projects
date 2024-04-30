@@ -37,7 +37,12 @@ nav a {
     display: flex;
     justify-content: center;
     align-items: center;
+}
 
+iframe{
+    width: 1920px;
+    scolling: "no";
+    scrollbar-width: none;
 }
 /* Fim Cabeçalho */
 
