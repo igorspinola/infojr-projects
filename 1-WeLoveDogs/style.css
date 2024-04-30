@@ -1,6 +1,14 @@
 *{
     box-sizing: border-box;
     margin: 0;
+    padding: 0;
+}
+
+
+body{
+    width: 1440px;
+    height: 904px;
+    
 }
 
 /* HEADER */
@@ -19,7 +27,7 @@ header{
 .wrapper{
     display: flex;
     align-items: center;
-    max-width: 1200px;
+    max-width: 1440px;
     margin: 0 auto;
 }
 
@@ -40,12 +48,13 @@ nav ul{
 
 .logo a{
     
+
+    position: absolute;
     width: 281px;
     height: 65px;
     top: 27px;
     left: 15px;
-    gap: 0px;
-    opacity: 0px;
+    
 
     font-family: "Open Sans", sans-serif;
     font-size: 48px;
@@ -70,6 +79,10 @@ nav ul{
     ;
 }
 
+.cabecalho-itens ul{
+    align-items: right;
+}
+
 
 .cabecalho-itens li{
     display: flex;
@@ -77,6 +90,8 @@ nav ul{
     margin-right:67px;
     justify-content: space-around;
     align-items: center;
+    
+    
     
 }
 
@@ -133,8 +148,7 @@ nav ul{
     height: 22px;
     top: 49px;
     left: 1306px;
-    gap: 0px;
-    opacity: 0px;
+    margin-right: 0;
 
 
     font-family: "Open Sans", sans-serif;
@@ -148,16 +162,19 @@ nav ul{
 
 }
 
+.botaoincresver{ 
+    top: 40px;
+    left: 1274px;
+    
+}
+
 
 .botao1 {
 
     width: 151px;
     height: 40px;
-    top: 40px;
-    left: 1274px;
-    gap: 0px;
     border-radius: 15px 15px 15px 15px;
-    opacity: 0px;
+    border: none;
 
     background: rgba(126, 211, 33, 0.4);
 
@@ -167,7 +184,7 @@ nav ul{
 
 /* MAIN */
 
-.page{
+.page1{
 
     width: 1440px;
     height: 904px;
@@ -177,19 +194,20 @@ nav ul{
 }
 
 .paragrafo{
+
     position: absolute;
-    width: 340px;
-    height: 234px;
+    width: 371px;
+    height: 351px;
     top: 235px;
     left: 200px;
     gap: 0px;
     opacity: 0px;
 }
 
-.texto{
+.texto p{
 
-    width: 371px;
-    height: 351px;
+    width: 340px;
+    height: 234px;
     top: -28px;
     gap: 0px;
     opacity: 0px;
@@ -197,7 +215,7 @@ nav ul{
     font-family: "Open Sans", sans-serif;
     font-size: 48px;
     font-weight: 700;
-    line-height: 65.37px;
+    /* line-height: 65.37px; */
     text-align: left;
 
     color:rgba(0, 0, 0, 1);
@@ -205,8 +223,10 @@ nav ul{
 }
 
 
-.botaoinscrever{
+.botaoinscrever-se{
+
     position:absolute;
+    
 
     width: 220px;
     height: 51px;
@@ -219,13 +239,22 @@ nav ul{
 
 .botao2{
 
+
     position: relative;
     width: 220px;
     height: 51px;
     border-radius: 15px 15px 15px 15px;
+    border: none;
 
     background: rgba(126, 211, 33, 1);
 
+    display: inline-block;
+    transition:300ms;
+
+}
+
+.botao2:hover{
+    transform: translateY(8px);
 }
 
 .frame1 a{
@@ -259,3 +288,91 @@ nav ul{
     
 
 }
+
+/* MAIN QUEM SOMOS */
+
+
+
+
+.page2{
+    
+    
+    position: static;
+    width: 1440px;
+    height: 904px;
+    top: 120px;
+    
+
+}
+
+.section{
+    
+    display: flex;
+    position: static;
+    width: 687px;
+    height: 535px;
+    top: 150px;
+    left: 377px;
+    
+    
+
+
+}
+
+
+.titulo{
+
+    position: absolute;
+    height: 65px;
+    top: 150px;
+    left: 553px;
+    margin: 0 auto;
+
+}
+
+.title{
+    font-family: "Open Sans", sans-serif;
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 65.37px;
+    text-align: justify;
+
+}
+
+.paragrafo2{
+    
+    position: absolute;
+    width: 687px;
+    height: 176px;
+    top: 229px;
+    left: 377px;
+    margin: 0 auto;
+    
+    
+}
+
+.paragrafo2 p{
+
+    
+    font-family: "Open Sans", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 21.79px;
+    display: flex; 
+    text-align: justify;
+    width: 100%; 
+    color:  rgba(0, 0, 0, 1);
+}
+
+.imagem2{
+    
+    position: absolute;
+    width: 354px;
+    height: 266px;
+    top: 419px;
+    left: 543px;
+    
+
+}
+
+
