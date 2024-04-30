@@ -13,24 +13,90 @@
 .formlayout {
   display: flex;
   flex-direction: column;
-  gap: 24px;
+  gap: 35px;
   align-items: center;
   margin-top: 61px;
 }
 
 .formtitle {
-  margin: 0px;
   font-family: Open Sans;
   font-size: 48px;
   font-weight: 700;
   line-height: 65.37px;
-  text-align: left;
-  width: 216px;
-  height: 65px;
+  margin: 0px;
 }
 
-.formcontents {
+.image_and_form_section {
   display: flex;
   flex-direction: row;
+  align-items: center;
   gap: 1px;
+}
+
+.forms {
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  gap: 20px;
+}
+
+::placeholder {
+  margin: 0px;
+  opacity: 100%;
+  color: rgba(159, 159, 159, 1);
+}
+
+label {
+  font-family: Open Sans;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 24.51px;
+  
+  display: inline-block;
+  width: 140px;
+  height: 43px;
+  align-content: center;
+  text-align: center;
+  margin-top: 2px;
+}
+
+.block {
+  display: flex;
+  flex-direction: row;
+  align-items: start;
+}
+
+.textform {
+  width: 419px;
+  height: 43px;
+  border-radius: 7px;
+  border: 1px solid rgba(159, 159, 159, 1);
+  padding-left: 13px;
+  
+  font-family: Open Sans;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 19.07px;
+}
+
+#ama {
+  display: block;
+  padding-bottom: 129px;
+}
+
+.submit {
+  font-family: Open Sans;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 21.79px;
+  cursor: pointer;
+  text-align: center;
+  padding-left: 0px;
+  border: none;
+
+  width: 141px;
+  height: 42px;
+  border-radius: 10px;
+  background: rgba(126, 211, 33, 1);
+  color: rgba(28, 71, 1, 1);
 }
