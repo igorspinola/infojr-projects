@@ -1,0 +1,38 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    width: 1440px;
+    height: 1024px;
+    top: -1131px;
+    left: -552px;
+    gap: 0px;
+    opacity: 0px;
+    
+}
+
+.header {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: flex-end;
+    width: 1440px;
+    height: 120px;
+    gap: 0px;
+    opacity: 0px;
+}
+
+.main {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 1440px;
+    height: 904px;
+    top: 120px;
+    gap: 0px;
+    opacity: 0px;
+
+
+}
+
+.love{
+    color: #00f000;
+}
