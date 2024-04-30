@@ -61,7 +61,6 @@ iframe{
     display: flex;
     justify-content: center;
     align-items: flex-start;
-    position: relative;
 }
 
 .pHome{
@@ -81,7 +80,26 @@ iframe{
     justify-content: center;
     align-items: center;
 }
-img{
+.imgHome{
     width: 450px;
     height: 350px;  
+}
+
+
+/* main quem somos */   
+.h1Quem{
+    display: flex;
+    justify-content: center;
+}
+
+.pQuem{
+    display: flex;
+    justify-content: center;
+}
+
+.imgQuem{
+    display: flex;
+    justify-content: center;
+    width: 250px;
+    height: 250px;
 }
