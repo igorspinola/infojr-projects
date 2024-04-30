@@ -1,0 +1,141 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+html {
+    font-size: 62.5%;
+    font-family: 'Open Sans', sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: #000000;
+    font-size: 1.6rem;
+    font-weight: bold;
+}
+
+h1 {
+    font-size: 4rem;
+}
+
+.menu-bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 10rem;
+    padding: 0 10px;
+}
+
+.menu-bar .logo {
+    line-height: 5.6rem;
+    font-weight: bold;
+    font-size: 4.8;
+}
+
+.menu-bar .logo h1 {
+    font-size: 4.8rem;
+}
+
+.logo h1 a {
+    font-size: 4.8rem;
+}
+
+.menu-bar .logo span {
+    color: #7ED321;
+}
+
+.menu-bar nav ul{
+    display: flex;
+    gap: 1rem;
+    justify-content: space-between;
+    align-items: center;
+    padding-inline-start: 0;
+}
+
+.menu-bar nav ul li {
+    padding: 1rem;
+    list-style: none;
+}
+
+.menu-bar nav ul li a {
+    text-decoration: none;
+    color: #000000;
+    
+}
+
+.menu-bar .menu-button {
+    border-radius: 1.5rem;
+    padding: 1rem 3rem;
+    cursor: pointer;
+    border: none;
+    background-color: #7dd3216e;
+    font-weight: bold;
+    font-size: 1.8rem;
+}
+
+.subscription {
+    max-width: 100rem;
+    max-height: calc(100vh - 10rem);
+    margin: 0 auto;
+}
+
+.main-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 10rem;
+}
+
+.subscription h1 {
+    text-align: center;
+    margin: 2rem 0;
+}
+
+form p {
+    margin-bottom: 2rem;
+}
+
+form label {
+    position: absolute;
+    font-weight: bold;
+    font-size: 1.6rem;
+    margin-right: 2.3rem;
+}
+
+form input, form textarea {
+    position: relative;
+    left: 9rem;
+    border-color: #9F9F9F;
+    border-width: 0.1rem;
+    border-radius: 0.7rem;
+    padding: 1rem;
+    width: 100%;
+}
+
+form p:nth-child(4) label {
+    margin-left: -2rem;
+    text-align: center;
+}
+
+.btn {
+    display: flex;
+    justify-content: end;
+}
+
+form button {
+    position: relative;
+    left: 9rem;
+    border-radius: 1.5rem;
+    padding: 1rem 4rem;
+    cursor: pointer;
+    border: none;
+    background-color: 
+    #7ED321;
+    font-weight: bold;
+    font-size: 1.8rem;
+}
+
+img {
+    max-height: 40rem;
+}
