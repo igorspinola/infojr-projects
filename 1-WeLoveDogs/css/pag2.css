@@ -101,7 +101,7 @@ nav .logo {
     line-height: 21.79px;
     text-align: left;
     border-radius: 15px;
-    background:#7ED32166;
+    background: #7ED32166;
     padding: 12px 28px;
 
 }
@@ -109,49 +109,57 @@ nav .logo {
 /*main*/
 .main-container {
     background: #FFFFFF;
-    height: 904px;
     width: 1440px;
+    height: 904px;
     top: 120px;
     display: flex;
+    flex-direction: column;
+    justify-content: center;
     align-items: center;
-
+   
+    
 }
 
 header {
     display: flex;
-    align-items: center;
-    justify-content: space-between;
-    width: 340px;
-    height: 234px;
-    left: 200px;
-    margin-left: 260px;
-    margin-top: auto;
-
+    flex-direction: column;
+    justify-content: center;
+    width: 687px;
+    height: 535px;
+    margin-left:400px;
+    text-align: center;
+    
 }
 
 header h1 {
-    width: 371px;
-    height: 351px;
-    top: -28px;
+    width: 334px;
+    height: 65px;
+    top: 150px;
     gap: 0px;
     opacity: 0px;
     font-family: 'Open Sans',sans-serif;
-    font-size: 48px;
+    font-size: 47px;
     font-weight: 700;
     line-height: 65.37px;
-    text-align: left;
-   
-}
+    text-align: center;
+    margin-bottom: 0px;
+    margin-left: 140px;
     
+    
+}
 
-header a {
-    color: #1C4701;
-    font-size: 18px;
-    text-decoration: none;
-    background: #7ED321;
-    border-radius: 15px;
-    width: 220px;
-    height: 51px;
-    padding: 12px 48px;
+header p {
+    font-size: 16px;
+    line-height: 21.79px;
+    color: #000000;
+    Width: 687px;
+    height: 176px;
+    text-align: left;
+    margin-left: -10px;
+    
+}
+
+header img {
+    margin-top: 20px;
     
 }
