@@ -3,7 +3,7 @@
     margin: 0;
 }
 
-/* Cabeçalho */
+/* START HEADER */
 header {
     display: flex;
     justify-content: space-between;
@@ -20,6 +20,7 @@ nav ul {
 
 nav a {
     color: black;
+    font-weight: bold;
     text-decoration: none;
     
 }
@@ -29,7 +30,7 @@ nav a {
 }
 
 .bordaInscrever{
-    width: 110px;
+    width: 130px;
     height: 30px;
     background-color: greenyellow;
     margin: -6px ;
@@ -40,9 +41,35 @@ nav a {
 }
 
 iframe{
-    width: 1920px;
+    width: 1570px;
     scolling: "no";
     scrollbar-width: none;
 }
-/* Fim Cabeçalho */
+/* END HEADER */
 
+
+/* START MAINS */
+
+/* main home */
+.mainHome{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pHome{
+    font-weight: bold;
+    font-size: 50px;
+}
+
+.inscHome{
+    font-size: 20px;
+    width: 200px;
+    height: 50px;
+    background-color: greenyellow;  
+    margin-top: 30px;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
