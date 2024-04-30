@@ -22,12 +22,10 @@ body{
     font-size: 40px;
     margin: 0;
     align-self: center;
-    
 }
 .container-text p{
     max-width: 700px;
     text-align: justify;
-    
 }
 
 .container-text img{
