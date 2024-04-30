@@ -11,6 +11,7 @@
 
     <link rel="stylesheet" href="css/home/style.css">
     <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/contato/main.css">
 </head>
 <body>
     <header>
@@ -26,38 +27,34 @@
             </ol>
         </nav>
     </header>
-    
-    <h2>Inscrição</h2>
+    <h2 id="inscrição">Inscrição</h2>
 
     <div class="container">
         <div class="form">
             <form>
-                <div class="form-informations">
-                    <div class="inputbox">
-                        <label for="nome">Nome</label>
-                        <input type="text" name="nome" placeholder="Seu nome" required="required">
-                    </div>
-                    <div class="inputbox">
-                        <label for="idade">Idade</label>
-                        <input type="number" name="idade" placeholder="18" required="required">
-                    </div>
-
-                    <div class="inputbox">
-                        <label for="email">E-mail</label>
-                        <input type="email" name="email" placeholder="exemplo@exemplo" required="required">
-                    </div>
-                    <div class="textarea">
-                        <label for="mensagem">Ama cachorros?</label>
-                        <textarea class="field" name="mensagem" placeholder="Mensagem" required="required"></textarea>
-                    </div>
-                <div class="form-button">
-                    <button type="submit">Enviar</button>
+                <div class="inputbox">
+                    <label for="nome">Nome</label>
+                    <input type="text" name="nome" class="form-informations" placeholder="Seu nome" required="required">
                 </div>
+                <div class="inputbox">
+                    <label for="idade">Idade</label>
+                    <input type="text" name="idade" class="form-informations" placeholder="18" required="required">
+                </div>
+                <div class="inputbox">
+                    <label for="email">Email</label>
+                    <input type="email" name="email" class="form-informations" placeholder="exemplo@exemplo" required="required">
+                </div>
+                <div class="inputbox" id="inputbox-msg">
+                    <label for="mensagem">Ama<br>cachorros?</label>
+                    <textarea class="form-informations" cols="30" rows="10" placeholder="Mensagem" required="required"></textarea>
+                </div>
+                <input type="submit" class="submit" value="Enviar">
             </form>
         </div>
 
         <img src="assets/img/Figure 5.svg">
     </div>
 
+    
 </body>
 </html>
