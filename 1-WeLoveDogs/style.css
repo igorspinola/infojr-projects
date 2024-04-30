@@ -3,21 +3,44 @@
     flex-direction: column;
     width: 1440px;
     height: 1024px;
-    top: -1131px;
-    left: -552px;
     gap: 0px;
     opacity: 0px;
-    
 }
 
 .header {
     display: flex;
     flex-flow: row wrap;
-    align-items: flex-end;
+    justify-content: space-between;
     width: 1440px;
     height: 120px;
-    gap: 0px;
     opacity: 0px;
+}
+
+.logo{
+    display: flex;
+    align-items: flex-start;
+    font-family: Open Sans;
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 22px;
+    text-align: left;
+}
+
+.love{
+    color: #00f000;
+}
+
+.navigation{
+    display: flex;
+    align-items:flex-end;
+    justify-content: space-evenly;
+    justify-items: space-evenly;
+    flex-grow: 2;
+    font-family: Open Sans;
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 22px;
+    text-align: left;
 }
 
 .main {
@@ -26,13 +49,52 @@
     align-items: center;
     width: 1440px;
     height: 904px;
-    top: 120px;
+    opacity: 0px;
+}
+
+.homepage-content{
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    justify-self: left;
+    width: 340px;
+    height: 234px;
+    left: 200px;
     gap: 0px;
     opacity: 0px;
 
-
 }
 
-.love{
-    color: #00f000;
+.paragrafo-homepage{
+    align-self: flex-start;
+    font-family: Open Sans;
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 65.37px;
+    text-align: left;
+}
+
+.botao{
+    align-self: flex-end;
+    font-family: Open Sans;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 24.51px;
+    text-align: left;
+    background: #7ED321;
+    border-radius: 15px;
+}
+
+.homepage-image{
+    display: flex;
+    flex-shrink: 2;
+    align-content: center;
+    justify-self: right;
+    width: 640px;
+    height: 480px;
+    top: 150px;
+    left: 600px;
+    padding: 0px 46.25px 20px 0px;
+    gap: 0px;
+    opacity: 0px;
 }
