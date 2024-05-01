@@ -1,10 +1,10 @@
 body * {
-  /* border: 1px solid red; */
+  border: 1px solid red;
   margin: 0;
 }
 
 .home {
-  background: white;
+  background: var(--main-bg-color);
   font-family: Open Sans;
   display: flex;
   align-items: center;
@@ -115,14 +115,20 @@ li a {
   margin-top: 1rem;
 }
 
-.vector-dog {
-  flex: 1 1 content;
-  max-width: 90vw;
-  min-width: 300px;
+.vector-image {
+  max-width: 37rem;
+  min-width: 18.5rem;
+  width: 100%;
 }
 
-#invisible {
-  visibility: hidden;
+/* https://dev.to/mxl/accessibility-for-beginners-with-html-and-css-16j7 */
+.sr-only {
+  position: absolute;
+  left: -10000px;
+  width: 1px;
+  height: 1px;
+  top: auto;
+  overflow: hidden;
 }
 
 #about-container {
@@ -165,8 +171,13 @@ li a {
 }
 
 #post-image {
-  margin-top: 0.56rem;
-  max-width: 19rem;
+  margin: 0.56rem 0 0.94rem;
+}
+
+.post-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .post-info p {
