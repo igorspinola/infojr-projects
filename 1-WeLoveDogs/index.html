@@ -5,6 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" type="text/css" href="css/normalize.css" media="screen" />
+  <link rel="stylesheet" type="text/css" href="css/reset.css" media="screen" />
   <link rel="stylesheet" type="text/css" href="css/stylesheet.css" media="screen" />
   <title>WeLoveDogs</title>
 </head>
@@ -13,7 +14,11 @@
   <div class="home">
 
   <div class="top-nav">
-    <div class="logo">we<span id="green-lettering">love</span>dogs</div>
+    <div>
+      <a class="logo" href="index.html">
+        we<span id="green-lettering">love</span>dogs
+      </a>
+    </div>
 
     <nav>
       <ul>
@@ -27,12 +32,12 @@
   <main>
     <section class="main-container">
       <div class="main-frame">
-        <p>Junte-se a uma comunidade apaixonada por cachorros</p>
+        <p class="priority-text" id="main-paragraph">Junte-se a uma comunidade apaixonada por cachorros</p>
         <a href="subscribe.html" id="sub-btn">Inscrever-se</a>
       </div>
 
       <div class="main-frame">
-        <figure>
+        <figure class="figure">
           <img class="vector-dog" src="public/images/vector-dog.svg" alt="Um cachorro feliz e seu tutor">
           <figcaption id="invisible">A imagem vetorizada mostra um cachorro feliz e seu tutor</figcaption>
         </figure>

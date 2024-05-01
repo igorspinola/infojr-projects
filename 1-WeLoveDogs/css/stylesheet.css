@@ -1,5 +1,7 @@
 body * {
   box-sizing: border-box;
+  border: 1px solid red;
+  margin: 0;
 }
 
 .home {
@@ -23,15 +25,24 @@ body * {
 }
 
 .logo {
-  height:auto;
   color: black;
   font-size: 3rem;
   font-family: Open Sans;
   font-weight: bold;
+  text-decoration: none;
 }
 
 #green-lettering {
   color: #7ED321;
+}
+
+nav {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: space-evenly;
+  align-items: center;
 }
 
 nav ul {
@@ -79,9 +90,13 @@ li a {
   align-items: center;
 }
 
-.main-frame p {
+.priority-text {
   font-weight: bold;
   font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+#main-paragraph {
   text-wrap: pretty;
   max-width: 25rem;
   margin: 0;
@@ -101,6 +116,11 @@ li a {
   margin-top: 1rem;
 }
 
+.figure {
+  display: flex;
+  flex-direction: column;
+}
+
 .vector-dog {
   flex: 1 1 content;
   max-width: 90vw;
@@ -109,4 +129,18 @@ li a {
 
 #invisible {
   visibility: hidden;
+}
+
+#about {
+  max-width: 70rem;
+  flex: 1 1 content;
+  text-wrap: pretty;
+  margin-bottom: 1rem;
+}
+
+#about-container {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  width: 90vw;
 }
