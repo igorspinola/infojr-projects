@@ -53,11 +53,15 @@
 
 .subscribeHeaderButton:hover{
     transform: scale(1.1); 
+    background-color: #7ED321;
 }
 
 @media only screen and (max-width: 768px){
 	.headerHome{
         flex-direction: column;
         gap: 20px;
+    }
+    .navHome{
+        max-width: 98%;
     }
 }

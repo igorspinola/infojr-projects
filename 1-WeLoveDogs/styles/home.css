@@ -20,7 +20,6 @@
 }
 
 .mainContent p {
-    width: 340px;
     opacity: 0px;
 }
 
@@ -51,7 +50,23 @@
         gap: 60px;
     }
 
-    .mainSection img{
-        width: 24rem;
+    .mainContent{
+        width: 90%;
+    }
+
+    .image{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .image img{
+        width: 95%;
     }
 }   
+
+/* @media only screen and (max-width: 768px){
+    .mainSection img{
+        width: 500px;
+    }
+} */
