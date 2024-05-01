@@ -13,7 +13,7 @@
     
 }
 body {
-    font-family: 'Open Sans', sans-serif;
+    font-family: "Open Sans", sans-serif;
     font-size: 16px;
     font-weight: 700;
     line-height: 21.79px;
@@ -22,29 +22,6 @@ body {
 a{
     text-decoration: none;
 }
-.btn {
-    
-    height: 40px;
-    color: var(--cor-3); 
-    background:var(--cor-3); 
-    border-radius: 15px;
-    padding: 12px 40px; 
-    text-decoration: none; 
-}
-
-.btn:hover {
-    background: var(--cor-verde); 
-}
-
-.btn:focus {
-    outline: none;
-}
-
-
-.btn span {
-   color: var(--cor-2);
-}
-
 
 /* Navigation */
 .nav-container {
@@ -53,9 +30,10 @@ a{
     height: 120px;
 }
 
-.wrapper {
+.wrapper2 {
     max-width: 1440px;
     margin: 0 auto;
+    
 }
 
 nav {
