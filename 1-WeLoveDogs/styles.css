@@ -1,0 +1,183 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.nav-container{
+
+    position: absolute;
+    width: 1440px;
+    height: 120px;
+    left: 0px;
+    top: 0px;
+
+    background: #FFFFFF;
+}
+
+.logo {
+    /* welovedogs */
+
+    position: absolute;
+    width: 281px;
+    height: 65px;
+    left: 15px;
+    top: 27px;
+
+    font-family: "Open Sans";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 65px;
+
+    color: #000000;
+
+}
+
+.love{
+    /*love*/
+    color: #7ED321;
+}
+
+.quem-somos{
+    display: inline-block; /* Certifica-se de que o contêiner não ocupa toda a largura disponível */
+    width: auto; 
+
+    position: absolute;
+    height: 22px;
+    left: 1047px;
+    top: 49px;
+
+}
+
+.blog{
+    /* BLOG */
+
+    position: absolute;
+    width: 45px;
+    height: 22px;
+    left: 1194px;
+    top: 49px;
+
+}
+
+.botao-inscrever{
+    /* Botão */
+
+    position: relative;
+    left: 1274px;
+    top: 40px;
+    width: 151px;
+    height: 40px;
+
+    background: rgba(126, 211, 33, 0.4);
+    border-radius: 15px;
+    text-align: center;
+    z-index:1;
+
+}
+
+.inscrever{
+
+    font-family: 'Open Sans Bold', sans-serif;
+    text-decoration: none;
+    position: absolute; 
+    top: 50%; /* Alinhe verticalmente o texto ao centro */
+    left: 50%; /* Alinhe horizontalmente o texto ao centro */
+    transform: translate(-50%, -50%); /* Ajuste o texto para ficar no centro */
+
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 22px;
+    z-index:2;
+
+    color: #1C4701;
+
+}
+
+.link{
+    /* QUEM SOMOS */
+
+    font-family: 'Open Sans Bold', sans-serif;
+    text-decoration: none;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 21.79px;
+    /* identical to box height */
+
+    color: #000000;
+}
+
+.texto-home{
+    /* Junte-se a comunidade apaixonada por cachorros */
+    font-family: 'Roboto', sans-serif;
+
+    position: absolute;
+    width: 371px;
+    height: 351px;
+    left: 200px;
+    top: 207px;
+
+    
+    font-style: normal;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 65px;
+
+    color: #000000;
+
+
+}
+
+.botao-home{
+    /* Frame 1 */
+
+    position: absolute;
+    width: 220px;
+    height: 51px;
+    left: 200px;
+    top: 494px;
+
+
+
+    background: #7ED321;
+    border-radius: 15px;
+
+
+}
+
+.imagem-home{
+/* Figure1 */
+
+    position: absolute;
+    width: 640px;
+    height: 480px;
+    left: 600px;
+    top: 150px;
+
+}
+
+.inscrever-home{
+    /* Inscrever-se */
+
+    text-decoration: none;
+    position: absolute;
+    width: 110px;
+    height: 25px;
+    left: 55px;
+    top: 13px;
+
+    font-family: 'Open Sans Bold', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 25px;
+
+    color: #1C4701;
+
+}
+
