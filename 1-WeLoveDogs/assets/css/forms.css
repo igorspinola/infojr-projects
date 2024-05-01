@@ -107,6 +107,7 @@ nav span{
 }
 
 .btn {
+    text-align: center;
     height: 40px;
     color: var(--cor-3); 
     background:var(--cor-verde); 
@@ -168,7 +169,7 @@ h2{
     display: flex;
     justify-content: flex-end;
     align-items: flex-end;
-    margin-left: 72%;
+    margin-left: 69%;
 
 
     font-family: Open Sans;
