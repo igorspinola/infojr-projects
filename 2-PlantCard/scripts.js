@@ -1,12 +1,12 @@
 let iconBar = document.querySelector(".icon-bar");
 let share = document.querySelector("#share-symbol");
 
-share.addEventListener('mouseenter', showSocials);
-share.addEventListener('mouseout', hideSocials);
+share.addEventListener("click", showSocials);
 
 function showSocials() {
-    iconBar.style.display = 'flex';
-}
-function hideSocials() {
-  iconBar.style.display = 'none';
+  if (iconBar.style.display === "none") {
+      iconBar.style.display = "flex";
+  } else {
+      iconBar.style.display = "none";
+  }
 }
