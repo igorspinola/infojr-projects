@@ -115,3 +115,27 @@ iframe{
     width: 250px;
     height: 250px;
 }
+
+/* main blog */
+.mainBlog{
+    display: flex;
+    justify-content: center;
+    margin-top: 8px;
+}
+
+.h1Blog{
+    display: flex;
+    justify-content: center;
+    font-size: 40px;
+    margin-top: 21px;   
+}
+.tituloPost{
+    font-size: 35px;
+    margin-left: 510px;
+    margin-top: 20px;
+}
+.pBlog{
+    font-size: 22px;
+    margin-top: ;
+
+}
