@@ -16,7 +16,7 @@
 /* Body */
 body {
     background-color: var(--blue);
-    font-family: 'Josefin Sans', sans-serif; /* Fonte padrão */
+    font-family: 'Josefin Sans', sans-serif; 
     display: flex;
     justify-content: center;
     align-items: center;
@@ -26,11 +26,11 @@ body {
 /* Section */
 section {
     width: 100%;
-    max-width: 875px; /* Largura máxima */
+    max-width: 875px;
     border-radius: 30px;
     background-color: var(--branco);
     display: flex;
-    flex-wrap: wrap; /* Quebra para a próxima linha em telas menores */
+    flex-wrap: wrap;
 }
 
 /* Colunas */
@@ -40,8 +40,8 @@ section {
 
 .coluna1 {
     width: 100%;
-    max-width: 30%; /* Largura da coluna 1 */
-    flex: 0 0 30%; /* Para garantir que a largura não mude */
+    max-width: 30%; 
+    flex: 0 0 30%;
 }
 
 .coluna1 img {
@@ -52,8 +52,8 @@ section {
 
 .coluna2 {
     width: 100%;
-    max-width: 70%; /* Largura da coluna 2 */
-    flex: 0 0 70%; /* Para garantir que a largura não mude */
+    max-width: 70%; 
+    flex: 0 0 70%; 
     padding: 15px;
     background-color: #ddd;
 }
@@ -85,9 +85,8 @@ section {
     height: auto; 
     gap: 0px;
     justify-content: space-between;
-    opacity: 1; /* Mudei a opacidade para 1 para que a caixa seja visível */
-    margin-top: 20px; /* Espaçamento para separar do conteúdo */
-   
+    opacity: 1; 
+    margin-top: 20px; 
     display: flex;
     align-items: center;
     padding: 10px;
