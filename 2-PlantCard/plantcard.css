@@ -16,6 +16,13 @@ body {
   flex-direction: row;
 }
 
+@media (max-width: 375px) {
+  .container {
+    flex-direction: column;
+  }
+}
+
+
 aside {
   display: flex;
   flex-direction: column;
@@ -57,8 +64,7 @@ h1 {
 
 footer {
   display: flex;
-  padding: 30px;
-  padding-bottom: 41px;
+  padding: 0px 30px 41px 30px;
   justify-content: space-between;
   align-items: end;
 }
@@ -99,6 +105,30 @@ footer {
   object-fit: cover;
 }
 
+@media (max-width: 375px) {
+  aside {
+    width: 350px;
+    height: 548px;
+    border-radius: 0px 0px 30px 30px;
+  }
+  .cardcontent {
+    padding-top: 25px;
+    gap: 10px;
+  }
+  .text {
+    width: 290px;
+    height: 286px;
+  }
+  footer {
+    padding: 0px 30px 25px 30px;
+  }
+  #leaves {
+    width: 350px;
+    height: 202px;
+    border-radius: 30px 30px 0px 0px;
+  }
+}
+
 #dog {
   width: 60px;
   height: 60px;
@@ -128,22 +158,24 @@ button {
 .share_button {
   display: flex;
   flex-direction: column;
+  justify-content: space-between; 
   align-items: end;
-  height: 100%;
-  gap: 7px;
 }
 
 .popup_drawer {
+  position: relative;
   display: flex;
   flex-direction: row;
+  width: 231px;
+  height: 44px;
+  justify-content: center;
   align-items: center;
   background: rgba(105, 111, 90, 1);
   border-radius: 15px;
-  padding-left: 15px;
-  padding-right: 15px;
-  padding: 10px;
   gap: 15px;
   visibility: hidden;
+  bottom: -12px;
+  right: -324px;
 }
 
 .share {
@@ -153,4 +185,13 @@ button {
   height: 21px;
   margin: 0px;
   color: rgba(223, 223, 214, 1);
+}
+
+@media (max-width: 375px) {
+  .popup_drawer {
+    bottom: 11px;
+    right: -100px;
+    width: 221px;
+    height: 34px;
+  }
 }
