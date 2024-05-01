@@ -116,11 +116,6 @@ li a {
   margin-top: 1rem;
 }
 
-.figure {
-  display: flex;
-  flex-direction: column;
-}
-
 .vector-dog {
   flex: 1 1 content;
   max-width: 90vw;
@@ -131,6 +126,14 @@ li a {
   visibility: hidden;
 }
 
+#about-container {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  width: 90vw;
+  padding-top: 1.88rem;
+}
+
 #about {
   max-width: 70rem;
   flex: 1 1 content;
@@ -138,9 +141,7 @@ li a {
   margin-bottom: 1rem;
 }
 
-#about-container {
+.figure {
   display: flex;
-  flex-flow: column nowrap;
-  align-items: center;
-  width: 90vw;
+  flex-direction: column;
 }
