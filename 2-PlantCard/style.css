@@ -9,7 +9,7 @@
 }   
 
 body {background-color: #BCCDD0;}
-a { text-decoration: none;}
+a {text-decoration: none;}
 ul {list-style: none;}
 img {max-width: 100%;}
 
@@ -44,8 +44,6 @@ p {
     line-height: 21.79px;
     text-align: left;
 }
-
-
 
 main {
     display: flex;
@@ -121,6 +119,7 @@ footer {
 }
 
 .icon-bar {
+    display: flex;
     flex-direction: row;
     align-items: center;
     overflow: hidden;
@@ -129,20 +128,26 @@ footer {
     width: fit-content;
     border-radius: 2rem;
     padding: 0 1rem;
+    margin-bottom: .5rem;
+    opacity: 0;
+    transition: opacity 200ms linear;
 }
 
-.icon-bar a {
-    justify-content: space-between;
+.show {
+    opacity: 1;
 }
 
 .icon-bar a i {
     padding: 1rem;
     font-size: 1.5rem;
+    transition: 100ms;
 }
 
 .icon-bar a #share-text {
     font-size: 1.3rem;
 }
+
+a i:hover {font-size: 2rem;}
 
 .fa {
     padding: 0.75rem;
@@ -153,19 +158,25 @@ footer {
     color: #DFDFD6;
   }
 
-  #share-text {
-    color: #DFDFD6;
-  }
-  
-  #share-symbol {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: #696F5A;
-    width: 52px;
-    height: 52px;
-    border-radius: 50%
-  }
+
+#share-text {
+color: #DFDFD6;
+}
+
+#share-symbol {
+display: flex;
+align-items: center;
+justify-content: center;
+background-color: #696F5A;
+width: 52px;
+height: 52px;
+border-radius: 50%
+}
+
+#share-symbol:hover {
+    transform: scale(1.15);
+    transition: transform 0.3s ease-in-out;
+}
 
 @media (max-width: 890px) {
     main {
