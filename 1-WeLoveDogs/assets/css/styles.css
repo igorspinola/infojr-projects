@@ -151,3 +151,24 @@ header a {
 header a:hover {
     transform: translate(-8px);
 }
+.btn2 {
+    height: 40px;
+    background:var(--cor-3); 
+    border-radius: 15px;
+    padding: 12px 40px; 
+    text-decoration: none; 
+}
+
+.btn2:hover {
+    background: var(--cor-verde); 
+}
+
+.btn2:focus {
+    outline: none;
+}
+
+.btn2 span {
+    color: var(--cor-2);
+}
+    
+    
