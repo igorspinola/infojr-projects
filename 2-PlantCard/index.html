@@ -8,6 +8,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,300" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Overpass:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="scripts.js" defer></script>
 </head>
 <body>
     <header>
@@ -15,6 +17,7 @@
             <div class="main-image">
                 <img src="./images/planta.jpg" alt="planta">
             </div>
+
             <div class="main-content">
                 <article>
                     <h1>Decore sua casa com plantas!</h1>
@@ -26,23 +29,35 @@
                         Gravida nibh magna cursus eget eget velit cras.
                     </p>
                 </article>
-        
+
+                <nav class="hamburger-menu">
+                    <span class="icon-bar" style="display: none;">
+                        <a href="#"><p id="share-text">SHARE</p></a>
+                        <a href="#"><i class="fa fa-facebook"></i></a>
+                        <a href="#"><i class="fa fa-twitter"></i></a>
+                        <a href="#"><i class="fa fa-pinterest"></i></a>
+                    </span>
+                </nav>
+
                 <footer>
+                    
                     <div class="profile">
                         <div class="foto-perfil">
                             <img src="./images/perfil.png" alt="cachorro">
                         </div>
+
                         <div class="info">
                             <h3>Doguito</h3>
                             <p>29/09/2022</p>
                         </div>
                     </div>
-            </div>
-    
-                <div class="share">
+
+                    <a href="javascript:void(0);" class="icon">
+                        <i id="share-symbol" style="font-size: 1.5rem;" class="fa fa-share"></i>
+                    </a>            
                     
-                </div>
-            </footer>
+                </footer>
+            </div>    
         </main>
     </header>
 </body>

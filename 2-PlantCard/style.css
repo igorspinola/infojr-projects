@@ -45,6 +45,8 @@ p {
     text-align: left;
 }
 
+
+
 main {
     display: flex;
     margin: 0;
@@ -62,8 +64,6 @@ main {
 .main-content {
     display: flex;
     flex: 1;
-    width: Fixed (584px);
-    height: Fixed (492px);
     padding: 50px 30px 40px 30px;
     border-radius: 0px 30px 30px 0px;
     justify-content: space-between;
@@ -79,6 +79,7 @@ main {
     width: 291px;
     height: 492px;
     border-radius: 30px 0px 0px 30px;
+    object-fit: cover;
 }
 
 .profile {
@@ -106,28 +107,82 @@ main {
     border-radius: 50%;
 }
 
+nav {
+    margin-top: auto;
+    align-self: flex-end;
+    
+}
 
+footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.icon-bar {
+    flex-direction: row;
+    align-items: center;
+    overflow: hidden;
+    background-color: #696F5A;
+    position: relative;
+    width: fit-content;
+    border-radius: 2rem;
+    padding: 0 1rem;
+}
+
+.icon-bar a {
+    justify-content: space-between;
+}
+
+.icon-bar a i {
+    padding: 1rem;
+    font-size: 1.5rem;
+}
+
+.icon-bar a #share-text {
+    font-size: 1.3rem;
+}
+
+.fa {
+    padding: 0.75rem;
+    width: 1rem;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 50%;
+    color: #DFDFD6;
+  }
+
+  #share-text {
+    color: #DFDFD6;
+  }
+  
+  #share-symbol {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #696F5A;
+    width: 52px;
+    height: 52px;
+    border-radius: 50%
+  }
 
 @media (max-width: 890px) {
     main {
         flex-direction: column;
         background: #DFDFD6;
         width: 95%;
-        height: 95%;
+        height: 97%;
         border-radius: 30px;
     }
 
     .main-content {
-        display: flex;
-        flex: 3;
         height: 100%;
         padding: 25px 30px 25px 30px;
-        gap: 70px;
         border-radius: 0px 0px 30px 30px;
     }
     
     .main-image {
-        flex: 2;
         height: 202px;
     }
 
@@ -138,7 +193,6 @@ main {
     }
 
     .main-content footer {
-        width: Fill (290px);
         height: 60px;
     }
 }
