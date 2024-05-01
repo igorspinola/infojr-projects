@@ -5,6 +5,7 @@ body{
 
 #love{
     color:rgba(126, 211, 33, 1);
+    text-decoration: none;
 }
 
 .header{
@@ -15,6 +16,10 @@ body{
     padding-bottom: 80px ;
 }
 
+.we, .dogs{
+    color: #000;
+    text-decoration: none;
+}
 .title{
     display: flex;
     flex-direction: row;
@@ -26,6 +31,7 @@ body{
     font-size: 48px;
     align-items:center;
     font-family: "Open Sans", sans-serif;
+    text-decoration: none;
 
 
 
@@ -161,8 +167,8 @@ label{
     color: #1C4701;
     text-decoration: none;
 
-
-
-
 }
 
+.botaoenviar:hover, .b1:hover{
+    background-color: #7dd321a1
+}

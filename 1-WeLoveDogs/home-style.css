@@ -5,6 +5,12 @@ body{
 
 #love{
     color:rgba(126, 211, 33, 1);
+    text-decoration: none;
+}
+
+.we, .dogs{
+    color: #000;
+    text-decoration: none;
 }
 
 .header{
@@ -26,6 +32,7 @@ body{
     font-size: 48px;
     align-items:center;
     font-family: "Open Sans", sans-serif;
+    text-decoration: none;
 
 
 
@@ -105,5 +112,9 @@ font-family: "Open Sans", sans-serif;
 font-weight: 700;
 font-size: 18px;
 color: #1C4701;
+}
+
+.b1:hover, .b2:hover{
+    background-color: #7dd321a1
 }
 

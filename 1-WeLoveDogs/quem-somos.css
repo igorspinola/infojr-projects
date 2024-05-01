@@ -5,6 +5,7 @@ body{
 
 #love{
     color:rgba(126, 211, 33, 1);
+    text-decoration: none;
 }
 
 .header{
@@ -79,6 +80,11 @@ body{
 
 }
 
+.we, .dogs{
+    color: #000;
+    text-decoration: none;
+}
+
 .texto{
     max-width: 687px;
     max-height: 180px;
@@ -98,3 +104,6 @@ body{
 
 }
 
+.b1:hover{
+    background-color: #7dd321a1
+}
