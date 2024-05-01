@@ -3,6 +3,10 @@ body
     font-family:'Open Sans', sans-serif;
     font-size: 16px;
 }
+nav a:hover
+{
+    color:#7ed321;
+}
 h1 
 {
     font-size: 3em;
@@ -26,3 +30,36 @@ header
 {
     font-weight: 700;
 }
+input[type="submit"]
+{
+    background: #7ED32166;
+    color: #1C4701;
+    font-weight: bold;
+    border: none;
+    transition: 0.5s all;
+    cursor: pointer;
+}
+input[type="submit"]:hover {
+    background: #7ed321;
+}
+.navInscrever
+{
+    width: 151px;
+    height: 40px;
+    border-radius: 15px;
+}
+#inscrevHome
+{
+    width: 220px;
+    height: 51px;
+    border-radius: 15px;
+    font-size: 18px;
+}
+#inscrevHome:hover {transform: scale(1.1)}
+#inscrevEnviar
+{
+    width: 141px;
+    height: 42px;
+    border-radius: 10px;
+}
+#inscrevEnviar:hover {transform: scale(1.1)}
