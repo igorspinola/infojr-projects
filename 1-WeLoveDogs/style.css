@@ -10,6 +10,8 @@ header {
     align-items: center;
     padding: 10px 20px;
     margin-top: 15px;
+    margin-left: 6px;
+    margin-right: 6px;
 }   
 
 nav ul {
@@ -22,11 +24,15 @@ nav a {
     color: black;
     font-weight: bold;
     text-decoration: none;
+    font-size: 17px;
     
 }
 
-h1{
-    font-size: 40px;
+.h1Welovedogs{
+    font-size: 48px;
+    font-weight: bold ;
+    text-decoration: none;
+    list-style: none;
 }
 
 .corLove{
@@ -60,19 +66,19 @@ iframe{
 .mainHome{
     display: flex;
     justify-content: center;
-    align-items: flex-start;
+    margin-top: 5%;
 }
 
 .pHome{
     font-weight: bold;
-    font-size: 37px;
+    font-size: 45px;
     margin-top: 30px;
 }
 
 .inscHome{
     font-size: 18px;
-    width: 150px;
-    height: 50px;
+    width: 175px;
+    height: 45px;
     background-color: greenyellow;  
     margin-top: 25px;
     border-radius: 15px;
@@ -81,8 +87,8 @@ iframe{
     align-items: center;
 }
 .imgHome{
-    width: 450px;
-    height: 350px;  
+    width: 500px;
+    height: 400px;  
 }
 
 
