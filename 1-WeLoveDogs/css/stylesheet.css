@@ -1,6 +1,5 @@
 body * {
-  box-sizing: border-box;
-  border: 1px solid red;
+  /* border: 1px solid red; */
   margin: 0;
 }
 
@@ -135,7 +134,8 @@ li a {
 }
 
 #about {
-  max-width: 70rem;
+  max-width: 43rem;
+  text-align: justify;
   flex: 1 1 content;
   text-wrap: pretty;
   margin-bottom: 1rem;
@@ -144,4 +144,38 @@ li a {
 .figure {
   display: flex;
   flex-direction: column;
+}
+
+.posts-container {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-top: 2.12rem;
+  margin-bottom: 2rem;
+}
+
+.post {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: flex-start;
+  max-width: 67.75rem;
+  margin-bottom: 2.81rem;
+}
+
+#post-image {
+  margin-top: 0.56rem;
+  max-width: 19rem;
+}
+
+.post-info p {
+  text-align: justify;
+  line-height: normal;
+}
+
+.post-title {
+  font-weight: bold;
+  font-size: 2rem;
+  margin-bottom: 1.44rem;
 }
