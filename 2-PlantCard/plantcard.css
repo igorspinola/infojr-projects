@@ -1,0 +1,119 @@
+body {
+  height: 100vh; 
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(188, 205, 208, 1);
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+}
+
+aside {
+  display: flex;
+  flex-direction: column;
+  width: 584px;
+  height: 492px;
+  border-radius: 0px 30px 30px 0px;
+  background-color: rgba(223, 223, 214, 1);
+  justify-content: space-between;
+}
+
+.cardcontent {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  padding: 30px;
+  padding-top: 50px;
+}
+
+h1 {
+  font-family: Josefin Sans;
+  font-size: 36px;
+  font-weight: 600;
+  line-height: 36px;
+  text-align: left;
+  margin: 0px;
+}
+
+.text {
+  font-family: Open Sans;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 21.79px;
+  text-align: left;
+
+  margin: 0px;
+  width: 524px;
+  height: 154px;
+}
+
+footer {
+  display: flex;
+  padding: 30px;
+  padding-bottom: 41px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.profileinfos {
+  display: flex;
+  gap: 11px;
+}
+
+.infos {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.name {
+  font-family: Overpass;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 30.38px;
+  text-align: left;
+  margin: 0px;
+}
+
+.date {
+  font-family: Overpass;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 20.26px;
+  text-align: left;
+  margin: 0px;
+}
+
+#leaves {
+  width: 291px;
+  height: 492px;
+  border-radius: 30px 0px 0px 30px;
+  object-fit: cover;
+}
+
+#dog {
+  width: 60px;
+  height: 60px;
+  border-radius: 30px;
+  object-fit: cover;
+}
+
+#sendicon {
+
+}
+
+button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: rgb(0,0,0,0);
+  border-radius: 26px;
+  height: 52px;
+  width: 52px;
+  background: rgba(105, 111, 90, 1);
+  cursor: pointer;
+}
