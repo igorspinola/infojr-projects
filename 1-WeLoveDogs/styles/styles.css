@@ -1,0 +1,44 @@
+body{
+    font-family: "Open Sans", sans-serif;
+}
+
+.flexer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 150px;
+    padding: 50px 15px 100px 15px;
+}
+
+.header__logo, .header__navbar__link{
+    user-select: none;
+}
+
+.header__logo{
+    font-size: 2.8rem;
+    font-weight: bold;
+}
+
+.header__navbar{
+    display: flex;
+    justify-content: space-evenly;
+    min-width: 30%;
+}
+
+.header__navbar__link{
+    padding: 10px 20px;
+    font-size: 0.95rem;
+    font-weight: 700;
+}
+
+.subscribe-nav-button{
+    background-color: #CBEDA6;
+    color: #1C4701;
+    border-radius: 10px;
+}

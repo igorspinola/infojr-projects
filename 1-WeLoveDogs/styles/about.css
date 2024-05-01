@@ -1,0 +1,12 @@
+.main__container{
+    width: 50%;
+}
+
+.main__container__content__title{
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.main__container__content__text{
+    text-align: justify;
+}
