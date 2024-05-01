@@ -79,3 +79,36 @@ main {
     height: 2.3em;
 }
 
+a:link { 
+    text-decoration: none;
+    color: inherit;
+  } 
+  a:visited { 
+    text-decoration: none; 
+    color: inherit;
+  } 
+  a:hover { 
+    text-decoration: none; 
+  } 
+  a:active { 
+    text-decoration: none; 
+  }
+
+  h1{
+    color: black;
+  }
+
+/* efeitos especiais */
+
+  #brand:hover > span {
+    color: black;
+  }
+
+  #brand:hover {
+    color: #7ED321;
+  }
+
+  #background-top-btn:hover {
+    background-color: #7ED321;
+    transition: background-color 0.5s ease-out; 
+  }
