@@ -7,29 +7,30 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
+        <a href="home.html"><h1>we<span style="color:#7ed321">love</span>dogs</h1></a>
         <nav>
-            <a href="home.html"><h1>we<span style="color:#7ed321">love</span>dogs</h1></a>
             <a href="about.html" class="navNotLogo">QUEM SOMOS</a>
             <a href="blog.html" class="navNotLogo">BLOG</a>
             <a href="contact.html" class="navNotLogo"><input class="navInscrever" type="submit" value="INSCREVER"></a>
         </nav>
     </header>
-    <h1 class="hNormal">Inscrição</h1>
-    <form>
-        <label for="nome">Nome</label>
-        <input type="text" id="nome" class="input-default" required placeholder="Seu nome">
-        <label for="idade">Idade</label>
-        <input type="number" id="idade" class="input-default" required placeholder="18">
-        <label for="email">E-mail</label>
-        <input type="email" id="email" class="input-default" required placeholder="exemplo@exemplo">
-        <label for="discorra">Ama cachorros?</label>
-        <textarea cols="70" rows="10" id="discorra" class="input-default" placeholder="Mensagem"></textarea>
-        <input id="inscrevEnviar" type="submit" value="Enviar">
-    </form>
-    <img src="Figure5.svg" alt="Ilustração da cintura para cima de uma pessoa com as mãos sobre o coração, estampado em sua camisa.">
+    <main id="mainContact">
+        <h1>Inscrição</h1>
+        <div id="divContact">
+            <form>
+                <label>Nome<input type="text" class="input-default" required placeholder="Seu nome"></label>
+                <label>Idade<input type="number" id="idade" class="input-default" required placeholder="18"></label>
+                <label>E-mail<input type="email" id="email" class="input-default" required placeholder="exemplo@exemplo"></label>
+                <label>Ama cachorros?<textarea cols="70" rows="10" id="discorra" class="input-default" placeholder="Mensagem"></textarea></label>
+                <input id="inscrevEnviar" type="submit" value="Enviar">
+            </form>
+            <img src="Figure5.svg" alt="Ilustração da cintura para cima de uma pessoa com as mãos sobre o coração, estampado em sua camisa.">
+        </div>
+    </main>
 </body>
 </html>

@@ -1,34 +1,53 @@
+*{box-sizing:border-box}
 body
 {
     font-family:'Open Sans', sans-serif;
     font-size: 16px;
 }
-header{height:120px;}
-.navNotLogo:hover{color:#7ed321;}
-.navNotLogo
+p
 {
-    align-self: flex-end
+    line-height:1.4;
+    text-align: justify;
 }
+header
+{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px;
+}
+nav a:hover
+{color:#7ed321;}
 nav
 {
     display: flex;
     align-items: center;
+    gap: 32px;
+    justify-content: space-between;
 }
 form
 {
     width: 50vw;
     display: flex;
-    flex-flow: column wrap;
+    flex-direction: column;
+    gap: 20px;
 }
-nav a
+header a /*Resetando formatação dos links*/
 {
-    /*Resetando formatação dos links*/
     text-decoration: none;
     color: black;
 }
-h1{font-size: 3em;}
-.hNormal{text-align:center;}
-h2{font-size: 2em;}
+h1
+{
+    font-size: 3em;
+    font-weight: 700;
+    text-align: center;
+}
+h2
+{
+    font-size: 2em;
+    font-weight: 700;
+}
 label
 {
     font-weight: 700;
@@ -41,9 +60,7 @@ label
     font-family: 'Open Sans';
 }
 header
-{
-    font-weight: 700;
-}
+{font-weight: 700;}
 input[type="submit"]
 {
     background: #7ED32166;
@@ -53,12 +70,13 @@ input[type="submit"]
     transition: 0.5s all;
     cursor: pointer;
 }
-input[type="submit"]:hover {background: #7ed321;}
+input[type="submit"]:hover
+{background: #7ed321;}
 .navInscrever
 {
-    width: 151px;
-    height: 40px;
+    padding: 8px 32px;
     border-radius: 15px;
+    font-size: 16px;
 }
 #inscrevHome
 {
@@ -67,18 +85,64 @@ input[type="submit"]:hover {background: #7ed321;}
     border-radius: 15px;
     font-size: 18px;
 }
-#inscrevHome:hover {transform: scale(1.1)}
+#inscrevHome:hover
+{transform: scale(1.1)}
 #inscrevEnviar
 {
     width: 141px;
     height: 42px;
     border-radius: 10px;
 }
-#inscrevEnviar:hover {transform: scale(1.1)}
+#inscrevEnviar:hover
+{transform: scale(1.1)}
 #junteSe
 {
     width: 340px;
     height: 234px;
-    top: 235px;
-    left: 200px;
+    text-align:left;
 }
+#mainHome
+{
+    display: flex;
+    justify-content: center;
+    gap: 64px;
+}
+#divHome
+{
+    display:flex;
+    justify-content:center;
+    flex-direction:column;
+    padding-top: 16px;
+}
+#mainAbout
+{
+    display: flex;
+    flex-direction: column;
+    padding: 0% 27.5%;
+    height: 60vh;
+    gap: 16px;
+}
+#mainBlog
+{
+    display: flex;
+    flex-direction: column;
+    padding: 30px 12.5%;
+    gap: 45px;
+}
+.blogPost
+{display: flex;}
+.conteudoPost
+{
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+#mainContact
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 24px;
+}
+#divContact
+{display: flex;}
