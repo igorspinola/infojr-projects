@@ -1,0 +1,133 @@
+.header {
+    width: 1440px;
+    height: 120px;
+    gap: 0px;
+    opacity: 0px;   
+}
+.marca {
+    width: 281px;
+    height: 65px;
+    top: 27px;
+    left: 15px;
+    gap: 0px;
+    opacity: 0px;
+    font-family: Open Sans;
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 65.37px;
+    text-align: left;
+    text-decoration: none;
+    color: black;
+}
+
+.enverdecimento {
+    font-family: Open Sans;
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 65.37px;
+    text-align: left;
+    color:#7ED321
+}
+
+.quemsomos {
+    display: flex;
+    width: 112px;
+    height: 22px;
+    top: 49px;
+    left: 1047px;
+    gap: 0px;
+    opacity: 0px;
+    color: #000000;
+    text-decoration: none;
+    font-family: Open Sans;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 21.79px;
+    }
+
+.blog {
+    display: flex;
+    width: 45px;
+    height: 22px;
+    top: 49px;
+    left: 1194px;
+    gap: 0px;
+    opacity: 0px;
+    color: #000000;
+    text-decoration: none;
+    font-family: Open Sans;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 21.79px;
+    margin-left: 30px;
+}
+
+.inscrever-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 151px;
+    height: 40px;
+    top: 40px;
+    left: 1274px;
+    gap: 0px;
+    border-radius: 15px;
+    opacity: 0px;
+    background: #7ED32166;
+    color: #1C4701;
+    font-family: Open Sans;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 21.79px;
+    text-decoration: none;
+    margin-right: 0px;
+    margin-left: 30px;
+}
+.header{
+    display: flex; 
+    justify-content: space-between;
+    align-items:center;
+}
+
+.botoes-direita-header {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.paragrafo-home {
+    width: 340px;
+    height: 234px;
+    top: 235px;
+    left: 200px;
+    gap: 0px;
+    opacity: 0px;    
+    font-family: Open Sans;
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 65.37px;
+    text-align: left;
+}
+
+.home-main {
+    display: flex;
+    justify-content: center;
+}
+
+.inscrever-main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Open Sans;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 24.51px;
+    width: 220px;
+    height: 51px;
+    gap: 0px;
+    border-radius: 15px;
+    opacity: 0px;
+    background: #7ED321;
+    color: #1C4701;
+    text-decoration: none;
+}
