@@ -113,55 +113,104 @@ nav .logo {
     height: 904px;
     top: 120px;
     display: flex;
-    flex-direction: column;
+    flex-direction:column;
     justify-content: center;
     align-items: center;
-   
-    
 }
 
 header {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    width: 687px;
-    height: 535px;
-    margin-left:450px;
-    text-align: center;
-    
+    display:flex;
+    flex-direction:column;
+    justify-content:left ;
+    width: 1084px;
+    height: 504px;
+    text-align: left;
 }
 
-header h1 {
-    width: 334px;
+header h1{
+    width: 104px;
     height: 65px;
     top: 150px;
     gap: 0px;
     opacity: 0px;
-    font-family: 'Open Sans',sans-serif;
-    font-size: 47px;
+    font-family: 'Open sans',sans-serif;
+    font-size: 48px;
     font-weight: 700;
     line-height: 65.37px;
-    text-align: center;
-    margin-bottom: 15px;
-    margin-left: 140px;
-    
-    
-    
+    text-align: right;
+    margin-bottom: 100px;
+    margin-left: 710px;
+
 }
 
-header p {
-    font-size: 16px;
-    line-height: 21.79px;
-    color: #000000;
-    Width: 687px;
-    height: 176px;
+header h2 {
+    width: 220px;
+    height: 44px;
+    gap: 0px;
+    opacity: 0px;
+    font-family: 'Open Sans',sans-serif;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 43.58px;
     text-align: left;
-    margin-left: -10px;
+    margin-left: 710px;
     
 }
 
-header img {
-    margin-top: 20px;
-    margin-right: 100px;
+header h3 {
+    width: 220px;
+    height: 44px;
+    gap: 0px;
+    opacity: 0px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 43.58px;
+    text-align: left;
+
+
+}
+
+header p{
+    width: 778px;
+    height: 185px;
+    font-size: 16px;
+    color: #000000;
+    line-height: 21.79px;
+    text-align: justified;
+    margin-left: 710px;
+    margin-bottom: -600px;
+
+
+}
+
+header h2,
+header h3 {
+    margin: 0;
+    margin-left: 130px;
+    margin-bottom: 40px;
+}
+ 
+.titulo1,
+.titulo2 {
+    display: flex; 
+    flex-direction: column; 
+    align-items: center;
     
 }
+ 
+ 
+header img {
+    margin-right: 0px;
+    margin-bottom: 100px;
+    margin-top: 10px;
+    margin-left: 200px;
+    top: 1000px;
+     
+}
+ 
+ 
+
+ 
+ 
+ 
