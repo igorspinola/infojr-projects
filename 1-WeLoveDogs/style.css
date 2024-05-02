@@ -43,6 +43,8 @@
         color: #000000;
     }
 
+    
+
     .menu{
         display: flex;
         justify-content: space-between;
@@ -138,4 +140,28 @@
         font-weight: normal;
         font-size: 16px;
         text-align: justify;
+      }
+
+      .titulo-blog{
+        text-align: center;
+      }
+
+      article p{
+        font-weight: normal;
+        text-align: justify ;
+      }
+
+      .blog_apresentacao{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        margin: auto;
+        width: 1084px;
+        margin-bottom: 50px;
+      }
+
+      .article-blog{
+        display: flex;
+        flex-direction: column;
+        gap: 25px;
       }
