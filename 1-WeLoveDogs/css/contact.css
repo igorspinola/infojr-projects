@@ -43,6 +43,7 @@ main form div {
     display: flex;
     flex-direction: row;
     margin-left: auto;
+    gap: 14px;
 }
 
 form label {
