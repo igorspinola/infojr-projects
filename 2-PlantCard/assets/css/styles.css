@@ -115,3 +115,29 @@ section {
     height: 40px; 
     
 }
+@media only screen and (max-width: 768px) {
+    .coluna1, .coluna2 {
+        display: block;
+        width: 100%;
+        max-width: 100%;
+        flex: 0 0 100%;
+    }
+
+    .coluna1 img {
+        height: auto;
+        display: block; 
+        margin: 0 auto; 
+        padding: 0 auto;
+        max-width: 59%; 
+        transform: rotate(90deg); 
+
+    .conteudo {
+        padding: 0;
+    }
+}
+
+.coluna{
+    margin-top: -5rem;
+}
+
+}
