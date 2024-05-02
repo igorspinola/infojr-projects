@@ -31,7 +31,19 @@
     line-height: 21.79px;
     text-align: left;
     color: #000000;
-    
+}
+
+.navHome a::after{
+    content: "";
+    display: block;
+    width: 0;
+    height: 2px;
+    background: #7ED321;
+    transition: width 0.3s;
+}
+
+.navHome a:hover::after{
+    width: 100%;
 }
 
 #greenText{
