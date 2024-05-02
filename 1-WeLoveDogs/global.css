@@ -1,0 +1,26 @@
+:root {
+  --white: #ffffff;
+  --black: #000000;
+  --green-400: #6BBF1A;
+  --green-500: #7ED321;
+  --green-700: #1C4701;
+  --gray-600: #9F9F9F;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: var(--white);
+  color: var(--black);
+  -webkit-font-smoothing: antialiased;
+}
+
+body, input, textarea, button {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 700;
+  font-size: 1rem;
+}
