@@ -147,6 +147,7 @@ header h1 {
 header a {
     color: #1C4701;
     font-size: 18px;
+    font-weight: 700;
     text-decoration: none;
     background: #7ED321;
     border-radius: 15px;
