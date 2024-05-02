@@ -86,8 +86,21 @@ body {
 
 input{
     border-radius: 7px;
-    margin-top: 80px;
-    margin-left: 450px;
+    margin-top: 25px;
+    margin-left: 20px;
+    border: 1px solid #9F9F9F;
+    width: 419px;
+    height: 39px;
+    border-radius: 7px;
+}
+
+label{
+    margin-left: 200px;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 24.51px;
+    text-align: center;
+       
 }
 
 .botao-enviar {
@@ -97,7 +110,19 @@ input{
     background-color: #7ED32166;
     padding: 15px 30px; /* Espaçamento interno */
     border: none; /* Remove a borda padrão */
-    border-radius: 10px; /* Raio de borda para arredondar */
+    border-radius: 15px; /* Raio de borda para arredondar */
     cursor: pointer;
     font-size: 16px;
+    margin-left: 350px;
+}
+
+.botao-enviar a{
+    text-decoration: none;
+    list-style-type: none;
+    color: #1C4701;
+}
+
+#mensagem{
+    width: 418px;
+    height: 160px;
 }
