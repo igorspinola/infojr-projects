@@ -9,27 +9,45 @@
 }
 
 .nomesite{
+    position: relative;
     display: flex;
+    align-items: flex-start;
+    left: 15px;
+    top: 22px;
+    width: 281px;
+    height: 65px;
     font-size: 48px;
     font-weight: 700;
-    margin-left: 17px;
-    width: 281px;
 }
 .nomesite p{
-    margin-top: 27px;
-    
+    margin-top: 0px; 
 }
 #love{
     color: #7ED321;
 }
 
-/* Segunda parte CSS */
+/* Segunda parte CSS topo*/
 
-/* .menu{
+.menu{
+    position: relative;
+    top: 22px;
+    width: 400px;
+    height: 65px;
     display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 16px;
+    font-weight: 700;
 }
 
 #botaotitulo{
-    height: 50px;
-} */
+    height: 40px;
+    width: 151px;
+    font-size: 16px;
+    font-weight: 700;
+    color: #1C4701;
+    background-color: #7ED32166;
+    border-radius: 15px;
+    border: 0px;
+}
 
