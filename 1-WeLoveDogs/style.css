@@ -1,0 +1,132 @@
+@font-face {
+    font-family: "Open Sans";
+    src: url("./fonts/OpenSans-VariableFont_wdth\,wght.ttf");
+}
+
+:root {
+    --black: 0, 0, 0;
+    --white: 255, 255, 255;
+    --light_green: 126, 211, 33;
+    --light_green_alpha: 0.4;
+    --active_green: 126, 211, 33;
+    --dark_green: 28, 71, 1;
+    --placeholder: 159, 159, 159;
+}
+
+/* geral */
+* {
+    font-family: "Open Sans";
+    color: rgb(var(--black));
+}
+
+body {
+    background-color: rgb(var(--white));
+}
+
+a {
+    text-decoration: none;
+    color: rgb(var(--black));
+}
+
+button {
+    border: 0;
+    border-radius: 15px;
+}
+
+.subscribe button {
+    color: rgb(var(--dark_green));
+}
+
+/* header */
+header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: auto;
+    height: 120px;
+}
+
+#logo {
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 65.37px;
+    text-align: left;
+    position: relative;
+    left: 15px;
+}
+
+#logo #logo-love {
+    color: rgb(var(--light_green));
+}
+
+header > nav {
+    position: relative;
+    right: 15px;
+}
+
+header > nav > ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 35px;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 21.79px;
+}
+
+nav .subscribe button {
+    width: 151px;
+    height: 40px;
+    background-color: rgba(var(--light_green), var(--light_green_alpha));
+
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 21.79px;
+}
+
+main {
+    display: flex;
+}
+
+/* home page */
+main {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 60px;
+    margin-top: 30px;
+}
+
+main article {
+    width: 371px;
+    height: 351px;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+main p {
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 65.37px;
+    text-align: left;
+
+}
+
+main .subscribe button {
+    width: 220px;
+    height: 51px;
+    background-color: rgb(var(--active_green));
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 24.51px;
+}
+
+/* about page */
+
+/* blog page */
+
+/* subscribe page */
