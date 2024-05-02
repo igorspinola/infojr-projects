@@ -3,11 +3,6 @@ body{
     margin-top: 0;
 
 }
-
-.nav-container{
-}
-.welovedogs{
-}
 nav{
     display: flex;
     align-items: center;
