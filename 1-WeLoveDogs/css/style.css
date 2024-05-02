@@ -6,12 +6,11 @@
 
 :root {
     --black: 0, 0, 0;
+    --gray: 159, 159, 159;
     --white: 255, 255, 255;
     --light_green: 126, 211, 33;
     --light_green_alpha: 0.4;
-    --active_green: 126, 211, 33;
     --dark_green: 28, 71, 1;
-    --placeholder: 159, 159, 159;
 }
 
 * {
@@ -25,15 +24,12 @@ body {
 
 a {
     text-decoration: none;
-    color: rgb(var(--black));
 }
 
 button {
     border: 0;
     border-radius: 15px;
-}
-
-.subscribe button {
+    background-color: rgb(var(--light_green));
     color: rgb(var(--dark_green));
 }
 

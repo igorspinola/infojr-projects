@@ -26,7 +26,6 @@ main p {
 main .subscribe button {
     width: 220px;
     height: 51px;
-    background-color: rgb(var(--active_green));
     font-size: 18px;
     font-weight: 700;
     line-height: 24.51px;
