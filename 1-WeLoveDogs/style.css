@@ -165,3 +165,44 @@
         flex-direction: column;
         gap: 25px;
       }
+
+      ::placeholder{
+        font-size: 16px;
+        font-family: "Open Sans", sans-serif;
+        font-weight: bold;
+    }
+
+    .apresentacao-principal-inscricao{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: auto;
+    }
+
+    .apresentacao-incricao{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: auto;
+        gap: 25px;
+    }
+
+    form input, form textarea{
+        outline: unset;
+        width: 418px;
+        padding: 10px;
+        border: 1px solid #9f9f9f;
+        border-radius: 10px;
+    }
+
+    .botao-enviar{
+        font-size: 16px;
+        font-family: "Open Sans", sans-serif;
+        font-weight: bold;
+        border-radius: 6px;
+        width: 141px;
+        padding: 6px;
+        background-color: var(--verde-claro);
+        color: var(--verde-escuro);
+    }
