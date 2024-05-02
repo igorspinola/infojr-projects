@@ -8,24 +8,6 @@ body {
   padding: 0;
 }
 
-.container{
-  font-family: 'Open Sans', sans-serif;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  text-align: justify;
-  margin: 0 auto;
-  width: 45%;
-}
-
-.container h1 {
-  font-size: 48px;
-  margin-bottom: 0;
-  margin-top: 0;
-  -webkit-text-stroke-width: 1px;
-}
-
 ul {
     list-style-type: none;
     margin-top: 20px;
@@ -119,4 +101,50 @@ button:hover {
     width: 600px;
     height: 480px;
     padding-right: 200px;
+}
+
+.container{
+  font-family: 'Open Sans', sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: justify;
+  margin: 0 auto;
+}
+
+.container h1 {
+  font-size: 48px;
+  margin-bottom: 20px;
+  margin-top: 0;
+  -webkit-text-stroke-width: 1px;
+}
+
+.who{
+  width: 45%;
+}
+
+.container h3 {
+  font-size: 32px;
+  margin-bottom: -10px;
+  margin-top: 15px;
+  -webkit-text-stroke-width: 1px;
+}
+
+.post {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  margin-top: 5px;
+  margin-bottom: 20px; 
+  width: 73%;
+}
+
+.corpo{
+  margin-top: -20px;
+  font-size: 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-bottom: 20px; 
 }
