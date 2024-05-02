@@ -3,23 +3,30 @@ body
     font-family:'Open Sans', sans-serif;
     font-size: 16px;
 }
-.navNotLogo:hover
+.navNotLogo:hover{color:#7ed321;}
+.navNotLogo
 {
-    color:#7ed321;
+    align-self: flex-end
+}
+nav
+{
+    display: flex;
+}
+form
+{
+    width: 50vw;
+    display: flex;
+    flex-flow: column wrap;
 }
 nav a
 {
+    /*Resetando formatação dos links*/
     text-decoration: none;
     color: black;
 }
-h1 
-{
-    font-size: 3em;
-}
-h2
-{
-    font-size: 2em;
-}
+h1{font-size: 3em;}
+.hNormal{text-align:center;}
+h2{font-size: 2em;}
 label
 {
     font-weight: 700;
@@ -44,9 +51,7 @@ input[type="submit"]
     transition: 0.5s all;
     cursor: pointer;
 }
-input[type="submit"]:hover {
-    background: #7ed321;
-}
+input[type="submit"]:hover {background: #7ed321;}
 .navInscrever
 {
     width: 151px;
@@ -68,3 +73,10 @@ input[type="submit"]:hover {
     border-radius: 10px;
 }
 #inscrevEnviar:hover {transform: scale(1.1)}
+#junteSe
+{
+    width: 340px;
+    height: 234px;
+    top: 235px;
+    left: 200px;
+}
