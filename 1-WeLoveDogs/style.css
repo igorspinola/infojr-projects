@@ -178,19 +178,36 @@
         justify-content: center;
         align-items: center;
         margin: auto;
+       
     }
 
     .apresentacao-incricao{
+        position: relative;
+        
         display: flex;
         justify-content: center;
         align-items: center;
-        margin: auto;
+        margin-top: 50px;
         gap: 25px;
+    }
+    
+    .labels{
+        display: flex;
+        align-self: flex-start;
+        flex-direction: column;
+        justify-content: space-between;
+        gap: 27px;
+    }
+
+    .formulario{
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
     }
 
     form input, form textarea{
         outline: unset;
-        width: 418px;
+        width: 419px;
         padding: 10px;
         border: 1px solid #9f9f9f;
         border-radius: 10px;
@@ -205,4 +222,18 @@
         padding: 6px;
         background-color: var(--verde-claro);
         color: var(--verde-escuro);
+        align-self: end;
     }
+
+
+    textarea {
+        border: none; 
+        outline: none; 
+        resize: none; 
+        min-height: 100px;
+    }
+
+    .ama-cachorros{
+        width: 124px;
+    }
+
