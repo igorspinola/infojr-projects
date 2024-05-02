@@ -1,45 +1,56 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
-    <link rel="stylesheet" href="styles.css" />
+    <!-- Importação do arquivo de estilos -->
+    <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
-    <div class="nav-container">
-            <div class="logo">
-                we<span class="love">love</span>dogs
+    <!-- Barra de navegação -->
+    <header class="nav">
+
+        <!-- Logo com parte "love" destacada -->
+        <div class="logo1">
+            <a href="home.html" class="logo"> we<span id="cor-verde">love</span>dogs </a>
+        </div>
+
+        <!-- Link para a página "Quem Somos" -->
+        <div class="quem-somos">
+            <a href="quemSomos.html" class="link">QUEM SOMOS</a>
+        </div>
+
+        <!-- Link para a seção "Blog" -->
+        <div class="blog">
+            <a href="blog.html" class="link">BLOG</a>
+        </div>
+
+        <!-- Botão de inscrição -->
+        <div class="botao-inscrever">
+            <a href="inscricao.html" class="inscricao">INSCREVER</a>
+        </div>
+
+    </header>
+
+    <!-- Container para o main -->
+    <main class="main">
+
+            <div class="texto-home">
+                <p><b>Junte-se a comunidade apaixonada por cachorros</b></p>
             </div>
 
-            <div class="quem-somos">
-                    <a href="#" class="link">QUEM SOMOS</a>
-            </div>
+        <!-- Botão de inscrição na seção "Home" -->
+        <div class="botao-home">
+            <a href="#" class="inscrever-home">Inscrever-se</a>
+        </div>
 
-            <div class="blog">
-                    <a href="#" class="link">BLOG</a>
-            </div>
+        <!-- Imagem principal da página "Home" -->
+        <div class="figura1">
+            <img src="./imagens/imagem-home.png" alt="Um cachorro com uma pessoa ao lado">
+        </div>
+    </main>
 
-            <div class="botao-inscrever">
-                    <a href="#" class="inscrever">INSCREVER</a>
-            </div>
-    </div>
-    
-    <div class="header-container">
-            <header>
-                <div class="texto-home">
-                    <p>Junte-se a comunidade apaixonada por cachorros</p>
-                </div>
-            </header>
-
-                <div class="botao-home">
-                    <a href="#" class="inscrever-home">Inscrever-se</a>
-                </div>
-
-                <div class="imagem-home">
-                    <img src="./imagens/imagem-home.png" alt="">
-                </div>
-    </div>
 </body>
 </html>

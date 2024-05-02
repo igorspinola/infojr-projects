@@ -3,10 +3,10 @@
 * {
     box-sizing: border-box;
     margin: 0;
-    font-family: 'Open Sans', sans-serif;
 }
 
-.nav-container{
+/* Barra de navegação */
+.nav{
 
     position: absolute;
     width: 1440px;
@@ -15,10 +15,16 @@
     top: 0px;
 
     background: #FFFFFF;
+
+    font-family: "Open Sans", sans-serif;
+    font-weight: bold;
+    font-size: 16px;
+    line-height:21.79px;
+    color: #000000;
 }
 
+/* welovedogs */
 .logo {
-    /* welovedogs */
 
     position: absolute;
     width: 281px;
@@ -26,23 +32,22 @@
     left: 15px;
     top: 27px;
 
-    font-family: "Open Sans";
-    font-style: normal;
-    font-weight: 700;
+    text-decoration: none;
     font-size: 48px;
-    line-height: 65px;
-
+    line-height: 65.37px;
+    font-weight: 700;
     color: #000000;
 
 }
 
-.love{
-    /*love*/
+/*love*/
+#cor-verde{
     color: #7ED321;
 }
 
+/* quem somos */
 .quem-somos{
-    display: inline-block; /* Certifica-se de que o contêiner não ocupa toda a largura disponível */
+    display: inline-block; 
     width: auto; 
 
     position: absolute;
@@ -52,8 +57,8 @@
 
 }
 
+/* blog */
 .blog{
-    /* BLOG */
 
     position: absolute;
     width: 45px;
@@ -63,10 +68,10 @@
 
 }
 
+/* botão inscrever */
 .botao-inscrever{
-    /* Botão */
 
-    position: relative;
+    position: absolute;
     left: 1274px;
     top: 40px;
     width: 151px;
@@ -79,46 +84,36 @@
 
 }
 
-.inscrever{
+/*inscrever*/
+.inscricao{
 
-    font-family: 'Open Sans Bold', sans-serif;
     text-decoration: none;
     position: absolute; 
-    top: 50%; /* Alinhe verticalmente o texto ao centro */
-    left: 50%; /* Alinhe horizontalmente o texto ao centro */
-    transform: translate(-50%, -50%); /* Ajuste o texto para ficar no centro */
+    top: 50%; 
+    left: 50%; 
+    transform: translate(-50%, -50%); 
 
-    font-style: normal;
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 22px;
     z-index:2;
 
     color: #1C4701;
 
 }
 
+/* links: quem somos, blog */
 .link{
-    /* QUEM SOMOS */
 
-    font-family: 'Open Sans Bold', sans-serif;
     text-decoration: none;
-    font-style: normal;
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 21.79px;
-    /* identical to box height */
-
     color: #000000;
 }
 
+/* página home */
 .texto-home{
     /* Junte-se a comunidade apaixonada por cachorros */
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Open Sans', sans-serif;
 
     position: absolute;
-    width: 371px;
-    height: 351px;
+    width: 340px;
+    height: 234px;
     left: 200px;
     top: 207px;
 
@@ -126,15 +121,14 @@
     font-style: normal;
     font-weight: 700;
     font-size: 48px;
-    line-height: 65px;
+    line-height: 65.37px;
 
     color: #000000;
-
 
 }
 
 .botao-home{
-    /* Frame 1 */
+    /* Frame */
 
     position: absolute;
     width: 220px;
@@ -142,15 +136,12 @@
     left: 200px;
     top: 494px;
 
-
-
     background: #7ED321;
     border-radius: 15px;
 
-
 }
 
-.imagem-home{
+.figura1{
 /* Figure1 */
 
     position: absolute;
@@ -181,7 +172,8 @@
 
 }
 
-.section-container{
+/* página quem somos */
+.section1{
     /* Section */
 
     position: absolute;
@@ -193,44 +185,42 @@
 
 }
 
-
 .titulo-quem-somos{
-    /* QUEM SOMOS */
 
     position: absolute;
-    width: 334px;
+    width: auto;
     height: 65px;
     left: 176px;
 
-    font-family: 'Open Sans';
+    font-family: 'Open Sans', sans-serif;
     font-style: normal;
     font-weight: 700;
     font-size: 48px;
-    line-height: 65px;
+    line-height: 65.37px;
 
     color: #000000;
 }
 
 .texto-quem-somos{
-    /* Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. At quis risus sed vulputate odio ut enim blandit volutpat. Urna duis convallis convallis tellus id interdum velit laoreet id. Sed felis eget velit aliquet sagittis id consectetur purus ut. Orci phasellus egestas tellus rutrum tellus. At elementum eu facilisis sed. Quam elementum pulvinar etiam non quam lacus. Viverra tellus in hac habitasse platea. Congue eu consequat ac felis donec et odio. Amet cursus sit amet dictum sit amet. Pellentesque eu tincidunt tortor aliquam nulla facilisi cras fermentum odio. Consectetur a erat nam at. */
 
     position: absolute;
     width: 687px;
     height: 176px;
     top: 79px;
 
-    font-family: 'Open Sans';
+    font-family: 'Open Sans', sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
-    line-height: 22px;
+    line-height: 21.79px;
     text-align: justify;
 
-    color: #000000;
+    color: rgba(0, 0, 0, 1);
+
 
 }
 
-.imagem-quem-somos{
+.figure2{
     /* Figure2 */
 
     position: absolute;
@@ -238,5 +228,98 @@
     height: 266px;
     left: 166px;
     top: 269px;
+
+}
+
+/*página blog*/
+.section2{
+    position: absolute;
+    width: 1084px;
+    height: 252px;
+    left: 179px;
+    top: 265px;
+}
+
+.section3{
+    /* Section3 */
+
+    position: relative;
+    width: 1082px;
+    height: 255px;
+    left: 181px;
+    top: 562px;
+
+}
+
+/*Blog*/
+.titulo1-blog{
+
+    position: relative;
+    width: 104px;
+    height: 65px;
+    left: 668px;
+    top: 150px;
+
+    font-family: 'Open Sans', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 65.37px;
+
+    color: #000000;
+
+}
+
+.titulo-blog{
+/* Título do Post */
+
+    position: absolute;
+    width: 239px;
+    height: 42px;
+    left: 304px;
+
+    font-family: 'Open Sans', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 43.58px;
+
+    color: #000000;
+
+}
+
+.texto-blog{
+    /* Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. At quis risus sed vulputate odio ut enim blandit volutpat. Urna duis convallis convallis tellus id interdum velit laoreet id. Sed felis eget velit aliquet sagittis id consectetur purus ut. Orci phasellus egestas tellus rutrum tellus. At elementum eu facilisis sed. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. At quis risus sed vulputate odio ut enim blandit volutpat. Urna duis convallis convallis tellus id interdum velit laoreet id. Sed felis eget velit aliquet sagittis id consectetur purus ut. Orci phasellus egestas tellus rutrum tellus. At elementum eu facilisis sed. */
+
+    position: absolute;
+    width: 778px;
+    height: 185px;
+    top:67px;
+    left:304px;
+
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 21.79px;
+    text-align: justify;
+
+    color: #000000;
+}
+
+.figure3{
+    position: absolute;
+    width:304px;
+    height:228px;
+    top:9px;
+}
+
+.figure4{
+    /* Figure4 */
+
+    position: absolute;
+    width: 304px;
+    height: 228px;
+    left: 0px;
+    top: 0px;
 
 }
