@@ -1,0 +1,35 @@
+*{
+    font-family: Open Sans;
+}
+
+.topo{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.nomesite{
+    display: flex;
+    font-size: 48px;
+    font-weight: 700;
+    margin-left: 17px;
+    width: 281px;
+}
+.nomesite p{
+    margin-top: 27px;
+    
+}
+#love{
+    color: #7ED321;
+}
+
+/* Segunda parte CSS */
+
+/* .menu{
+    display: flex;
+}
+
+#botaotitulo{
+    height: 50px;
+} */
+
