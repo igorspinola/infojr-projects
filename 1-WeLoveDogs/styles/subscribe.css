@@ -1,3 +1,4 @@
+/* Css document that contains the style declarations for the subscribe page. */
 .subscribe-nav-button{
     background-color: #7ed321;
     color: #1C4701;
@@ -43,4 +44,23 @@
     border-radius: 10px;
     font-size: 1.2rem;
     font-weight: bold;
+}
+
+/* This is part of the document that treats responsivity. It has been made
+    after observing what needed to be changed when the screen is smaller. */
+@media screen and (max-width: 1000px) {
+    .main__container__content{
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .form-label{
+        display: block;
+        text-align: left;
+    }
+
+    .content-image{
+        width: 95vw;
+    }
 }
