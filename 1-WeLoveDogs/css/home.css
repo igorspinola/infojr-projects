@@ -3,7 +3,6 @@ main {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    align-items: center;
     gap: 60px;
     margin-top: 30px;
 }
@@ -33,7 +32,7 @@ main .subscribe button {
     line-height: 24.51px;
 }
 
-main figure img {
+main img {
     width: 640px;
     height: 480px;
 }
