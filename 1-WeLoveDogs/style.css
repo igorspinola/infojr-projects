@@ -30,6 +30,7 @@ form
     width: 50vw;
     display: flex;
     flex-direction: column;
+    align-items: flex-end;
     gap: 20px;
 }
 header a /*Resetando formatação dos links*/
@@ -42,6 +43,7 @@ h1
     font-size: 3em;
     font-weight: 700;
     text-align: center;
+    line-height: 1.4;
 }
 h2
 {
@@ -52,13 +54,21 @@ label
 {
     font-weight: 700;
     font-size: 18px;
+    display: flex;
+    justify-content: flex-end;
+    gap: 14px;
+    text-align: center;
 }
 .input-default
 {
     font-weight: 700;
     font-size: 14px;
     font-family: 'Open Sans';
+    border-radius: 7px;
+    width: 27.5vw;
 }
+label input
+{height: 48px;}
 header
 {font-weight: 700;}
 input[type="submit"]
@@ -126,7 +136,7 @@ input[type="submit"]:hover
 {
     display: flex;
     flex-direction: column;
-    padding: 30px 12.5%;
+    padding: 30px 15%;
     gap: 45px;
 }
 .blogPost
@@ -136,6 +146,7 @@ input[type="submit"]:hover
     display:flex;
     flex-direction: column;
     justify-content: space-between;
+    gap: 25px;
 }
 #mainContact
 {
