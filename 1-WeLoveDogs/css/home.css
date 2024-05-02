@@ -1,0 +1,39 @@
+/* home page */
+main {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 60px;
+    margin-top: 30px;
+}
+
+main article {
+    width: 371px;
+    height: 351px;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+main p {
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 65.37px;
+    text-align: left;
+
+}
+
+main .subscribe button {
+    width: 220px;
+    height: 51px;
+    background-color: rgb(var(--active_green));
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 24.51px;
+}
+
+main figure img {
+    width: 640px;
+    height: 480px;
+}
