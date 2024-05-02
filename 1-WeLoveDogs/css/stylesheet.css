@@ -1,5 +1,4 @@
 body * {
-  /* border: 1px solid red; */
   margin: 0;
 }
 
@@ -118,7 +117,6 @@ li a {
 .vector-image {
   max-width: 37rem;
   min-width: 18.5rem;
-  width: 100%;
 }
 
 /* https://dev.to/mxl/accessibility-for-beginners-with-html-and-css-16j7 */
@@ -145,11 +143,6 @@ li a {
   flex: 1 1 content;
   text-wrap: pretty;
   margin-bottom: 1rem;
-}
-
-.figure {
-  display: flex;
-  flex-direction: column;
 }
 
 .posts-container {
@@ -189,4 +182,69 @@ li a {
   font-weight: bold;
   font-size: 2rem;
   margin-bottom: 1.44rem;
+}
+
+.form-ext-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap-reverse;
+  justify-content: center;
+  align-content: center;
+  align-items: stretch;
+}
+
+#form {
+  display: grid;
+  grid-template-columns: [label] 1fr [input] auto [end];
+  gap: 0.8rem 1.25rem;
+}
+
+#form label {
+  grid-column: label;
+  text-wrap: wrap;
+  justify-self: center;
+  max-width: 7.75rem;
+}
+
+label span {
+  font-weight: bold;
+  font-size: 1.125rem;
+}
+
+#form input,
+#form textarea {
+  grid-column: input;
+  border: 1px solid #9F9F9F;
+  border-radius: 0.44rem;
+  padding: 0.75rem 0.81rem;
+  &::placeholder {
+    color: #9F9F9F;
+    font-weight: bold;
+  }
+  &:focus{
+    outline:none;
+    border:1px solid rgba(126, 211, 33, 0.40);
+    box-shadow:0 0 5px rgba(126, 211, 33, 0.40);
+ }
+ &:invalid {
+  box-shadow: -3px 0  rgba(126, 211, 33, 0.40);
+  border-left: none;     
+ }
+}
+
+#form p {
+  grid-column: input;
+  &:nth-last-child(-n+2) {
+    border: none;
+    justify-self: right;
+  }
+}
+
+#centered {
+  display: flex;
+  text-align: center;
+}
+
+#form #sub-btn {
+  cursor: pointer;
 }

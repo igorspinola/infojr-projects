@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="css/normalize.css" media="screen" />
+  <link rel="stylesheet" type="text/css" href="css/reset.css" media="screen" />
+  <link rel="stylesheet" type="text/css" href="css/stylesheet.css" media="screen" />
+  <title>Sobre WeLoveDogs</title>
+</head>
+
+<body>
+  <div class="home">
+
+    <div class="top-nav">
+      <div>
+        <a class="logo" href="index.html">
+          we<span id="green-lettering">love</span>dogs
+        </a>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="about.html">QUEM SOMOS</a></li>
+          <li><a href="blog.html">BLOG</a></li>
+          <li><a id="nav-btn" href="subscribe.html">INSCREVER</a></li>
+        </ul>
+      </nav>
+    </div>
+
+    <main>
+      <div id="about-container">
+        <h1 class="priority-text" id="form-header">Inscrição</h1>
+        <div class="form-ext-container">
+          <form id="form" method="post">
+            <label for="name">
+              <span>Nome</span>
+              <strong><span aria-label="required">*</span></strong>
+            </label>
+            <input type="text" id="name" name="username" placeholder="Seu nome" autocomplete="name" required />
+            <label for="age">
+              <span>Idade</span>
+            </label>
+            <input type="number" id="age" name="user-age" min="13" max="130" placeholder="18" />
+            <label for="mail">
+              <span>E-mail</span>
+              <strong><span aria-label="required">*</span></strong>
+            </label>
+            <input type="email" id="mail" name="usermail" placeholder="exemplo@exemplo.com" autocomplete="email" required />
+            <label for="message" id="centered">
+              <span>Ama cachorros?</span>
+            </label>
+            <textarea name="user-message" id="message" rows="5" placeholder="Mensagem"></textarea>
+            <p>
+              Campos obrigatórios são marcados com
+              <strong><span aria-label="required">*</span></strong>.
+            <p><button id="sub-btn" type="submit" value="Enviar">Enviar</button></p>
+          </form>
+          <figure>
+            <img class="vector-image" src="public/images/vector-feeling.svg" alt="Pessoa afagando coração">
+            <figcaption class="sr-only">A imagem vetorizada mostra uma pessoa afagando seu coração</figcaption>
+          </figure>
+        </div>
+      </div>
+      </section>
+    </main>
+  </div>
+
+</body>
+
+</html>
