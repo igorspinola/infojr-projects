@@ -31,6 +31,7 @@
     line-height: 21.79px;
     text-align: left;
     color: #000000;
+    
 }
 
 #greenText{
@@ -43,8 +44,9 @@
     border-radius: 15px;
     opacity: 0px;   
     border:none;
-    background-color: #7ED32166;
-    transition: all 0.3s ease;
+    transition: 0.3s ease-out;
+    background: linear-gradient(to left, #7ED32166 50%, #7ED321 50%) right;
+    background-size: 200%;
 }
 
 .subscribeHeaderButton a{
@@ -53,7 +55,7 @@
 
 .subscribeHeaderButton:hover{
     transform: scale(1.1); 
-    background-color: #7ED321;
+    background-position: left;
 }
 
 @media only screen and (max-width: 768px){
