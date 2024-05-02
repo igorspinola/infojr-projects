@@ -1,0 +1,46 @@
+/* share.css */
+
+:root {
+    --green: #696F5A;
+}
+
+.btn-share {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    position: relative;
+    outline: none;
+}
+
+.conteudo-share {
+    display: none;
+    position: absolute;
+    top: auto; 
+    left: auto; 
+    background-color: var(--green);
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    border-radius: 5px;
+}
+
+.btn-share:focus + .conteudo-share, 
+.conteudo-share:focus-within {
+    display: flex;
+    flex-direction: column;
+}
+
+.conteudo-share p {
+    color: #DFDFD6;
+    font-family: Overpass;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 25.32px;
+    text-align: left;
+    margin: 0;
+}
+
+.conteudo-share img {
+    margin-right: 10px;
+    width: 30px;
+    height: 30px;
+}

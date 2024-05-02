@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Mostrar Conteúdo</title>
+    <style>
+        #conteudo {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+
+<button id="mostrarConteudo">
+    <img src="https://cdn-icons-png.flaticon.com/512/748/748121.png" alt="Ícone de seta para baixo">
+</button>
+
+<div id="conteudo">
+    <p>Aqui está o conteúdo que será mostrado ao clicar no botão.</p>
+</div>
+
+<script>
+    // Selecionando o botão e o conteúdo
+    var botao = document.getElementById('mostrarConteudo');
+    var conteudo = document.getElementById('conteudo');
+
+    // Adicionando um event listener para o clique no botão
+    botao.addEventListener('click', function() {
+        // Verificando se o conteúdo está visível ou não
+        if (conteudo.style.display === 'none') {
+            // Se estiver invisível, torna visível
+            conteudo.style.display = 'block';
+        } else {
+            // Se estiver visível, torna invisível
+            conteudo.style.display = 'none';
+        }
+    });
+</script>
+
+</body>
+</html>
