@@ -1,25 +1,12 @@
 body{
     font-family: 'Open Sans', sans-serif;
-    overflow: hidden;
+    margin-top: 0;
 
 }
+
 .nav-container{
-    width: 1440px;
-    height: 120px;
-    padding-bottom: 50px;
 }
 .welovedogs{
-    padding-right: 700px;
-}
-.wrapper1{
-    max-width: 1200px;
-}
-.wrapper2{
-    width: 1440px;
-    height: 904px;
-    top: 120px;
-    justify-content: center;
-    margin-left: 20%;
 }
 nav{
     display: flex;
@@ -60,10 +47,14 @@ header{
     color:#7ED321;
 }
 .hero-container{
-    width: 1440px;
-    height: 904px;
     top: 120px;
-    display: flex
+    display: flex;
+    margin-top: 10px;
+}
+.wrapper{
+    top: 120px;
+    justify-content: center;
+    margin-left: 20%;
 }
 .hero-content{
     flex-direction: column;
