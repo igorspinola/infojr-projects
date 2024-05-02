@@ -1,8 +1,21 @@
-const hamMenu = document.getElementById('hamburguer');
-var botaoMenu = document.getElementById('imagem4');
+let hamMenu = document.getElementById('hambcontainer');
+let botaoMenu = document.getElementById('imagem4');
 
 function clickMenu() {
-    console.log("Olá, mundo!")
+    if (hamMenu.style.visibility === "hidden") {
+        hamMenu.style.visibility = "visible";
+        setTimeout(() => {
+            hamMenu.style.opacity = "1";
+        }, 10);
+    } else {
+        hamMenu.style.opacity = "0";
+        setTimeout(() => {
+            hamMenu.style.visibility = "hidden";
+        }, 500);
+    }
 }
+    
 
-botaoMenu.addEventListener("click", clickMenu);
+hamMenu.style.visibility = "hidden"
+// botaoMenu.addEventListener("click", clickMenu);
+botaoMenu.onclick = clickMenu
