@@ -5,6 +5,12 @@
 
 .content {
   text-align: center;
+  margin-top: 1.875rem; 
+  padding-bottom: 40px;
+}
+
+.content p {
+  text-align: justify;
 }
 
 h1 {
@@ -18,8 +24,6 @@ p {
   margin-top: 1rem;
 }
 
-img {
+.about-img {
   margin-top: 1rem;
-  display: block;
-  margin: 0 auto;
 }
