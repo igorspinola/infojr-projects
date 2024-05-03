@@ -1,0 +1,25 @@
+.container {
+  margin: 0 auto;
+  max-width: 680px;
+}
+
+.content {
+  text-align: center;
+}
+
+h1 {
+  font-size: 3rem;
+  font-weight: 700;
+}
+
+p {
+  font-weight: 400;
+  font-size: 1rem;
+  margin-top: 1rem;
+}
+
+img {
+  margin-top: 1rem;
+  display: block;
+  margin: 0 auto;
+}
