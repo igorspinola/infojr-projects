@@ -102,6 +102,7 @@ input[type="submit"]:hover
     width: 141px;
     height: 42px;
     border-radius: 10px;
+    font-size: 16px;
 }
 #inscrevEnviar:hover
 {transform: scale(1.1)}
@@ -116,13 +117,13 @@ input[type="submit"]:hover
     justify-content: center;
     gap: 64px;
     padding: 0% 200px;
+    /*não sei bem ao certo se o espaçamento está funcionando como deveria*/
 }
 #divHome
 {
     display:flex;
     justify-content:center;
     flex-direction:column;
-    padding-top: 16px;
     gap: 25px;
 
 }
