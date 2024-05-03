@@ -1,20 +1,8 @@
 body{
     font-family: 'Open Sans', sans-serif;
-    overflow: hidden;
+    margin-top: 0;
 
 }
-.nav-container{
-    width: 1440px;
-    height: 120px;
-    padding-bottom: 50px;
-}
-.welovedogs{
-    padding-right: 700px;
-}
-.wrapper1{
-    max-width: 1200px;
-}
-
 nav{
     display: flex;
     align-items: center;
@@ -53,9 +41,14 @@ header{
 .verde{
     color:#7ED321;
 }
+.hero-container{
+    top: 120px;
+    display: flex;
+    margin-top: 10px;
+}
 p{
-    font-size: 48px;
-    font-weight: bold;
+    font-size: 16px;
+    text-align: justify;
 }
 .inscricao{
     background-color: #7ED321;
@@ -63,4 +56,12 @@ p{
     padding-bottom: 9px;
     padding-inline: 32px;
     border-radius: 15px;
+}
+
+.container-geral{
+    margin-top: 0px;
+    display: flex;
+    text-align: center;
+    padding-left: 28%;
+    padding-right: 28%;
 }
