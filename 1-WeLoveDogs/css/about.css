@@ -2,21 +2,26 @@
 	font-family: 'Open Sans';
 }
 
-header {
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-	font-size: 1.2rem;
-	padding: 1.2rem;
+.link1 {
+	padding:15px;
+	border-radius: 14px;
+	background-color: rgba(126, 211, 33, 0.4);
 }
-.links {
+
+main section {
+	margin: 0, 4rem, 0, 4rem;
 	display: flex;
-	justify-content: space-around;
+	flex-direction: column;
+	justify-content: center;
 	align-items: center;
-	gap: 16px;
+}
+
+main section h1 {
+	font-size: 2.5rem;
 	font-weight: bold;
+	margin: 0, 1rem, 0, 1rem;
 }
-.links a {
-	text-decoration: none;
-	color: black;
+
+main section p {
+	margin: 8rem, 0, 8rem, 0;
 }
