@@ -8,6 +8,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  margin-top: 1.875rem;
 }
 
 .text {
@@ -18,7 +19,13 @@ p {
   font-size: 48px;
 }
 
+a {
+  text-decoration: none;  
+}
+
 .inscrever-body-btn {
+  width: 13.75rem;
+  height: 3.175rem;
   text-decoration: none;
   background: var(--green-500);
   color: var(--green-700);
@@ -28,5 +35,5 @@ p {
 }
 
 .inscrever-body-btn:hover {
-  background: var(--green-400);
+  background: var(--green-600);
 }

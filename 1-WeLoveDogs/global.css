@@ -1,8 +1,8 @@
 :root {
   --white: #ffffff;
   --black: #000000;
-  --green-400: #6BBF1A;
   --green-500: #7ED321;
+  --green-600: #6BBF1A;
   --green-700: #1C4701;
   --gray-600: #9F9F9F;
 }
@@ -27,7 +27,6 @@ body, input, textarea, button {
 
 header {
   height: 120px;
-  margin-bottom: 1.875rem;
 }
 
 .header-wrapper {
@@ -53,8 +52,6 @@ nav ul li a {
   cursor: pointer;
 }
 
-nav ul li a:hover {}
-
 .inscrever-header-btn {
   background: rgba(126, 211, 33, 0.4);
   color: var(--green-700);
@@ -64,5 +61,5 @@ nav ul li a:hover {}
 }
 
 .inscrever-header-btn:hover {
-  background-color: var(--green-400);
+  background-color: var(--green-600);
 }
