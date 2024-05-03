@@ -6,6 +6,8 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    width: 1440px;
+    height: 120px;
 }
 
 .nomesite{
@@ -25,8 +27,6 @@
 #love{
     color: #7ED321;
 }
-
-/* Segunda parte CSS topo*/
 
 .menu{
     position: relative;
@@ -49,5 +49,56 @@
     background-color: #7ED32166;
     border-radius: 15px;
     border: 0px;
+}
+
+
+/*CSS Corpo*/
+
+.corpo{
+    position: absolute;
+    top: 207px;
+    left: 200px;
+    display: flex;
+    flex-direction: column;
+    width: 371px;
+
+
+}
+
+.texto{
+    font-size: 48px;
+    font-weight: 700;
+
+
+}
+
+.texto p{
+    margin-top: 0px;
+    width: 341px;
+    height: 234px;
+
+}
+
+#botaocorpo{
+    position: absolute;
+    width: 220px;
+    height: 51px;
+    font-size: 18px;
+    font-weight: 700;
+    background-color: #7ED321;
+    color: #1C4701;
+    border-radius: 15px;
+    border: 0px;
+    margin-top: 287px;
+}
+
+
+.imagem{
+    position: absolute;
+    width: 640px;
+    height: 480px;
+    top: 150px;
+    left: 600px;
+
 }
 
