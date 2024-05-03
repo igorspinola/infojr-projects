@@ -1,0 +1,103 @@
+*{
+    font-family: Open Sans;
+}
+
+.topo{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 1440px;
+    height: 120px;
+}
+
+.nomesite{
+    position: relative;
+    display: flex;
+    align-items: flex-start;
+    left: 15px;
+    top: 22px;
+    width: 281px;
+    height: 65px;
+    font-size: 48px;
+    font-weight: 700;
+}
+.nomesite p{
+    margin-top: 0px; 
+}
+#love{
+    color: #7ED321;
+}
+
+.menu{
+    position: relative;
+    top: 22px;
+    width: 400px;
+    height: 65px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+#botaotitulo{
+    height: 40px;
+    width: 151px;
+    font-size: 16px;
+    font-weight: 700;
+    color: #1C4701;
+    background-color: #7ED32166;
+    border-radius: 15px;
+    border: 0px;
+}
+
+
+
+/* Css do conteudo */
+
+.conteudo{
+    position: absolute;
+    top: 150px;
+    left: 377px;
+    width: 687px;
+    height: 535px;
+    display: flex;
+    flex-direction: column;
+}
+
+.texto{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.texto h1{
+    align-self: center;
+    font-size: 48px;
+    font-weight: 700;
+    margin-top: 0px;
+    height: 65px;
+    width: 334px;
+    
+}
+
+.texto p{
+    position: absolute;
+    text-align: justify;
+    font-size: 16px;
+    font-weight: 400;
+    margin-top: 0px;
+    height: 176px;
+    width: 687px;
+    top: 79px;
+    
+    
+}
+
+.imagem{
+    align-self: center;
+    position: absolute;
+    width: 354px;
+    height: 266px;
+    top: 269px;
+}
