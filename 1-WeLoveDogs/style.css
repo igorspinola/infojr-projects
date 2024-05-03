@@ -293,42 +293,24 @@ nav ul{
 
 
 
-
-.page2{
-    
-    
-    position: static;
-    width: 1440px;
-    height: 904px;
-    top: 120px;
-    
-
-}
-
 .section{
     
-    display: flex;
-    position: static;
+    position: relative;
     width: 687px;
     height: 535px;
-    top: 150px;
+    top: 30px;
     left: 377px;
-    
-    
-
-
+       
 }
 
 
-.titulo{
+.tituloquemsomos{
+    
     position: absolute;
     height: 65px;
-    top: 150px;
-    left: 553px;
-    margin: 0 auto;
-}
+    top: 30px;
+    left: 176px;
 
-.title{
     font-family: "Open Sans", sans-serif;
     font-size: 48px;
     font-weight: 700;
@@ -337,13 +319,14 @@ nav ul{
 
 }
 
+
+
 .paragrafo2{
     
     position: absolute;
     width: 687px;
     height: 176px;
-    top: 229px;
-    left: 377px;
+    top: 109px;
     margin: 0 auto;
     
     
@@ -351,14 +334,12 @@ nav ul{
 
 .paragrafo2 p{
 
-    
     font-family: "Open Sans", sans-serif;
     font-size: 16px;
     font-weight: 400;
     line-height: 21.79px;
     display: flex; 
     text-align: justify;
-    width: 100%; 
     color:  rgba(0, 0, 0, 1);
 }
 
@@ -367,10 +348,161 @@ nav ul{
     position: absolute;
     width: 354px;
     height: 266px;
-    top: 419px;
-    left: 543px;
+    top: 299px;
+    left: 166px;
 }
 
+/* BLOG MAIN */
+
+main{
+    
+    position:relative;
+    width: 1440px;
+    height: 904px;
+
+}
+
+.tituloblog {
+
+    position:absolute;
+    width: 104px;
+    height: 65px;
+    top: 30px;
+    left: 668px;
+
+    font-family: "Open Sans", sans-serif;
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 65.37px;
+    text-align: left;
+
+    
+}
+
+
+
+.section1{
+
+    position:absolute;
+    width: 1084px;
+    height: 252px;
+    top: 145px;
+    left: 179px;
+    
+}
+
+.header1{
+
+    position:absolute;
+    width: 239px;
+    height: 42px;
+    left: 304px;
+    padding: 0px 19px 0px 0px;
+}
+
+.titulopost{
+    width: 220px;
+    height: 44px;
+
+    font-family: "Open Sans", sans-serif;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 43.58px;
+    text-align: left;
+}
+
+.paragraph1{
+
+    position:absolute;
+    width: 780px;
+    height: 185px;
+    top: 67px;
+    left: 304px;
+    padding: 0px 2px 0px 0px;
+
+}
+
+.textop1{
+
+    width: 778px;
+    height: 185px;
+
+    font-family: "Open Sans", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 21.79px;
+    text-align: justify;
+
+}
+
+.Figure3{
+
+    position:absolute;
+    width: 304px;
+    height: 228px;
+    top: 9px;
+
+
+}
+
+.section2{
+    position:absolute;
+    width: 1082px;
+    height: 255px;
+    top: 442px;
+    left: 181px;
+}
+
+.header2{
+    position:absolute;
+    width: 239px;
+    height: 42px;
+    left: 304px;
+    padding: 0px 19px 0px 0px;
+}
+
+.titulopost2{
+    position:absolute;
+    width: 220px;
+    height: 44px;
+
+    font-family: "Open Sans", sans-serif;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 43.58px;
+    text-align: left;
+
+}
+
+.paragraph2{
+    position:absolute;
+    width: 780px;
+    height: 185px;
+    top: 67px;
+    left: 304px;
+    padding: 0px 2px 0px 0px;
+
+}
+
+.textop2{
+    width: 778px;
+    height: 188px;
+
+    font-family: "Open Sans",sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 21.79px;
+    text-align: justify;
+}
+
+.Figure4{
+
+    position:absolute;
+    width: 304px;
+    height: 228px;
+
+
+}
 
 
 
