@@ -1,8 +1,11 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
 
 * {
     box-sizing: border-box;
     margin: 0;
+    font-family: 'Open Sans', sans-serif;
+    font-style: normal;
+    font-weight: 700;
 }
 
 /* Barra de navegação */
@@ -24,7 +27,7 @@
 }
 
 /* welovedogs */
-.logo {
+#logo {
 
     position: absolute;
     width: 281px;
@@ -40,13 +43,18 @@
 
 }
 
+#logo:hover{
+    cursor: pointer;
+    transform: scale(1.03);
+}
+
 /*love*/
 #cor-verde{
     color: #7ED321;
 }
 
 /* quem somos */
-.quem-somos{
+#quem-somos{
     display: inline-block; 
     width: auto; 
 
@@ -57,8 +65,13 @@
 
 }
 
+#quem-somos:hover{
+    cursor: pointer;
+    transform: scale(1.03);
+}
+
 /* blog */
-.blog{
+#blog{
 
     position: absolute;
     width: 45px;
@@ -68,8 +81,13 @@
 
 }
 
+#blog:hover{
+    cursor: pointer;
+    transform: scale(1.03);
+}
+
 /* botão inscrever */
-.botao-inscrever{
+#botao-inscrever{
 
     position: absolute;
     left: 1274px;
@@ -85,7 +103,7 @@
 }
 
 /*inscrever*/
-.inscricao{
+#inscricao{
 
     text-decoration: none;
     position: absolute; 
@@ -96,8 +114,14 @@
     z-index:2;
 
     color: #1C4701;
-
 }
+
+#botao-inscrever:hover{
+    background-color: #7ED321; 
+    cursor: pointer;
+    transform: scale(1.03);
+}
+
 
 /* links: quem somos, blog */
 .link{
@@ -106,8 +130,10 @@
     color: #000000;
 }
 
+
+
 /* página home */
-.texto-home{
+#texto-home{
     /* Junte-se a comunidade apaixonada por cachorros */
     font-family: 'Open Sans', sans-serif;
 
@@ -119,7 +145,7 @@
 
     
     font-style: normal;
-    font-weight: 700;
+    font-weight: 200;
     font-size: 48px;
     line-height: 65.37px;
 
@@ -127,7 +153,7 @@
 
 }
 
-.botao-home{
+#botao-home{
     /* Frame */
 
     position: absolute;
@@ -138,10 +164,16 @@
 
     background: #7ED321;
     border-radius: 15px;
-
+    transition: background-color 0.4s;
 }
 
-.figura1{
+#botao-home:hover{
+    background-color: rgba(126, 211, 33, 0.4); 
+    cursor: pointer;
+    transform: scale(1.03);
+}
+
+#figura1{
 /* Figure1 */
 
     position: absolute;
@@ -152,7 +184,7 @@
 
 }
 
-.inscrever-home{
+#inscrever-home{
     /* Inscrever-se */
 
     text-decoration: none;
@@ -172,6 +204,8 @@
 
 }
 
+
+
 /* página quem somos */
 .section1{
     /* Section */
@@ -185,7 +219,7 @@
 
 }
 
-.titulo-quem-somos{
+#titulo-quem-somos{
 
     position: absolute;
     width: auto;
@@ -201,7 +235,7 @@
     color: #000000;
 }
 
-.texto-quem-somos{
+#texto-quem-somos{
 
     position: absolute;
     width: 687px;
@@ -220,7 +254,7 @@
 
 }
 
-.figure2{
+#figure2{
     /* Figure2 */
 
     position: absolute;
@@ -230,6 +264,8 @@
     top: 269px;
 
 }
+
+
 
 /*página blog*/
 .section2{
@@ -251,7 +287,7 @@
 
 }
 
-.titulo1-blog{
+#titulo1-blog{
 
     position: relative;
     width: 104px;
@@ -305,14 +341,14 @@
     color: #000000;
 }
 
-.figure3{
+#figure3{
     position: absolute;
     width:304px;
     height:228px;
     top:9px;
 }
 
-.figure4{
+#figure4{
     /* Figure4 */
 
     position: absolute;
@@ -322,6 +358,8 @@
     top: 0px;
 
 }
+
+
 
 /*página contato */
 
@@ -441,6 +479,14 @@ color: #9F9F9F;
 
     background: #7ED321;
     border-radius: 10px;
+    transition: background-color 0.4s;
+    border:none;
+}
+
+#botao-enviar:hover{
+    background-color: rgba(126, 211, 33, 0.4); 
+    cursor: pointer;
+    transform: scale(1.03);
 }
 
 #titulo-inscricao{
@@ -458,22 +504,5 @@ color: #9F9F9F;
     line-height: 65px;
 
     color: #000000;
-
-}
-
-
-
-#botao2-inscrever{
-
-    position: absolute;
-    left: 1274px;
-    top: 40px;
-    width: 151px;
-    height: 40px;
-
-    background: #7ED321;
-    border-radius: 15px;
-    text-align: center;
-    z-index:1;
 
 }
