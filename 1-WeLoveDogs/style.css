@@ -137,7 +137,7 @@ button:hover {
   align-items: flex-start;
   margin-top: 5px;
   margin-bottom: 20px; 
-  width: 73%;
+  width: 74%;
 }
 
 .corpo{
@@ -147,4 +147,63 @@ button:hover {
   flex-direction: column;
   align-items: flex-start;
   margin-bottom: 20px; 
+}
+
+.formulario{
+  position: relative;
+  font-family: 'Open Sans', sans-serif;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  text-align: justify;
+}
+
+label {
+  display: inline-block;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: bold;
+  width: 18%;
+  text-align: start;
+  vertical-align: top; /* Alinha o label à parte superior do input */
+}
+
+input[type="text"],
+input[type="email"],
+input[type="int"],
+textarea {
+  display: inline-block;
+  width: 65%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: bold;
+}
+
+input[type="submit"] {
+  background-color: #7ED321;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: bold;
+  color:#1C4701;
+  padding: 15px 20px;
+  border: none;
+  border-radius: 15px;
+  cursor: pointer;
+  font-size: 16px;
+  float:right;
+  margin-right: 80px;
+}
+
+input[type="submit"]:hover {
+  background-color: #7ED32166;
+}
+
+.imagemform{
+  width: 582px;
+  height: 436px;
+  margin: 0;
+  float:left;
 }
