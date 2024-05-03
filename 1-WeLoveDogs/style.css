@@ -128,14 +128,65 @@ iframe{
     justify-content: center;
     font-size: 40px;
     margin-top: 21px;   
-}
+}   
+
 .tituloPost{
     font-size: 35px;
     margin-left: 510px;
     margin-top: 20px;
 }
+
 .pBlog{
     font-size: 22px;
-    margin-top: ;
+}
 
+/* main inscrição */
+.mainInsc{
+    margin-top: 37px;
+}
+
+.hInsc{
+    display: flex;
+    justify-content: center;
+    font-size: 50px;
+    font-weight: bold;
+}
+
+
+fieldset{
+    border: 0;
+    margin-top: 17px;
+}
+
+label{
+    font-weight: bold;
+}
+
+input{
+    width: 400px;
+    height: 35px;   
+    border-radius: 8px;
+    border-color: gray;
+    
+}
+
+.centerInsc{
+    display: flex;
+    justify-content: center;
+    margin-top: 35px;
+}
+
+#AmaCachorros{
+    width: 400px;
+    height: 200px;
+}
+
+.AmaCachorros{
+    display: flex;
+}
+
+textarea{
+    width: 400px;
+    height: 200px;
+    border-radius: 8px;
 }
