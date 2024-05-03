@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet" type="text/css">
+    <title>Document</title>
+</head>
+<body>
+    <header class="header">
+        <a class="marca" href="HOME.html">we<span class="enverdecimento">love</span>dogs</a>
+        <ol class="botoes-direita-header">
+            <il><a href="QUEM SOMOS.html" class="quemsomos">QUEM SOMOS</a></il>
+            <il><a href="BLOG.html" class="blog">BLOG</a></il>
+            <il><p class="inscrever-header">INSCREVER</p></il> <!--Aqui eu removi o link clicável porque ele reseta os dados no formulário. Um usuário menos experiente poderia achar que se envia clicando uma segunda vez em "inscrever"-->
+        </ol>
+    </header>
+    <main class="blog-main">
+        <h1 class="manchete" style="margin-top: 62px;">Inscrição</h1>
+        <ol style="display: flex; flex-direction: row; margin-top: 24px; justify-content: center;">
+            <il><form>
+                    <table>
+                        <tr>
+                            <td class="tabela-nominal">
+                                Nome
+                            </td>
+                            <td>
+                                <input type="text" id="Nome" name="Nome" placeholder="Seu nome" class="tabela-input">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="tabela-nominal">
+                                Idade
+                            </td>
+                            <td>
+                                <input type="text" id="Idade" name="Idade" placeholder="18" class="tabela-input">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="tabela-nominal">
+                                E-mail
+                            </td>
+                            <td>
+                                <input type="e-mail" id="email" name="email" placeholder="exemplo@exemplo" class="tabela-input">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="tabela-nominal">
+                                <p style="text-align: center; text-align-last: center;">Ama<br>cachorros?</p> <!--Por que eu tive que fazer essa gambiarra para centralizar com <br>, eu não sei.-->
+                            </td>
+                            <td>
+                                <textarea type="text" id="mensagem" name="mensagem" placeholder="Mensagem" class="me-mande-um-meme-se-ler-isso"></textarea>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>  
+                                <input type="submit" value="Enviar" class="botao-enviar">
+                             </td>
+                        </tr>
+                    </table>
+            </form>
+            </il><img src="Imagens/outrocarecacomcoracao.svg" alt="Careca de olhos fechados olhando o seu coração verde">
+        </ol>
+    </main>
+</body>
+</html>
