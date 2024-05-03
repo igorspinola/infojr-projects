@@ -73,6 +73,7 @@ iframe{
     font-weight: bold;
     font-size: 45px;
     margin-top: 30px;
+    font-family: "Open sans";
 }
 
 .inscHome{
@@ -85,6 +86,7 @@ iframe{
     display: flex;
     justify-content: center;
     align-items: center;
+    font-family: "Open sans";
 }
 
 .buttonInsc{
@@ -106,12 +108,14 @@ iframe{
     display: flex;
     justify-content: center;
     font-size: 50px;
+    font-family: "Open sans";
 }
 
 .pQuem{
     display: flex;
     justify-content: center;
     font-size: 20px;
+    font-family: "Open sans";
 }
 
 .imgQuem{
@@ -132,17 +136,20 @@ iframe{
     display: flex;
     justify-content: center;
     font-size: 40px;
-    margin-top: 21px;   
+    margin-top: 21px;
+    font-family: "Open sans";
 }   
 
 .tituloPost{
     font-size: 35px;
     margin-left: 510px;
     margin-top: 20px;
+    font-family: "Open sans";
 }
 
 .pBlog{
     font-size: 22px;
+    font-family: "Open sans";
 }
 
 /* main inscrição */
@@ -155,6 +162,7 @@ iframe{
     justify-content: center;
     font-size: 50px;
     font-weight: bold;
+    font-family: "Open sans";
 }
 
 fieldset{
@@ -166,6 +174,7 @@ label{
     font-weight: bold;
     font-size: 18px;
     margin-right: 40px;
+    font-family: "Open sans";
 }
 
 input{
@@ -174,7 +183,7 @@ input{
     border-radius: 8px;
     border-color: gray;
     outline: none;
-    
+
     padding: 10px;
 }
 
@@ -221,4 +230,5 @@ button{
 
 ::placeholder{
     font-size: 15px;
+    font-family: "Open sans";
 }
