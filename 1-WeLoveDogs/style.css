@@ -142,7 +142,7 @@ iframe{
 
 /* main inscrição */
 .mainInsc{
-    margin-top: 37px;
+    margin-top: 32px;
 }
 
 .hInsc{
@@ -152,7 +152,6 @@ iframe{
     font-weight: bold;
 }
 
-
 fieldset{
     border: 0;
     margin-top: 17px;
@@ -160,6 +159,8 @@ fieldset{
 
 label{
     font-weight: bold;
+    font-size: 18px;
+    margin-right: 40px;
 }
 
 input{
@@ -176,13 +177,11 @@ input{
     margin-top: 35px;
 }
 
-#AmaCachorros{
-    width: 400px;
-    height: 200px;
-}
+
 
 .AmaCachorros{
     display: flex;
+    margin-left: -18px;
 }
 
 textarea{
@@ -195,8 +194,8 @@ button{
     width: 151px;
     height: 45px;
     background-color: greenyellow;
-    margin-top: 10px;
-    margin-left: 300px;
+    margin-top: 20px;
+    margin-left: 342px;
     border-radius: 10px;
     border: 0;
     display: flex;
@@ -204,4 +203,12 @@ button{
     align-items: center;
     font-weight: bold;
     font-size: 18px;
+}
+
+.labelText{
+    margin-right: 25px;
+}
+
+.labelIdade{
+    margin-right: 41.3px;
 }
