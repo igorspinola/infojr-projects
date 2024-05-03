@@ -139,55 +139,127 @@ h1.in{
 
 }
 
-p.cara{
-    position: absolute;
-    top: 58%;
-    left: 30%;
-    transform: translate(-50%, -50%);
-    opacity: 0px;
-    width: 371px;
-    font-family: Open Sans;
-    font-size: 52px;
-    font-weight: 700;
-    line-height: 65.37px;
-    text-align: left;
-    color:#000000
-}
-
-figure.figure1{
-    position: absolute;
-    top: 70%;
-    left: 75%;
-    transform: translate(-50%, -50%);
-}
-
-a.ult{
-    position: absolute;
-    top: 98.5%;
-    left: 24.5%;
-    transform: translate(-50%, -50%);
-    opacity: 0px;
-    width: 220px;
-    height: 51px;
-    font-family: Open Sans;
-    font-size: 16px;
-    font-weight: 700;
-    line-height: 21.79px;
-    background-color: #7ED321;
-    display: block;
-    text-align: center;
-    border-radius: 15px;
-}
-
-h1.ult1{
+h1.Blog{
+    width: 334px;
+    height: 65px;
+    top: 150px;
+    left: 553px;
     gap: 0px;
     opacity: 0px;
     font-family: Open Sans;
-    font-size: 18px;
+    font-size: 48px;
     font-weight: 700;
-    line-height: 24.51px;
-    text-align: center;
-    display: inline-block;
-    color: #1C4701;
+    line-height: 65.37px;
+    text-align: left;
+    color:#000000;
+    position: absolute;
+    top: 28%;
+    left: 65%;
+    transform: translate(-50%, -50%);
+}
+
+h2.Tit1{
+
+    width: 220px;
+    height: 44px;
+    gap: 0px;
+    opacity: 0px;
+    font-family: Open Sans;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 43.58px;
+    text-align: left;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    position: absolute;
+    top: 0.01%;
+    left: 29%;
+    color:#000000;
+}
+
+p.top1{
+    width: 778px;
+    height: 185px;
+    gap: 0px;
+    opacity: 0px;
+    font-family: Open Sans;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 21.79px;
+    text-align: justify;
+    color:#000000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    position: absolute;
+    top: 24.5%;
+    left: 29.5%;
+}
+
+figure.mdelivro{
+    width: 304px;
+    height: 228px;
+    top: 9px;
+    gap: 0px;
+    opacity: 0px;
+    position: absolute;
+    top: 53%;
+    left: 3%;
+}
+
+h2.Tit2{
+    width: 220px;
+    height: 44px;
+    gap: 0px;
+    opacity: 0px;
+    font-family: Open Sans;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 43.58px;
+    text-align: left;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    position: absolute;
+    top: 55%;
+    left: 29%;
+}
+
+p.top2{
+    width: 778px;
+    height: 188px;
+    gap: 0px;
+    opacity: 0px;
+    font-family: Open Sans;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 21.79px;
+    text-align: justify;
+    color:#000000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    position: absolute;
+    top: 80%;
+    left: 29.5%;
+}
+
+figure.mdedog{
+    width: 304px;
+    height: 228px;
+    gap: 0px;
+    opacity: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    position: absolute;
+    top: 74%;
+    left: 3%;
 
 }
