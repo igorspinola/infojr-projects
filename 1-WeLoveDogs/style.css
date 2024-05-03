@@ -89,12 +89,13 @@
     }
 
     .apresentacao{
-        margin: 15%;
+        margin: 10%;
         display: flex;
         flex-direction:row;
-        align-items: center;
-        justify-content: space-between;
+        align-items: start;
+        justify-content: flex-start;
         gap: 50px;
+        
     }
 
     .apresentacao__conteudo-principal{
@@ -194,6 +195,7 @@
     .labels{
         display: flex;
         align-self: flex-start;
+        align-items: center;
         flex-direction: column;
         justify-content: space-between;
         gap: 27px;
@@ -234,6 +236,7 @@
     }
 
     .ama-cachorros{
-        width: 124px;
+        width: 114px;
+        text-align: center;
     }
 
