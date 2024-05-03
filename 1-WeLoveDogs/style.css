@@ -10,6 +10,14 @@ a {
     text-decoration: none;
 }
 
+h1 {
+    font-size: 48px;
+}
+
+h2 {
+    font-size: 32px; 
+}
+
 .container {
     display: flex;
     flex-flow: column wrap;
@@ -118,6 +126,103 @@ strong{
 .about-main {
     display: flex;
     justify-content: center;
+    align-items: center;
     flex-flow: column wrap;
+    background-color: white;
+}
+
+.about-content {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    width: 687px;
+    text-align: justify;
+}
+
+.blog-main{
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+}
+
+.blog-content {
+    display: flex;
+    flex-flow: row wrap;
+    align-content: baseline;
+    justify-content: center;
+    width: 1084px;
+}
+
+.blog-post {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    width: 780px;
+    text-align: justify;
+}
+
+.contact-main {
+    display: flex;
+    flex-flow: column wrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact-content{  
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+}
+
+.forms {
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+}
+
+.contact-div{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    column-gap: 35px;
+}
+
+.input-form {
+    width: 258px;
+    height: 28px;
+    text-align: left;
+    border-radius: 7px;
+    border-color: rgba(159, 159, 159, 1);
+    color: rgba(159, 159, 159, 1);
+}
+
+.contact-div-alternative {
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    column-gap: 35px;
     width: auto;
+}
+
+.input-big {
+    height: 80px;
+    width: 258px;
+    text-align: left;
+    border-radius: 7px;
+    border-color: rgba(159, 159, 159, 1);
+    color: rgba(159, 159, 159, 1);
+}
+
+.send-botao {
+    align-self: flex-end;
+    width: 100px;
+    height: 30px;
+    border-color: transparent;
+    border-radius: 10px;
+    background-color:rgba(126, 211, 33, 1);
 }
