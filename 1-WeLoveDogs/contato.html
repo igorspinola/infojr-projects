@@ -3,9 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home</title>
-    <!-- Importação do arquivo de estilos -->
-    <link rel="stylesheet" href="styles.css">
+    <title>Inscreva-se</title>
+    <link rel="stylesheet" href="styles.css" />
 </head>
 
 <body>
@@ -28,29 +27,31 @@
         </div>
 
         <!-- Botão de inscrição -->
-        <div class="botao-inscrever">
+        <div id="botao2-inscrever">
             <a href="contato.html" class="inscricao">INSCREVER</a>
         </div>
 
     </header>
 
-    <!-- Container para o main -->
-    <main class="main">
+    <main>
+        <h1 id="titulo-inscricao">Inscrição</h1>
 
-            <div class="texto-home">
-                <p><b>Junte-se a comunidade apaixonada por cachorros</b></p>
-            </div>
+        <label for="nome" id="nome-label">Nome</label>
+        <input type="text" id="nome-input" name="nome" placeholder="Seu Nome">
 
-        <!-- Botão de inscrição na seção "Home" -->
-        <div class="botao-home">
-            <a href="contato.html" class="inscrever-home">Inscrever-se</a>
-        </div>
+        <label for="idade" id="idade-label">Idade</label>
+        <input type="text" id="idade-input" name="idade" placeholder="18">
 
-        <!-- Imagem principal da página "Home" -->
-        <div class="figura1">
-            <img src="./imagens/imagem-home.png" alt="Um cachorro com uma pessoa ao lado">
-        </div>
+        <label for="email" id="email-label">E-mail</label>
+        <input type="text" id="email-input" name="email" placeholder="exemplo@exemplo">
+
+        <label for="mensagem" id="mensagem-label">Ama cachorros?</label>
+        <input type="text" id="mensagem-input" name="mensagem" placeholder="Mensagem">
+
+        <button id="botao-enviar">Enviar</button>
+
+        <img src="imagens/Figure5.png" id="figure5">
     </main>
 
 </body>
-</html>
+    
