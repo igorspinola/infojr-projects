@@ -1,0 +1,118 @@
+*{
+    font-family: Open Sans;
+    
+}
+
+.topo{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    /* width: 1440px; */
+    height: 120px;
+}
+
+.nomesite{
+    position: relative;
+    display: flex;
+    align-items: flex-start;
+    left: 15px;
+    top: 22px;
+    width: 281px;
+    height: 65px;
+    font-size: 48px;
+    font-weight: 700;
+}
+.nomesite p{
+    margin-top: 0px; 
+}
+#love{
+    color: #7ED321;
+}
+
+.menu{
+    position: relative;
+    top: 22px;
+    width: 400px;
+    height: 65px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+#botaotitulo{
+    height: 40px;
+    width: 151px;
+    font-size: 16px;
+    font-weight: 700;
+    color: #1C4701;
+    background-color: #7ED321;
+    border-radius: 15px;
+    border: 0px;
+}
+
+
+/* Css do corpo */
+
+
+.corpo{
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.titulo{
+    align-self: center;
+}
+
+.titulo h1{
+    font-size: 48px;
+    font-weight: 700;
+}
+
+.conteudo{
+    display: flex;
+    justify-content: center;
+}
+
+.formulario{
+    display: flex;
+}
+
+.formulario>div>form{
+    display: flex;
+    flex-direction: column;
+    
+}
+
+form>input{
+    display: flex;
+    margin-bottom: 5%;
+    width: 419px;
+    height: 43px;
+    border-color: #9F9F9F;
+    border-style: solid;
+    border-radius: 7px;
+    outline: none;
+}
+
+form>input::placeholder{ 
+    position: absolute;
+    left: 13px;
+}
+
+#amor{
+    width: 418px;
+    height: 160px;
+}
+#amor::placeholder{ 
+    position: absolute;
+    top: 12px;
+    left: 13px;
+}
+
+.imagem img{
+    width: 582px;
+    height: 436px;
+}
