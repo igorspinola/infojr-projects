@@ -1,6 +1,5 @@
 *{
     font-family: Open Sans;
-    
 }
 
 .topo{
@@ -88,7 +87,7 @@
 
 form>input{
     display: flex;
-    margin-bottom: 5%;
+    margin-bottom: 4.5%;
     width: 419px;
     height: 43px;
     border-color: #9F9F9F;
@@ -100,6 +99,8 @@ form>input{
 form>input::placeholder{ 
     position: absolute;
     left: 13px;
+    font-size: 14px;
+    font-weight: 700;
 }
 
 #amor{
@@ -109,10 +110,21 @@ form>input::placeholder{
 #amor::placeholder{ 
     position: absolute;
     top: 12px;
-    left: 13px;
 }
 
 .imagem img{
     width: 582px;
     height: 436px;
+}
+
+#botaoenviar{
+    border-radius: 10px;
+    border: 0px;
+    background-color: #7ED321;
+    width: 141px;
+    height: 42px;
+    font-size: 16px;
+    font-weight: 700;
+    color: #1C4701;
+    align-self: flex-end;
 }
