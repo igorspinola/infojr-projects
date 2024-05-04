@@ -38,7 +38,9 @@ nav ul li:nth-last-of-type(1){
 }
 
 #inscricao:hover{
-    background-color: #7ED321; 
+    background-color: rgba(126, 211, 33, 0.4); 
+    cursor: pointer;
+    transform: scale(1.03);
 }
 
 nav ul li:hover{
@@ -81,7 +83,7 @@ nav ul li:hover{
     width: 151px;
     height: 40px;
 
-    background: rgba(126, 211, 33, 0.4);
+    background: rgba(126, 211, 33, 1);
     border-radius: 15px;
     justify-content: center;
     align-items: center;
@@ -90,7 +92,7 @@ nav ul li:hover{
 /* texto botão inscrição */
 #inscricao a{
     text-decoration: none;
-    color: #1C4701;
+    color:rgba(28, 71, 1, 1);
 }
 
 /*main da página contato */
