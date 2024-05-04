@@ -6,7 +6,7 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    width: 1440px;
+    /* width: 1440px; */
     height: 120px;
 }
 
@@ -55,14 +55,9 @@
 /*CSS Corpo*/
 
 .corpo{
-    position: absolute;
-    top: 207px;
-    left: 200px;
+    margin-top: 5%;
     display: flex;
-    flex-direction: column;
-    width: 371px;
-
-
+    justify-content: center;
 }
 
 .texto{
@@ -80,7 +75,6 @@
 }
 
 #botaocorpo{
-    position: absolute;
     width: 220px;
     height: 51px;
     font-size: 18px;
@@ -89,16 +83,18 @@
     color: #1C4701;
     border-radius: 15px;
     border: 0px;
-    margin-top: 287px;
+}
+
+.imagem{
+    margin-left: 3%;
 }
 
 
-.imagem{
-    position: absolute;
+.imagem img{
+    position: relative;
+    top: -11%;
     width: 640px;
     height: 480px;
-    top: 150px;
-    left: 600px;
 
 }
 
