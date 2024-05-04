@@ -1,0 +1,108 @@
+.inscricao{
+    color: #1C4701;
+    background-color: #7ED321;
+}
+
+section{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+
+}
+
+h1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Open Sans", sans-serif;
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 65.37px;
+    text-align: left;
+}
+
+.div-form{
+    display: flex;
+    justify-content:center;
+    gap: 30px;
+    align-items: center;
+    margin-top: 25px;
+}
+
+
+.div-form label {
+    justify-content: space-around;
+    font-family: "Open Sans", sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 24.51px;
+    margin-top: 20px ;
+    width: 100px;
+    text-align: center;
+
+
+}
+
+.div-form input{   
+    width: 419px;
+    height: 43px;
+    top: 283px;
+    left: 297px;
+    gap: 0px;
+    opacity: 0px;
+    color: #FFFFFF;
+    border: 1px solid #9F9F9F;
+    border-radius: 7px;
+    margin-top: 20px;
+    font-family: "Open Sans", sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 19.07px;
+    margin-left: 10px;
+    
+    
+}
+
+.input-grande{
+    width: 418px;
+    height: 160px;
+    opacity: 0px;
+    color: #FFFFFF;
+    border: 1px solid #9F9F9F;
+    border-radius: 7px;
+    outline: none;
+    margin-top: 20px;
+    font-family: "Open Sans", sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 19.07px;
+    
+
+}
+
+.div-form button{
+    align-items: center;
+    justify-content: flex-end;
+    width: 141px;
+    height: 42px;
+    top: 652px;
+    left: 574px;
+    border-radius: 10px;
+    background-color: #7ED321;
+    color: #1C4701;
+    font-family: "Open Sans", sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 21.79px;
+    margin-top: 10px;
+    border: none;
+    
+}
+
+div{
+    display: flex;
+    text-align: right;
+    justify-content: space-around;
+    gap: 14px;
+}
+  
