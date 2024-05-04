@@ -57,6 +57,17 @@ p>a{
     text-decoration: none;
 }
 
+.menu p a:hover{
+    text-shadow: 0px 0px 1px #1C4701;
+    transition: 10ms;
+}
+
+#botaotitulo:hover{
+    text-shadow: 0px 0px 1px #7ED321;
+    background-color: #9dd75f;
+    transition: 10ms;
+}
+
 
 /* Css do corpo */
 
@@ -154,4 +165,10 @@ form>input::placeholder{
     color: #1C4701;
     cursor: pointer;
     align-self: flex-end;
+}
+
+#botaoenviar:hover{
+    text-shadow: 0px 0px 1px #7ED321;
+    background-color: #9dd75f;
+    transition: 10ms;
 }
