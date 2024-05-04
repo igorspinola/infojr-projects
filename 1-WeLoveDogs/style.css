@@ -129,26 +129,26 @@ iframe{
 .mainBlog{
     display: flex;
     justify-content: center;
-    margin-top: 8px;
+    margin-top: 0px;
 }
 
 .h1Blog{
     display: flex;
     justify-content: center;
-    font-size: 40px;
-    margin-top: 21px;
+    font-size: 38px;
+    margin-top: 19px;
     font-family: "Open sans";
 }   
 
 .tituloPost{
-    font-size: 35px;
-    margin-left: 510px;
+    font-size: 34px;
+    margin-left: 508px;
     margin-top: 20px;
     font-family: "Open sans";
 }
 
 .pBlog{
-    font-size: 22px;
+    font-size: 19px;
     font-family: "Open sans";
 }
 
@@ -203,6 +203,7 @@ textarea{
     height: 200px;
     border-radius: 8px;
     padding: 10px;
+    resize: none;
 }
 
 button{
@@ -210,7 +211,7 @@ button{
     height: 45px;
     background-color: greenyellow;
     margin-top: 20px;
-    margin-left: 359px;
+    margin-left: 365px;
     border-radius: 10px;
     border: 0;
     display: flex;
@@ -220,15 +221,22 @@ button{
     font-size: 18px;
 }
 
+.labelNome{
+    margin-right: 36px;
+}
 .labelText{
-    margin-right: 25px;
+    margin-right: 16px;
 }
 
 .labelIdade{
-    margin-right: 41.3px;
+    margin-right: 39px;
 }
 
 ::placeholder{
     font-size: 15px;
     font-family: "Open sans";
+}
+
+.labelEmail{
+
 }
