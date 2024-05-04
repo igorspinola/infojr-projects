@@ -1,0 +1,152 @@
+header {
+    width: 1440px;
+    height: 120px;
+    background-color: #fff; 
+    color: #fff; 
+    position: relative; 
+}
+
+.logo {
+    position: absolute;
+    width: 281px;
+    height: 65px;
+    top: 27px;
+    left: 15px;
+    cursor: pointer;
+}
+
+.botaoquemsomos {
+    position: absolute;
+    width: 112px;
+    height: 22px;
+    top: 49px;
+    left: 1490px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 22px; 
+    color: #000; 
+    background: none; 
+    border: none; 
+    padding: 0; 
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.botaoblog {
+    position: absolute;
+    width: 112px;
+    height: 22px;
+    top: 49px;
+    left: 1650px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 22px; 
+    color: #000; 
+    background: none; 
+    border: none; 
+    padding: 0; 
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.botaoinscrever {
+    position: absolute;
+    width: 112px;
+    height: 22px;
+    top: 49px;
+    left: 1750px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 22px; 
+    color: #000; 
+    background: #ff9900;
+    background-color: rgba(255, 153, 0, 0.6);
+    border: none; 
+    padding: 0; 
+    cursor: pointer;
+    text-decoration: none;
+    border-radius: 10px;
+    text-align: center; 
+    display: inline-block;
+}
+
+.centralizado {
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.centralizado p {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 65.37px;
+    width: 104px;
+    height: 65px;
+}
+
+.post1 {
+    margin-bottom: 30px;
+    margin-top: 100px;
+    margin-left: 800px;
+    padding: 20px;
+    max-width: 700px;
+}
+
+.post1 h2 {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 32px;
+    font-weight: bold;
+    color: #333;
+    text-align: left;
+}
+
+.post1 p {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 21.79px;
+    text-align: justify;
+    color: #666;
+}
+
+.post2 {
+    margin-bottom: 30px;
+    margin-top: 30px;
+    margin-left: 800px;
+    padding: 20px;
+    max-width: 700px;
+}
+
+.post2 h2 {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 32px;
+    font-weight: bold;
+    color: #333;
+    text-align: left;
+}
+
+.post2 p {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 21.79px;
+    text-align: justify;
+    color: #666;
+}
+
+.imagem1 {
+    position: absolute;
+    top: 280px;
+    left: 480px;
+}
+
+.imagem2 {
+    position: absolute;
+    top: 630px;
+    left: 480px;
+}

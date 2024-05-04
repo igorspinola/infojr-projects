@@ -1,0 +1,206 @@
+header {
+    width: 1440px;
+    height: 120px;
+    background-color: #fff; 
+    color: #fff; 
+    position: relative; 
+}
+
+.logo {
+    position: absolute;
+    width: 281px;
+    height: 65px;
+    top: 27px;
+    left: 15px;
+    cursor: pointer;
+}
+
+.botaoquemsomos {
+    position: absolute;
+    width: 112px;
+    height: 22px;
+    top: 49px;
+    left: 1490px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 22px; 
+    color: #000; 
+    background: none; 
+    border: none; 
+    padding: 0; 
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.botaoblog {
+    position: absolute;
+    width: 112px;
+    height: 22px;
+    top: 49px;
+    left: 1650px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 22px; 
+    color: #000; 
+    background: none; 
+    border: none; 
+    padding: 0; 
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.botaoinscrever {
+    position: absolute;
+    width: 112px;
+    height: 22px;
+    top: 49px;
+    left: 1750px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 22px; 
+    color: #000; 
+    background: #ff9900;
+    background-color: rgba(255, 153, 0, 0.6);
+    border: none; 
+    padding: 0; 
+    cursor: pointer;
+    text-decoration: none;
+    border-radius: 10px;
+    text-align: center; 
+    display: inline-block;
+}
+
+.centralizado {
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.centralizado p {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 65.37px;
+    width: 104px;
+    height: 65px;
+}
+
+label {
+    font-weight: bold;
+    margin-bottom: 5px;
+    display: block;
+}
+
+input[type="text"] {
+    padding: 10px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    margin-bottom: 10px;
+    width: 450px;
+}
+
+#nome {
+    position: absolute;
+    top: 400px;
+    left: 500px;
+}
+
+#idade {
+    position: absolute;
+    top: 450px;
+    left: 500px;
+}
+
+#email {
+    position: absolute;
+    top: 500px;
+    left: 500px;
+}
+
+#amacachorros {
+    position: absolute;
+    top: 550px;
+    left: 500px;
+}
+
+.caixa-ama-cachorros {
+    width: 400px;
+    height: 100px;
+}
+
+#nomee {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    color: black;
+    margin-bottom: 10px;
+    position: absolute;
+    top: 400px;
+    left: 425px;
+}
+
+#idadee {
+    font-family: 'Open Sans', sans-serif; 
+    font-size: 16px; 
+    font-weight: bold; 
+    color: black; 
+    margin-bottom: 10px; 
+    position: absolute; 
+    top: 450px; 
+    left: 425px;
+}
+
+#emaill {
+    font-family: 'Open Sans', sans-serif; 
+    font-size: 16px; 
+    font-weight: bold; 
+    color: black; 
+    margin-bottom: 10px; 
+    position: absolute; 
+    top: 500px; 
+    left: 425px;
+}
+
+#ama-cachorross {
+    font-family: 'Open Sans', sans-serif; 
+    font-size: 16px; 
+    font-weight: bold; 
+    color: black; 
+    margin-bottom: 10px; 
+    position: absolute; 
+    top: 550px; 
+    left: 400px;
+    text-align: center;
+}
+
+.figure5 {
+    position: absolute; 
+    top: 320px; 
+    left: 980px; 
+}
+
+.botaoenviar {
+    position: absolute;
+    width: 112px;
+    height: 22px;
+    top: 710px;
+    left: 870px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 22px; 
+    color: #000; 
+    background: #ff9900; 
+    border: none; 
+    padding: 0; 
+    cursor: pointer;
+    text-decoration: none;
+    border-radius: 10px;
+    text-align: center;
+    display: inline-block;
+}

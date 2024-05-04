@@ -1,0 +1,105 @@
+header {
+    width: 1440px;
+    height: 120px;
+    background-color: #fff;
+    color: #fff;
+    position: relative;
+}
+
+.logo {
+    position: absolute;
+    width: 281px;
+    height: 65px;
+    top: 27px;
+    left: 15px;
+    cursor: pointer;
+}
+
+.botaoquemsomos {
+    position: absolute;
+    width: 112px;
+    height: 22px;
+    top: 49px;
+    left: 1490px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 22px;
+    color: #000;
+    background: none;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.botaoblog {
+    position: absolute;
+    width: 112px;
+    height: 22px;
+    top: 49px;
+    left: 1650px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 22px;
+    color: #000;
+    background: none;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.botaoinscrever {
+    position: absolute;
+    width: 112px;
+    height: 22px;
+    top: 49px;
+    left: 1750px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 22px;
+    color: #000;
+    background: #ff9900;
+    background-color: rgba(255, 153, 0, 0.6);
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    text-decoration: none;
+    border-radius: 10px;
+    text-align: center;
+    display: inline-block;
+}
+
+.quem-somos {
+    margin-top: 50px;
+    padding: 20px;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.quem-somos h2 {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 48px;
+    font-weight: bold;
+    color: #333;
+    text-align: center;
+}
+
+.quem-somos p {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 21.79px;
+    text-align: justify;
+    color: #666;
+}
+
+.figure2 {
+    margin-top: 20px;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+}
