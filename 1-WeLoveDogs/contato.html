@@ -3,55 +3,59 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Inscreva-se</title>
-    <link rel="stylesheet" href="styles.css" />
+    <title>Contato</title>
+    <link rel="stylesheet" href="styles-contato.css" />
 </head>
 
 <body>
-    <!-- Barra de navegação -->
-    <header class="nav">
 
+    <nav>
         <!-- Logo com parte "love" destacada -->
-        <div>
-            <a href="home.html" id="logo"> we<span id="cor-verde">love</span>dogs </a>
-        </div>
+        <a href="home.html" id="logo"> we<span>love</span>dogs </a>
 
-        <!-- Link para a página "Quem Somos" -->
-        <div id="quem-somos">
-            <a href="quemSomos.html" class="link">QUEM SOMOS</a>
-        </div>
-
-        <!-- Link para a seção "Blog" -->
-        <div id="blog">
-            <a href="blog.html" class="link">BLOG</a>
-        </div>
-
-        <!-- Botão de inscrição -->
-        <div id="botao-inscrever">
-            <a href="contato.html" id="inscricao">INSCREVER</a>
-        </div>
-
-    </header>
+        <!-- Barra de navegação -->
+        <ul>
+            <!-- Link para a página "Quem Somos" -->
+            <li>
+                <a href="quem-somos.html" class="link">QUEM SOMOS</a>
+            </li>
+            <!-- Link para a seção "Blog" -->
+            <li>
+                <a href="blog.html" class="link">BLOG</a>
+            </div>
+            <!-- Botão de inscrição -->
+            <li id="inscricao">
+                <a href="contato.html">INSCREVER</a>
+            </li>
+        </ul>
+    </nav>
 
     <main>
-        <h1 id="titulo-inscricao">Inscrição</h1>
+        <h1>Inscrição</h1>
 
-        <label for="nome" id="nome-label">Nome</label>
-        <input type="text" id="nome-input" name="nome" placeholder="Seu Nome">
+        <div>
 
-        <label for="idade" id="idade-label">Idade</label>
-        <input type="text" id="idade-input" name="idade" placeholder="18">
+        <section>
 
-        <label for="email" id="email-label">E-mail</label>
-        <input type="text" id="email-input" name="email" placeholder="exemplo@exemplo">
+            <label for="idade" id="idade-label">Nome</label>
+            <input type="text" id="nome-input" name="nome" placeholder="Seu Nome">
+            
+            <label for="idade" id="idade">Idade</label>
+            <input type="text" id="idade" name="idade" placeholder="18">
+            
+            <label for="email" id="email">E-mail</label>
+            <input type="text" id="email" name="email" placeholder="exemplo@exemplo">
 
-        <label for="mensagem" id="mensagem-label">Ama cachorros?</label>
-        <input type="text" id="mensagem-input" name="mensagem" placeholder="Mensagem">
+            <label for="mensagem" id="mensagem">Ama cachorros?</label>
+            <input type="text" id="mensagem" name="mensagem" placeholder="Mensagem">
 
-        <button id="botao-enviar">Enviar</button>
+            <button id="botao-enviar">Enviar</button>
+        </section>
 
-        <img src="imagens/Figure5.png" id="figure5" alt="Uma pessoa feliz segurando um coração">
+        <img src="./imagens/Figure5.png" id="figure5" alt="Uma pessoa feliz segurando um coração">
+
+        </div>
     </main>
 
 </body>
-    
+</html>

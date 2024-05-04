@@ -4,52 +4,48 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
-    <!-- Importação do arquivo de estilos -->
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles-home.css" />
 </head>
 
 <body>
-    <!-- Barra de navegação -->
-    <header class="nav">
 
+    <nav>
         <!-- Logo com parte "love" destacada -->
-        <div>
-            <a href="home.html" id="logo"> we<span id="cor-verde">love</span>dogs </a>
-        </div>
+        <a href="home.html" id="logo"> we<span>love</span>dogs </a>
 
-        <!-- Link para a página "Quem Somos" -->
-        <div id="quem-somos">
-            <a href="quemSomos.html" class="link">QUEM SOMOS</a>
-        </div>
+        <!-- Barra de navegação -->
+        <ul>
+            <!-- Link para a página "Quem Somos" -->
+            <li>
+                <a href="quem-somos.html" class="link">QUEM SOMOS</a>
+            </li>
+            <!-- Link para a seção "Blog" -->
+            <li>
+                <a href="blog.html" class="link">BLOG</a>
+            </div>
+            <!-- Botão de inscrição -->
+            <li id="inscricao">
+                <a href="contato.html">INSCREVER</a>
+            </li>
+        </ul>
+    </nav>
 
-        <!-- Link para a seção "Blog" -->
-        <div id="blog">
-            <a href="blog.html" class="link">BLOG</a>
-        </div>
-
-        <!-- Botão de inscrição -->
-        <div id="botao-inscrever">
-            <a href="contato.html" id="inscricao">INSCREVER</a>
-        </div>
-
-    </header>
-
-    <!-- Container para o main -->
-    <main>
-            <div id="texto-home">
+        <main id="main-home">
+            
+            <section>
                 <p><b>Junte-se a comunidade apaixonada por cachorros</b></p>
+        
+                <div>
+                    <a href="contato.html" id="botao-home">Inscrever-se</a>
+                </div>
+
+            </section>
+
+            <div id="imagem-home">
+                <img src="./imagens/imagem-home.png" alt="Um cachorro com uma pessoa ao lado">
             </div>
 
-        <!-- Botão de inscrição na seção "Home" -->
-        <div id="botao-home">
-            <a href="contato.html" id="inscrever-home">Inscrever-se</a>
-        </div>
+        </main>
 
-        <!-- Imagem principal da página "Home" -->
-        <div id="figura1">
-            <img src="./imagens/imagem-home.png" alt="Um cachorro com uma pessoa ao lado">
-        </div>
-    </main>
-
-</body>
-</html>
+    </body>
+    </html>
