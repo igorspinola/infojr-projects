@@ -16,7 +16,7 @@ body {
   flex-direction: row;
 }
 
-@media (max-width: 375px) {
+@media (max-width: 875px) {
   .container {
     flex-direction: column;
   }
@@ -105,7 +105,7 @@ footer {
   object-fit: cover;
 }
 
-@media (max-width: 375px) {
+@media (max-width: 875px) {
   aside {
     width: 350px;
     height: 548px;
@@ -187,7 +187,7 @@ button {
   color: rgba(223, 223, 214, 1);
 }
 
-@media (max-width: 375px) {
+@media (max-width: 875px) {
   .popup_drawer {
     bottom: 11px;
     right: -100px;
