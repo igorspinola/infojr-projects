@@ -67,6 +67,7 @@
 }
 
 .post1{
+    margin-top: 1%;
     display: flex;
     justify-content: flex-start;
 }
