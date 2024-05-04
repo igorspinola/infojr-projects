@@ -25,7 +25,6 @@ nav a {
     font-weight: bold;
     text-decoration: none;
     font-size: 17px;
-    
 }
 
 .h1Welovedogs{
@@ -50,17 +49,11 @@ nav a {
     align-items: center;
 }
 
-iframe{
-    width: 1440px;
-    height: 120px;
-    scolling: "no";
-    scrollbar-width: none;
-    max-width: 100%;
-}
 /* END HEADER */
 
 
 /* START MAINS */
+
 
 /* main home */
 .mainHome{
@@ -97,6 +90,7 @@ iframe{
     width: 500px;
     height: 400px;  
 }
+/* fim main home */
 
 
 /* main quem somos */   
@@ -124,6 +118,8 @@ iframe{
     width: 250px;
     height: 250px;
 }
+/* fim main quem somos */
+
 
 /* main blog */
 .mainBlog{
@@ -151,6 +147,8 @@ iframe{
     font-size: 19px;
     font-family: "Open sans";
 }
+/* fim main blog */
+
 
 /* main inscrição */
 .mainInsc{
@@ -236,7 +234,7 @@ button{
     font-size: 15px;
     font-family: "Open sans";
 }
+/* fim main inscrição */
 
-.labelEmail{
 
-}
+/* FIM MAIN */
