@@ -279,7 +279,7 @@
 .section3{
     /* Section3 */
 
-    position: relative;
+    position: absolute;
     width: 1082px;
     height: 255px;
     left: 181px;
@@ -312,6 +312,7 @@
     width: 239px;
     height: 42px;
     left: 304px;
+    top:0px;
 
     font-family: 'Open Sans', sans-serif;
     font-style: normal;
