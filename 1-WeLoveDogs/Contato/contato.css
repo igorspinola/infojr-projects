@@ -57,8 +57,7 @@
 
 .corpo{
     display: flex;
-    flex-direction: column;
-    
+    flex-direction: column;  
 }
 
 .titulo{
@@ -85,15 +84,30 @@
     
 }
 
-form>input{
+
+form>label{
+    text-align: center;
+    align-self: center;
+    position: relative;
+    display: flex;
+    font-size: 18px;
+    font-weight: 700;
+    justify-content: space-between;
+    margin-top: 5%;
+    margin-bottom: 45%;
+    margin-right: 45%;
+    
+
+}
+
+form>input, form>textarea{
     display: flex;
     margin-bottom: 4.5%;
     width: 419px;
     height: 43px;
-    border-color: #9F9F9F;
-    border-style: solid;
     border-radius: 7px;
     outline: none;
+    border: 1px solid #9F9F9F;
 }
 
 form>input::placeholder{ 
@@ -101,15 +115,21 @@ form>input::placeholder{
     left: 13px;
     font-size: 14px;
     font-weight: 700;
+    color: #9F9F9F;
 }
 
 #amor{
     width: 418px;
     height: 160px;
+    resize: none;
 }
 #amor::placeholder{ 
     position: absolute;
     top: 12px;
+    left: 13px;
+    font-size: 14px;
+    font-weight: 700;
+    color: #9F9F9F;
 }
 
 .imagem img{
