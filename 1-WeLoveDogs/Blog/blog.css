@@ -1,6 +1,5 @@
 *{
     font-family: Open Sans;
-    
 }
 
 .topo{
@@ -25,7 +24,7 @@
 .nomesite p{
     margin-top: 0px; 
 }
-#love{
+#love a{
     color: #7ED321;
 }
 
@@ -50,6 +49,12 @@
     background-color: #7ED32166;
     border-radius: 15px;
     border: 0px;
+    cursor: pointer;
+}
+
+p>a{
+    color: black;
+    text-decoration: none;
 }
 
 /* Css do corpo */
