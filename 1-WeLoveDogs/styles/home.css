@@ -1,0 +1,42 @@
+section{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 40px ;
+}
+
+div{
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    justify-content: space-between;
+    font-family: "Open Sans", sans-serif;
+    font-weight: bold;
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 62px;
+
+}
+
+h1{
+    display: flex;
+    width: 340px;
+}
+
+button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #1C4701;
+    background-color: #7ED321;
+    width: 220px;
+    height: 51px;
+    border-radius: 15px;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    border: none;
+
+
+
+}
