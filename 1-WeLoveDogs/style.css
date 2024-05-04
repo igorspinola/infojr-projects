@@ -651,9 +651,10 @@ label[for="cachorros"] {
     
 }
 
-.botao3{
+.botao3 {
 
     position:absolute;
+    display: inline-block;
     width: 141px;
     height: 42px;
     top: 532px;
@@ -664,6 +665,23 @@ label[for="cachorros"] {
 
     background: rgba(126, 211, 33, 1);
 
+}
+
+.botao3 a{
+    
+    
+    top: 542px;
+    font-family: "Open Sans",sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 21.79px;
+    text-align: center;
+    color: rgba(28, 71, 1, 1);
+    text-decoration: none;
+}
+
+.botao3:hover {
+    background-color: rgb(189, 230, 173);
 }
 
 
@@ -677,6 +695,44 @@ label[for="cachorros"] {
 }
 
 
+.modal {
+    visibility: hidden;
+    position: absolute;
+    transition: all 0.4s; 
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 9999;
+}
+
+.modal:target {
+    visibility: visible;
+    opacity: 1; 
+}
+
+
+.modalconteudo {
+    position: absolute;
+    font-family: "Open Sans",sans-serif;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.modalfechar{
+    position:absolute;
+    top: 10px;
+    right:10px;
+    color: rgba(28, 71, 1, 1);
+    text-decoration: none;
+    
+}
 
 
 
