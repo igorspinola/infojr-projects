@@ -1,0 +1,42 @@
+h1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "Open Sans", sans-serif;
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 65.37px;
+}
+
+.div-section{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+section{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 1084px;
+    height: 252px;
+    top: 265px;
+    left: 179px;
+}
+
+h2{
+    font-family: "Open Sans", sans-serif;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 43.58px;
+}
+
+p{
+    font-family: "Open Sans", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 21.79px;
+    text-align: justified;
+       
+}
