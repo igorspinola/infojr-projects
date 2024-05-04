@@ -95,7 +95,6 @@ nav ul li{
 }
 
 
-
 .menu_itens_li_contato_dois a{
     text-decoration: none;
     color: inherit;
@@ -176,6 +175,8 @@ nav ul li{
     font-size: 32px;
     margin-bottom: 10px;
 }
+
+
 /* ------ CONTATO ------ */
 
 .contato_titulo{
@@ -191,7 +192,6 @@ nav ul li{
     justify-content:center;
 
 }
-
 
 .div_contato_titulos{
     margin-right: 20px;
@@ -225,7 +225,6 @@ nav ul li{
     resize: none;
     
 }
-
 
 .contato_form__botao{
     background-color:var(--cor-primaria);
