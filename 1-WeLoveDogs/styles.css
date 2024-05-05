@@ -18,54 +18,313 @@ a {
 } 
 a:hover{opacity: 1;}
 
+body {
+    height: 100vw;
+}
 
-/* Header */
-.header {
+/* mexendo no header */
+header {
     display: flex;
-    /* padding-top: 27px;
-    padding-left: 15px; */
     justify-content: space-between;
     align-items: center;
-    text-decoration: none;
+    padding: 27px 15px;
 }
 
 .logo {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 65px;
+    text-decoration: none;
+    color: #000000;
+}
+.love {color: #7ED321;}
+
+.menu {
     display: flex;
-    justify-content: flex-start;
-    padding-left: 15px;
-    padding-top: 27px;
+    align-items: center;
+    justify-content: space-around;
+    gap: 35px 49px;
+}
+
+.menu>li>a {
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 16px;
+    color: black;
+}
+
+.botao-menu {
+    width: 151px;
+    height: 40px;
+    border: none;
+    border-radius: 15px;
+    opacity: none;
+    background-color:  #7ED32166;
+}
+
+.inscrever {
+    color: #1C4701;
+    font-weight: 700;
+}
+
+/* mexendo no main da home */
+.mainhome {
+    display: flex;
+    gap:60px;
+    padding-top: 30px;
+    justify-content: center;
+    align-items: center;
+}
+
+.texto-home {
+    display: flex;
+    flex-direction: column;
+    /* justify-items: flex-start; */
+    gap: 25px;
+    padding-top: px;
+    padding-left: px;
+    margin-right: 0px;
+    /* align-self: flex-start; */
+
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 48px;
+    color: black;
+}
+
+.botao-inscrever-se {
+    width: 220px;
+    height: 51px;
+    border: none;
+    border-radius: 15px;
+    opacity: none;
+    background-color: #7ED321;
+    /* cursor: pointer; */
+    font-size: 18px;
+}
+
+.inscrever-se {
+    color: #1C4701;
+    font-weight: 700;
+}
+
+.figure-home {
+    display: flex;
+    margin-left: 360px;
+    margin-right: 20px;
+}
+
+/* mexendo na main - quem somos */
+.main-quemsomos {
+    display: flex;
+    flex-direction: column;
+    padding-top: 30px;
+    align-items: center;
+}
+
+.texto-quemsomos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    text-align: justify;
+}
+
+.h1-quemsomos {
     font-family: 'Open Sans';
     font-style: normal;
     font-weight: 700;
     font-size: 48px;
-    /* line-height: 65px; */
-    text-decoration: none;
+    line-height: 65px;
     color: #000000;
-}  
-.logo .love {
-    color: #7ED321; 
-} 
+}
 
-.menu {
-    display:flex;
-    list-style: none;
-    justify-content: flex-end;
-    gap: 35px 49px;
+.p-quemsomos {
+    width: 687px;
+
     font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
     font-size: 16px;
-    font-weight: 700;
-    line-height: 21.79px;
-    text-align: left;
-    text-decoration: none;
+    line-height: 22px;
     color: #000000;
 }
-.menu .quemsomos {
+
+/* mexendo na main - blog */
+.main-blog {
     display: flex;
-    text-decoration: none;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 30px;
 }
 
-.botao-menu{
-    background-color: #7ED32166;
-    text-decoration: #1C4701;
-    ;
+.h1-blog{
+    padding-bottom: 45px;
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 65px;
+    color: #000000;
+}
+
+.figure-blog {
+    left: 0px;
+    top: 9px;
+    padding-top: 50px;
+}
+
+.blog1 {
+    display: flex;
+    flex-grow: 2;
+    width: 1084px;
+    height: 252px;
+    left: 179px;
+    top: 265px;
+}
+
+.blog2 {
+    width: 778px;
+    height: 185px;
+    left: 0px;
+    top: 0px;
+    padding-top: 0px;
+
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+    text-align: justify;
+    color: #000000;
+}
+
+.h2-blog {
+    width: 220px;
+    height: 44px;
+    left: 0px;
+    top: 0px;
+    padding-bottom: 75px;
+    padding-top: 40px;
+
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 44px;
+    color: #000000;
+}
+
+.p-blog {
+    width: 778px;
+    height: 185px;
+    left: 0px;
+    top: 0px;
+    padding-top: 3px;
+
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+    text-align: justify;
+    color: #000000;
+}
+
+/* Mexendo na main - contato */
+.main-contato {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 30px;
 } 
+
+.h1-contato {
+    padding-bottom: 45px;
+    font-family: 'Open Sans';
+    font-style: normal;
+    text-align: center;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 65px;
+    color: #000000;
+}
+
+.section-contato {
+    display: flex;
+    justify-content: center;
+    padding-top: 37px;
+}
+
+.form-grupo {
+    display: flex;
+    justify-content: flex-end;
+    align-items:center;
+    margin-bottom: 20px;
+    gap: 20px;   
+    outline: unset;
+    text-align: center;
+    
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 700;
+    border-radius: 7px;
+}
+
+input, textarea {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 19px;
+    color: #9F9F9F; 
+    outline: unset;
+    display: flex;
+    border: 1px solid #9F9F9F;
+    border-radius: 7px;
+    height: 43px;
+    width: 418px;
+} 
+
+.input{
+    padding-left: 10px;
+}
+
+
+
+#mensagem {
+    height: 160px;
+    /* padding-left: 10px; */
+}
+
+#amacachorros {
+    padding-bottom: 120px;
+    padding-right: 30px;
+    width: 11%;
+    text-align: right;
+    justify-content:center;
+    width: 7%;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+
+#botao-form {
+        
+    background-color: #7ED321;
+    color: #1C4701;
+    text-align: center;
+    text-indent: 48px;
+    font-weight: 700;
+    border-radius: 10px;
+    cursor: pointer;
+    border: unset;
+    width: 141px;
+    height: 42px;
+    background: #7ED321;
+} 
+#botao-form:hover {
+    background-color: rgb(77, 182, 77);
+}
+
