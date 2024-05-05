@@ -1,3 +1,4 @@
+/* AJUSTES GERAIS */
 * {
     background-color: #BCCDD0;
 }
@@ -21,6 +22,15 @@ section{
     margin-top: 10px;
 }
 
+img{
+    background-color: #DFDFD6;
+}
+
+div{
+    background-color: #DFDFD6;
+}
+
+/* HEADER */
 header{
     background-color: #DFDFD6;
     margin-left: 37px;
@@ -33,6 +43,8 @@ h1{
     font-family: "Josefin sans";
 }
 
+
+/* MAIN */
 main{
     background-color: #DFDFD6;
     margin-left: 37px;
@@ -44,19 +56,13 @@ p{
     font-family: "Open sans";
 }
 
+
+/* FOOTER */
 footer{
     background-color: #DFDFD6;
 }
 
 .doguito{
-    background-color: #DFDFD6;
-}
-
-img{
-    background-color: #DFDFD6;
-}
-
-div{
     background-color: #DFDFD6;
 }
 
