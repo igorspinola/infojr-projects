@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Overpass:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+    --title: #111313;
+    --text: #000000;
+    --bg-card: #dfdfd6;
+    --bg-principal: #bccdd0;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+
+    background-color: var(--bg-principal);
+}
+
+main {
+    display: flex;
+    width: fit-content;
+}
+
+.section_info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.section_info h1 {
+    font-size: 36px;
+    font-family: "Josefin Sans", sans-serif;
+    font-weight: 600;
+    color: var(--title);
+}
+
+.section_info p {
+    text-align: justify;
+}
