@@ -14,6 +14,11 @@ body{
     border-radius: 30px;
 }
 
+section{
+    display: flex;
+    flex-direction: column;
+}
+
 header{
     background-color: #DFDFD6;
     margin-left: 86px;
@@ -23,3 +28,6 @@ h1{
     background-color: #DFDFD6;
 }
 
+p{
+    margin-left: 86px;
+}
