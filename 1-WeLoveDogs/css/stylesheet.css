@@ -1,10 +1,10 @@
 body * {
   margin: 0;
+  font-family: Open Sans;
 }
 
 .home {
   background: white;
-  font-family: Open Sans;
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -70,7 +70,7 @@ li a {
   padding: 0.56rem 2rem;
 }
 
-.main-container {
+.home-container {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap-reverse;
@@ -129,7 +129,7 @@ li a {
   overflow: hidden;
 }
 
-#about-container {
+.main-container {
   display: flex;
   flex-flow: column nowrap;
   align-items: center;
@@ -225,11 +225,11 @@ label span {
     outline:none;
     border:1px solid rgba(126, 211, 33, 0.40);
     box-shadow:0 0 5px rgba(126, 211, 33, 0.40);
- }
- &:invalid {
-  box-shadow: -3px 0  rgba(126, 211, 33, 0.40);
-  border-left: none;     
- }
+  }
+  &:invalid {
+    box-shadow: -3px 0  rgba(126, 211, 33, 0.40);
+    border-left: none;     
+  }
 }
 
 #form p {
@@ -247,4 +247,5 @@ label span {
 
 #form #sub-btn {
   cursor: pointer;
+  margin: 0;
 }
