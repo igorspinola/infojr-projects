@@ -69,7 +69,10 @@ footer{
 h2{
     background-color: #DFDFD6;
     margin-top: 29px;
+    font-family: "Overpass";
+    font-size: 24px;
 }
+
 
 .doguito{
     display: flex;
@@ -86,5 +89,7 @@ h2{
 }
 
 .pData{
-    margin-top: -12px;
+    margin-top: -9px;
+    font-family: "Overpass";
+    font-weight: bold;
 }
