@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <link href="styles.css" rel="stylesheet"/>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WeLoveDogs - Contato</title>
+</head>
+<body> <!-- Conteúdo da página, que o usuário verá -->
+    <header class="header">
+        <div>
+            <a href="home.html" class="logo">
+            <h1>we<span class="love">love</span>dogs</h1></a>
+        </div>
+        <nav class="nav">
+            <ul class="menu">
+                <li><a href="quemsomos.html" class="quemsomos">QUEM SOMOS</a></li>
+                <li><a href="blog.html" class="blog">BLOG</a></li>
+                <li><button class="botao-menu"><a href="contato.html"class="inscrever">INSCREVER</a></button></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="main-contato">
+        <h1 class="h1-contato">Inscrição</h1>
+        <section class="section-contato">
+            <!-- <div> -->
+                <form action="#">
+                    <div class="form-grupo">
+                        <label for="nome">Nome</label>
+                        <input class="input" type="text" id="nome" name="nome" placeholder="Seu nome" autofocus required>
+                    </div>
+                    <div class="form-grupo">
+                        <label for="idade">Idade</label>
+                        <input class="input" type="number" id="idade" name="idade" placeholder="18" required>
+                    </div>
+                    <div class="form-grupo">
+                        <label id="" for="email">E-mail</label>
+                        <input class="input" type="email" id="email" name="email" placeholder="exemplo@exemplo" required>
+                    </div>
+                    <div class="form-grupo">
+                        <label id="amacachorros" for="mensagem">Ama<br>cachorros?</label>
+                        <textarea class="input" id="mensagem" name="mensagem" rows="5" placeholder="Mensagem"></textarea>
+                    </div>
+                    <div class="form-grupo">    
+                        <input id="botao-form" type="submit" aria-label="Enviar inscrição"></button>
+                    </div>
+                </form>
+            <!-- </div> -->
+            <figure id="figure-contato">
+                <img src="./imagens/inscricao.svg" alt="imagem da página de inscrição">
+            </figure>
+        </section>
+    </main>
+</body>
+<footer></footer>
+</html>
