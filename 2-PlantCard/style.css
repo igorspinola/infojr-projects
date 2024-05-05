@@ -40,7 +40,6 @@ main{
 
 p{
     background-color: #DFDFD6;
-    margin-left: px;
     font-size: 16px;
     font-family: "Open sans";
 }
@@ -56,3 +55,12 @@ footer{
 img{
     background-color: #DFDFD6;
 }
+
+div{
+    background-color: #DFDFD6;
+}
+
+h2{
+    background-color: #DFDFD6;
+}
+
