@@ -62,5 +62,23 @@ div{
 
 h2{
     background-color: #DFDFD6;
+    margin-top: 29px;
 }
 
+.doguito{
+    display: flex;
+    margin-top: 70px;
+    margin-left: 30px;
+}
+
+.imgCachorro{
+    margin-top: 30px;
+}
+
+.textoFooter{
+    margin-left: 10px;
+}
+
+.pData{
+    margin-top: -12px;
+}
