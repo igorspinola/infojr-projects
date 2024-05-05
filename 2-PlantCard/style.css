@@ -22,16 +22,19 @@ section{
 
 header{
     background-color: #DFDFD6;
-    margin-left: 86px;
+    margin-left: 70px;
+    
 }
 
 h1{
     background-color: #DFDFD6;
+    font-size: 36px;
 }
 
 p{
     background-color: #DFDFD6;
-    margin-left: 86px;
+    margin-left: 70px;
+    font-size: 16px;
 }
 
 main{
