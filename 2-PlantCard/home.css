@@ -1,0 +1,22 @@
+*{
+   background-color: #BCCDD0;
+}
+
+.section{
+    display: flex;
+    background-color:  #DFDFD6;
+    width: 584px;
+    height: 492px;
+    justify-content: center;
+    align-items: center;
+}
+.bloco1{
+    
+    display: flex;
+    justify-content: center;
+}
+
+.texto{
+    display: flex;
+    flex-direction: column;
+}
