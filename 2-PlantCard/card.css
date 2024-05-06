@@ -1,0 +1,131 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+@font-face {
+    font-family: 'minhafonte';
+    src: url('Josefin_Sans/static/JosefinSans-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Overpass';
+    src: url("Overpass/static/Overpass-Regular.ttf") format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Open Sans';
+    src: url("Open_Sans/static/OpenSans-Regular.ttf") format('truetype');
+    font-weight: normal;
+    font-size: normal;
+}
+
+.desktop {
+    background: #BCCDD0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+.card-container{
+    margin-bottom: 200px;
+    width: 875px;
+    top: 294px;
+    left: 523px;
+    height: 492px;
+    padding: 50px 30px 41px 30px;
+    border-radius: 30px 30px;
+    justify-content: space-evenly;
+    background: #DFDFD6;  
+    margin-top: 200px;
+   
+    
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    
+}
+
+.info img {
+    width: 291px;
+    height: 492px;
+    border-radius: 30px 0px 0px 30px;
+    margin-right: 600px;
+    margin-top: -50px;
+}
+
+.info h1 {
+    text-align: left;
+    margin-top: -450px;
+    margin-left: 265px;
+    width: 492px;
+    height: 36px;
+    font-family:'minhafonte', Times, serif;
+    font-size: 36px;
+    font-weight: 600;
+    line-height: 36px;
+
+}
+
+.info p{
+    margin-top: 20px;
+    display: flex;
+    width: 524px;
+    height: 154px;
+    margin-left: 300px;
+    font-family: "Open Sans",sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 21.79px;
+    text-align: left;
+
+}
+
+.footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 140px;
+    margin-left: 300px;
+}
+
+.profile{
+    display:flex;
+    
+}
+
+.profile section {
+    display: flex;
+    flex-direction: column;
+    margin-left: 10px;
+}
+
+.profile h2{
+    width: 87px;
+    height: 30px;
+    font-family: 'Overpass';
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 30.38px;
+    text-align: left;
+}
+
+.profile h3{
+    width: 96px;
+    height: 20px;
+    font-family: 'Overpass';
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 20.26px;
+    text-align: left;
+
+}
