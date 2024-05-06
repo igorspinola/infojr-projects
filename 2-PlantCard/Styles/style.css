@@ -2,16 +2,24 @@
 
 main {
     display: flex;
+    justify-content: center;
+    align-items: center;
     background-color: #BCCDD0;
 }
 h1 {
     font-family: 'Josefin Sans', sans-serif;
     color: #111313;
+    font-size: 36px;
 }
 p {
     font-family: 'Open Sans', sans-serif;
 }
 section {
-    border-radius: 30px;
+    border-radius: 0px, 30px, 30px, 0px;
     background-color: #DFDFD6;
+}
+#carta {
+    display: flex;
+    width: 584px;
+    height: 492px;
 }
