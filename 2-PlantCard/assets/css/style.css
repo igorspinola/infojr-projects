@@ -101,7 +101,17 @@ main {
     border-radius: 16px;
 
     background-color: var(--bg-social-med9a);
+    position: absolute;
 
+    top: 65%;
+    right: -100%;
+
+    transition: right .5s, top .5s;
+}
+
+.section_info-socialmedia-posição {
+    top: 65%;
+    right: 20px;
 }
 
 .section_info-socialmedia span {
