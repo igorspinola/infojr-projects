@@ -13,6 +13,7 @@ h1 {
 }
 p {
     font-family: 'Open Sans', sans-serif;
+    text-align: justify;
 }
 img {
     object-fit: cover;
