@@ -1,3 +1,7 @@
 body {
-    background-color: #bccdd0
+    background-color: #BCCDD0;
+}
+#carta {
+    border-radius: 30px;
+    background-color: #DFDFD6;
 }
