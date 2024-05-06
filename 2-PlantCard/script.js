@@ -1,4 +1,4 @@
 function clicar() {
-    var click = window.document.getElementsByClassName('imgBotao')
-    alert()
+    document.getElementById("imgRedes").innerHTML =
+    "<img src='imagens/redes sociais.png'>";
 }   
