@@ -1,0 +1,114 @@
+body {
+    font-family: Open Sans;
+    font-weight: 700;
+    text-align: left;
+}
+
+/* header */
+
+#background-top-btn {
+    background: #7ED32166;
+
+}
+
+#top {
+    display: flex;
+    flex-direction: column;
+    
+}
+
+
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 1em
+    
+}
+
+
+span {
+    color: #7ED321;
+}
+
+#links > * {
+    margin-left: 2em;
+}
+
+a {
+    font-size: 0.8em;
+}
+
+#links {
+    display: flex;
+    align-items: center;
+}
+
+/* main */
+
+main {
+    display: flex;
+    justify-content: center;
+}
+
+#left-text {
+    display: flex;
+    flex-direction: column;
+    margin-left: .5em;
+    
+}
+
+#left-text, object {
+    transform: scale(1.12);
+    transform-origin: 0 0;
+}
+
+.btn-sign-in {
+    display: flex;
+    color: #1C4701;
+    background-color: #7ED321;
+    border-radius: 0.7em;
+    width: 7em;
+    height: 2em;
+    align-items: center;
+    justify-content: center;
+}
+
+#bottom-btn {
+    width: 9.2em;
+    height: 2.3em;
+}
+
+a:link { 
+    text-decoration: none;
+    color: inherit;
+  } 
+  a:visited { 
+    text-decoration: none; 
+    color: inherit;
+  } 
+  a:hover { 
+    text-decoration: none; 
+  } 
+  a:active { 
+    text-decoration: none; 
+  }
+
+  h1{
+    color: black;
+  }
+
+/* efeitos especiais */
+
+  #brand:hover > span {
+    color: black;
+  }
+
+  #brand:hover {
+    color: #7ED321;
+  }
+
+  #background-top-btn:hover {
+    background-color: #7ED321;
+    transition: background-color 0.5s ease-out; 
+  }
