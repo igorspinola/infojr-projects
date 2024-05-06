@@ -27,6 +27,11 @@ img {
     flex-direction: column;
     background-color: #DFDFD6;
 }
+#textoCarta {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
 #carta {
     display: flex;
     width: 875px;
