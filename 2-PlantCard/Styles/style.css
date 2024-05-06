@@ -42,7 +42,23 @@ img {
     flex-direction: column;
     gap: 32px;
 }
-
+#userShare {
+    display: flex;
+    justify-content: space-between;
+}
+#usuario {
+    display: flex;
+    justify-content: space-between;
+    gap: 11px;
+}
+#dadosUser {
+    font-family: 'Overpass';
+    font-weight: 500;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+#dadosUser h2 {font-size: 24px;}
 #iconeDog{
     width: 60px;
     height: 60px;
