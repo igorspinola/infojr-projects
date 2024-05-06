@@ -6,7 +6,7 @@
     --bg-card: #dfdfd6;
     --bg-principal: #bccdd0;
     --bg-social-med9a:
-    #777c69;
+        #777c69;
 }
 
 * {
@@ -104,11 +104,14 @@ main {
 
 }
 
-.img {
-    width: 22px;
-    height: 22px;
-    border-radius: 50%;
-    background-color: white;
+.section_info-socialmedia span {
+    font-family: Overpass;
+    font-size: 20px;
+
+    align-items: center;
+
+    margin-top: 5px;
+    color: var(--bg-card);
 }
 
 .profile_name {
