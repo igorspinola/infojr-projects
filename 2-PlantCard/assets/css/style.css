@@ -17,7 +17,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 10px;
+    padding: 20px;
 
     background-color: var(--bg-principal);
 }
@@ -25,12 +25,32 @@ body {
 main {
     display: flex;
     width: fit-content;
+    background-color: var(--bg-card);
+    border-radius: 30px;
+}
+
+.section_image{
+    flex-grow: 2;
+}
+
+
+.section_image img {
+    width: 100%;
+    height: 100%;
 }
 
 .section_info {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    padding: 50px 30px 41px 30px;
+    flex-shrink: 1;
+}
+
+.section_info-text{
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
 }
 
 .section_info h1 {
@@ -42,4 +62,37 @@ main {
 
 .section_info p {
     text-align: justify;
+    font-size: 1rem;
+    font-family: Open sans;
+    max-width: 501px;
+}
+
+.section_info-assets {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.section_info-profile{
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-top: 20px;
+}
+
+.section_profile-text{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.profile_name{
+    font-family: Overpass;
+    font-size:1.5rem;
+}
+
+.profile_date{
+    font-family: Overpass;
+    font-size:1rem; 
 }
