@@ -31,7 +31,7 @@ img {
 }
 #conteudoCarta {
     display: flex;
-    padding: 50px 30px;
+    padding: 50px 30px 41px 30px;
     border-radius: 0px 30px 30px 0px;
     justify-content: space-between;
     flex-direction: column;
@@ -58,6 +58,7 @@ img {
     flex-direction: column;
     justify-content: space-between;
 }
+#dadosUser p {font-family: 'Overpass';}
 #dadosUser h2 {font-size: 24px;}
 #iconeDog{
     width: 60px;
