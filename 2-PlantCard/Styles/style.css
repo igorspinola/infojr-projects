@@ -15,11 +15,15 @@ p {
     font-family: 'Open Sans', sans-serif;
 }
 section {
-    border-radius: 0px, 30px, 30px, 0px;
+    display: flex;
+    padding: 50px 30px;
+    border-radius: 0px 30px 30px 0px;
+    justify-content: space-between;
+    flex-direction: column;
     background-color: #DFDFD6;
 }
 #carta {
     display: flex;
-    width: 584px;
+    width: 875px;
     height: 492px;
 }
