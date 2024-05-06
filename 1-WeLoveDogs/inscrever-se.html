@@ -4,57 +4,59 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="index.css">
     <title>WeLoveDogs</title>
 </head>
 <body>
-
-    <div class="header">
-        <a href="pagina-inicial.html">WELOVEDOGS</a>
-        <div class="navigation">
-            
-            <a href="quem-somos.html">QUEM SOMOS</a>
-            <a href="blog.html">BLOG</a>
-            <a href="inscrever-se.html">INSCREVER-SE</a>
+    <header class="header">
+        <div class="marca">
+            <a href="pagina-inicial.html">We<strong>Love</strong>Dogs</a>
         </div>
-    </div>
+        <div class="principal">
+            <a href="quem-somos.html">QUEM SOMOS</a>
+            <a href="blog.html" >BLOG</a>
+            <button type="button" class="nav-botão"><a href="inscrever-se.html" >INSCREVER-SE</a></button>
+        </div>
+    </header>
     
-    <div class="container">
-        <div class="form">
-            <form action="#">
-                <div class="form-header">
-                    <div class="title">
-                        <h1>Inscrição</h1>
-                    </div>
-                </div>
-
+    <main class="Inscrever-se">
+        <section>
+            <h1>Inscrição</h1>
+        </section>
+  
+        <section class="inscrever-se">
                 <div class="input-group">
                     <div class="input-box">
                         <label for="name">Nome</label>
-                        <input id="name" type="text" name="name" placeholder="Digite seu nome" required>
+                        <input id="name" type="text" name="name" placeholder="Digite seu nome" class="formulario">
                     </div>
                     <div class="input-box">
                         <label for="Idade">Idade</label>
-                        <input id="Idade" type="text" name="Idade" placeholder="Digite sua idade" required>
+                        <input id="Idade" type="text" name="Idade" placeholder="Digite sua idade" class="formulario">
                     </div>
                     <div class="input-box">
                         <label for="Email">Email</label>
-                        <input id="Email" type="text" name="Email" placeholder="Digite seu Email" required>
+                        <input id="Email" type="text" name="Email" placeholder="Digite seu Email" class="formulario">
                     </div>
-                    <div class="input-box">
+                    <div class="input-box-alternative">
                         <label for="name">Ama cachorros?</label>
-                        <input id="name" type="text" name="name" placeholder="Ama cachorros?" required>
+                        <input id="AmaCachorros" type="text" name="name" placeholder="Ama cachorros?" class="formulario">
                     </div>
-                </div>
+                
                 
                 <div class="login-button">
-                    <button><a href="#">Enviar</a></button>
+                    <button type="button" class="classButton"><a href= pagina-inicial.html>Enviar</a></button>
                 </div>
-            </form>
-            <div class="form-image">
-                <img src="WeLoveDogs/img/FIGURA05.png">
+
             </div>
-        </div>
+           
+            <div class="form-image">
+                <figure>
+                    <img src="WeLoveDogs/img/FIGURA05.png">
+                </figure>
+            </div>
+        </section>
     </div> 
+    </main>
 </body>
 </html>
