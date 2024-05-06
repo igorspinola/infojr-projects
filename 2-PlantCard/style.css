@@ -28,6 +28,7 @@ img{
 
 div{
     background-color: #DFDFD6;
+    height: 0px;
 }
 
 /* HEADER */
@@ -60,6 +61,7 @@ p{
 /* FOOTER */
 footer{
     background-color: #DFDFD6;
+    margin-top: 50px;
 }
 
 .doguito{
@@ -76,8 +78,10 @@ h2{
 
 .doguito{
     display: flex;
-    margin-top: 70px;
+    margin-top: 30px;
     margin-left: 30px;
+    height: 0px;
+    width: 0px;
 }
 
 .imgCachorro{
@@ -95,6 +99,10 @@ h2{
 }
 
 .imgBotao{
-    margin-left: 300px;
+    margin-left: -18px;
     margin-top: 30px;
+}
+
+#imgRedes{
+    margin-left: 323px; 
 }
