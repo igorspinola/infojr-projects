@@ -1,0 +1,125 @@
+/* general styling */
+
+body {
+
+    background: #BCCDD0;
+    font-family: "Josefin Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+
+}
+
+p {
+    text-align: justify;
+    font-weight: 400;
+    font-size: 1rem;
+    
+}
+
+h1{
+    font-weight: 600;
+    font-size: 2.1rem;
+}
+
+#center {
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+
+/* font styling */
+
+    #lorem-ipsum {
+
+        font-family: Open Sans;
+        font-size: 1rem;
+        line-height: 1.3rem;
+        font-weight: 500;
+    }
+
+    #doguito {
+
+        font-family: Overpass;
+        font-weight: 500;
+        font-size: 1.5rem;
+        margin: 0.2rem 0 0 0;
+    }
+
+    #date {
+        font-family: Overpass;
+        font-weight: 500;
+        margin: 0.5rem 0 0 0 ;
+    }
+
+/* card styling */
+
+#card {
+
+    display: flex;
+    height: 30rem;
+    
+}
+
+#general-info {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background: #DFDFD6;
+    padding: 1.5rem;
+    border-radius: 0 1.8rem 1.8rem 0;
+    width: 32rem;
+}
+
+#user-info {
+    display: flex;
+
+}
+
+#user-area {
+    display: flex;
+    justify-content: space-between;
+}
+
+#doggo {
+    margin-right: 0.5rem;
+}
+
+/* menu */
+
+#menu {
+    display: flex;
+    position: relative;
+    top: 2rem;
+    align-self: flex-end;
+    width: 40%;
+    padding: 0rem 1rem;
+    border-radius: 1rem;
+    align-items: center;
+    justify-content: space-between;
+    background: #696F5A;
+
+
+}
+
+#menu > p {
+    color: #DFDFD6;
+}
+
+
+@media (max-width: 800px) {
+
+    #card {
+ 
+        flex-direction: column;
+        width: 25rem;
+        align-items: center;
+    }
+
+    #leaves {
+        transform: rotate(90deg);
+        transform-origin: center;
+    }
+  }
