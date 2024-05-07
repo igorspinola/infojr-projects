@@ -98,19 +98,25 @@ body{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    margin-top: 140px;
+    margin-top: 100px;
     margin-left: 300px;
 }
 
 .profile{
     display:flex;
-    
+    flex-direction: row;
+    margin-top: 40px;
 }
 
 .profile section {
     display: flex;
     flex-direction: column;
     margin-left: 10px;
+}
+
+.profile img {
+    width: 60px;
+    height: 60px;
 }
 
 .profile h2{
@@ -132,6 +138,52 @@ body{
     line-height: 20.26px;
     text-align: left;
 
+}
+
+.social{
+    margin-top: -20px;
+}
+
+.icons {
+    display: flex;
+    flex-direction: row;
+    width: 231.02px;
+    height: 44px;
+    padding: 10px 15px 10px 15px;
+    gap: 15px;
+    border-radius: 15px;
+    opacity: 0px;
+    background: #696F5A;
+    margin-bottom: 15px;
+
+}
+
+.icons h4 {
+    width: 84px;
+    height: 21px;
+    font-family: "Overpass";
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 25.32px;
+    text-align: left;
+    color: #DFDFD6;
+}
+
+.icons nav {
+    display: flex;
+    flex-direction: row ;
+    justify-content: space-between;
+}
+
+
+nav :nth-child(2),
+nav :nth-child(1){
+    margin-right: 10px;
+}
+
+.share {
+    margin-left: 170px;
+    
 }
 
 @media screen and (max-width: 916px) {
@@ -198,7 +250,7 @@ body{
         display: flex;
         flex-direction: row;
         justify-content: space-between;
-        margin-top: 70px;
+        margin-top: 20px;
         margin-left: -1px;
     }
     
@@ -232,6 +284,49 @@ body{
         line-height: 20.26px;
         text-align: left;
     
+    }
+    
+    .social{
+        margin-top: -10px;
+    }
+    
+    .icons {
+        display: flex;
+        flex-direction: row;
+        width: 221.02px; 
+        height: 34px;
+        padding: 5px 10px 5px 10px;
+        gap: 15px;
+        border-radius: 15px ;
+        opacity: 0px;
+        background: #696F5A;
+        margin-bottom: 15px;
+        margin-left: -89px;
+    
+    }
+    
+    .icons h4 {
+        width: 84px;
+        height: 21px;
+        font-family: "Overpass";
+        font-size: 20px;
+        font-weight: 500;
+        line-height: 25.32px;
+        text-align: left;
+        color: #DFDFD6;
+        margin-top: 2px;
+    }
+    
+    .icons nav {
+        display: flex;
+        flex-direction: row ;
+        justify-content: space-between;
+    }
+    
+    
+    nav :nth-child(2),
+    nav :nth-child(1){
+        margin-right: 13px;
     }
 
     .share{
