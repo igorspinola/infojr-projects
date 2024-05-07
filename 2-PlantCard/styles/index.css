@@ -1,4 +1,4 @@
-/* general styling */
+/* general styling -------------------------------------------------- */
 
 body {
 
@@ -29,7 +29,7 @@ h1{
     align-items: center;
 }
 
-/* font styling */
+/* font styling ------------------------------------------------*/
 
     #lorem-ipsum {
 
@@ -49,16 +49,17 @@ h1{
 
     #date {
         font-family: Overpass;
-        font-weight: 500;
+        font-weight: 600;
+        font-size: 0.9rem;
         margin: 0.5rem 0 0 0 ;
     }
 
-/* card styling */
+/* card styling ------------------------------------------------*/
 
 #card {
 
     display: flex;
-    
+    height: 28rem;
 }
 
 #general-info {
@@ -86,14 +87,16 @@ h1{
     margin-right: 0.5rem;
 }
 
-/* menu */
+/* menu ------------------------------------------------*/
 
 #menu {
+    
     display: flex;
     position: relative;
-    top: 2rem;
+    top: 01rem;
     align-self: flex-end;
     width: 40%;
+    height: 2.5rem;
     padding: 0rem 1rem;
     border-radius: 1rem;
     align-items: center;
@@ -103,10 +106,29 @@ h1{
 
 }
 
-#menu > p {
-    color: #DFDFD6;
+#menu > * {
+    margin-left: 0.7rem;
 }
 
+#menu > p {
+    white-space: nowrap;
+    color: #DFDFD6;
+    margin-left: 0;
+}
+
+#curtain {
+
+    position: absolute;
+    margin: 0;
+    left: 0;
+    width: 100%;
+    height: inherit;
+    background: #DFDFD6;
+    
+}
+
+
+/* mobile ------------------------------------------- */
 
 @media (max-width: 900px) {
 
@@ -114,6 +136,7 @@ h1{
  
         flex-direction: column;
         width: 20rem;
+        height: unset;
         align-items: center;
     }
 
@@ -135,7 +158,8 @@ h1{
     #menu {
 
         top: unset;
-        width: 10.65rem;
+        width: 11rem;
+        padding: 0 1rem 0 0.6rem;
         height: 2rem;
 
     }
@@ -143,5 +167,36 @@ h1{
     #user-area {
 
         margin-top: 1rem;
+    }
+
+    #menu > p {
+
+        margin-left: 0;
+        margin-top: 1.2rem
+    }
+
+    #date {
+
+        font-size: 1rem;
+    }
+    
+  }
+
+  .animation {
+
+    animation-name: reveal;
+    animation-duration: .5s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+
+}
+
+  @keyframes reveal {
+    0% {
+      width: 100%;
+    }
+    
+    100% {
+      width: 0%;
     }
   }
