@@ -137,10 +137,10 @@ body{
 @media screen and (max-width: 916px) {
     .card-container{
         margin-bottom: 200px;
-        width: 527px;
+        width: 350px;
         top: 294px;
         left: 523px;
-        height: 902px;
+        height: 750px;
         padding: 50px 30px 41px 30px;
         border-radius: 40px 30px;
         justify-content: space-evenly;
@@ -159,20 +159,20 @@ body{
     }
     
     .info img {
-        width: -29px;
-        height: 672px;
-        margin-right: 235px;
+        width: 350px;
+        height: 202px;
+        margin-right: -2px;
         margin-top: -50px;
-        border-radius: 30px 0 0 0;
+        border-radius: 30px 30px  0 0;
 
     }
     
     .info h1 {
         text-align: left;
-        margin-top: -630px;
-        margin-left: 300px;
-        width: 172px;
-        height: 0px;
+        margin-top: 20px;
+        margin-left: 5px;
+        width: 290px;
+        height: 72px;
         font-family:'minhafonte', Times, serif;
         font-size: 36px;
         font-weight: 600;
@@ -181,11 +181,11 @@ body{
     }
     
     .info p{
-        margin-top: 170px;
+        margin-top: 10px;
         display: flex;
-        width: 204px;
-        height: 354px;
-        margin-left: 300px;
+        width: 290px;
+        height: 286px;
+        margin-left: 0px;
         font-family: "Open Sans",sans-serif;
         font-size: 16px;
         font-weight: 400;
@@ -198,8 +198,8 @@ body{
         display: flex;
         flex-direction: row;
         justify-content: space-between;
-        margin-top: 190px;
-        margin-left: 30px;
+        margin-top: 70px;
+        margin-left: -1px;
     }
     
     .profile{
@@ -232,6 +232,10 @@ body{
         line-height: 20.26px;
         text-align: left;
     
+    }
+
+    .share{
+        margin-left: 80px;
     }
     
 }
