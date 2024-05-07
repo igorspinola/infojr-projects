@@ -23,6 +23,7 @@
 
 div{
     height: 0px;
+    width: 0px;
 }
 
 .imgPlantaMobile{
@@ -31,7 +32,10 @@ div{
 
 /* HEADER */
 header{
-    margin-left: 37px;
+    height: 118px;
+    margin-left: 30px;
+    display: flex;
+    align-items: center;
 }
 
 h1{
@@ -42,7 +46,9 @@ h1{
 
 /* MAIN */
 main{
-    margin-left: 37px;
+    width: 524px;
+    height: 154px;
+    margin-left: 30px;
 }
 
 p{
@@ -53,27 +59,36 @@ p{
 
 /* FOOTER */
 footer{
-    margin-top: 50px;
-}
-
-h2{
-    margin-top: 29px;
-    font-family: "Overpass";
-    font-size: 24px;
-}
-
-.doguito{
-    display: flex;
-    margin-top: 30px;
+    width: 524px;
+    height: 220px;
     margin-left: 30px;
 }
 
-.imgCachorro{
-    margin-top: 30px;
+.Share{
+    width: 524px;
+    height: 112px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    background-color: blue;
 }
 
-.textoFooter{
-    margin-left: 10px;
+.rodape{
+    width: 524px;
+    height: 60px;
+    margin-top: 7px;
+    display: flex;
+    justify-content: space-between;
+    background-color: red;
+}
+
+.doguito{
+    
+}
+
+h2{
+    font-family: "Overpass";
+    font-size: 24px;
 }
 
 .pData{
@@ -82,14 +97,6 @@ h2{
     font-weight: bold;
 }
 
-.imgBotao{
-    margin-left: -18px;
-    margin-top: 30px;
-}
-
-#imgRedes{
-    margin-left: 323px; 
-}
 
 /* RESPONSIVIDADE */ 
 @media (max-width: 492px) {
