@@ -25,6 +25,9 @@ div{
     height: 0px;
 }
 
+.imgPlantaMobile{
+    display: none;
+}
 
 /* HEADER */
 header{
@@ -94,5 +97,13 @@ h2{
         width: 100%;
         flex-wrap: wrap;
     }
-   
+    
+    .imgPlanta{
+        display: none;
+    }
+
+    .imgPlantaMobile{
+        display: block;
+    }
+
 }
