@@ -179,13 +179,8 @@ footer{
 }
 
 #menu{
-    display:none;
-}
-
-#menu.active{
-
+    visibility: hidden;
     align-self: flex-end;
-    display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
@@ -198,12 +193,31 @@ footer{
 
     background: #696F5A;
     border-radius: 15px;
-
+    width: 0;
     flex: none;
     flex-grow: 0;
     z-index: 2;
-
+    transition: .6s;
+    overflow: hidden;    
 }
+
+#menu.active{
+    display: flex;
+    width: 231.02px;
+    visibility: visible;
+}
+
+
+#share:hover{
+    cursor: pointer;
+    transform: scale(1.05);
+}
+
+.icon:hover{
+    cursor: pointer;
+    transform: scale(1.03);
+}
+
 
 
 
@@ -267,9 +281,12 @@ footer{
     }
 
     #menu{
-
-        width: 221.02px;
+        width: 0px;
         height: 34px;
+    }
+
+    #menu.active{
+        width: 221.02px;;
     }
 
 }
