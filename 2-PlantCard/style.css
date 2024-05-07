@@ -93,24 +93,28 @@ h2{
 
 /* RESPONSIVIDADE */ 
 @media (max-width: 492px) {
-    
+
+/* Altera o alinhamento dos itens */
     .container{
-        display: flex;
-        flex-direction: column;
-    }
-    
+    display: flex;
+    flex-direction: column;
+}
+
+/* Ajusta o tamanho da box pra tela mobile */
     .box {
-        width: 100%;
-        flex-wrap: wrap;
-        width: 350px;
-        height: 548px;
-    }
-    
-    .imgPlanta{
-        display: none;
-    }
+    width: 100%;
+    flex-wrap: wrap;
+    width: 350px;
+    height: 548px;
+}
+
+/* Troca a imagem da versão desktop para a versão mobile */
+    .imgPlantaDesktop{
+    display: none;
+}
 
     .imgPlantaMobile{
-        display: block;
-    }
+    display: block;
+}
+
 }
