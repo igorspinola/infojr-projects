@@ -58,7 +58,6 @@ h1{
 #card {
 
     display: flex;
-    height: 30rem;
     
 }
 
@@ -109,17 +108,40 @@ h1{
 }
 
 
-@media (max-width: 800px) {
+@media (max-width: 900px) {
 
     #card {
  
         flex-direction: column;
-        width: 25rem;
+        width: 20rem;
         align-items: center;
     }
 
     #leaves {
-        transform: rotate(90deg);
-        transform-origin: center;
+        
+        content: url(../assets/leaves_mobile.svg);
+        width: inherit;
+
+    }
+
+    #general-info {
+
+        width: unset;
+        border-radius: 0 0 1.8rem 1.8rem;
+    }
+
+    h1 {margin-top: 0;}
+
+    #menu {
+
+        top: unset;
+        width: 10.65rem;
+        height: 2rem;
+
+    }
+
+    #user-area {
+
+        margin-top: 1rem;
     }
   }
