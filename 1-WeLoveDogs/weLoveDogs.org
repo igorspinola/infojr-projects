@@ -1,0 +1,40 @@
+#+author: Fernando Barreto Costa
+
+:reveal_properties:
+#+reveal_root: https://cdn.jsdelivr.net/npm/reveal.js
+#+reveal_reveal_js_version: 4
+#+reveal_theme: night
+#+options: timestamp:nil toc:1 num:nil
+:end:
+
+* Apresentação do projeto WeLoveDogs
+- Merge Request
+  Disponível em [[https://gitlab.com/InfoJrUFBA/nucleos/2024/1-ciclo/nucleo-web/-/merge_requests/45][1 - WeLoveDogs]]
+* Recursos utilizados
+** Figma
+- Link: [[https://www.figma.com/file/83KrYRp9nXE4wyMIWgxu6O/WeLoveDogs---N%C3%BAcleo-Web?t=qTsHfGXf9Z2fo5Nu-0][Figma]]
+  - Imagens vetorizadas
+  - Fontes
+  - Códigos de cores
+  - Espaçamentos
+** Stylesheets pré-prontos
+- normalize.css
+  - Disponível no [[https://necolas.github.io/normalize.css/latest/normalize.css][GitHub]]
+  - Padroniza o CSS para vários dispositivos
+- reset.css
+  - Disponível no [[https://github.com/elad2412/the-new-css-reset][GitHub]]
+  - Reseta as propriedades de elementos
+** Técnicas úteis de debug
+*** Arquivo CSS oculto em .gitignore
+#+begin_src css
+/* Outline de elementos */
+,* {
+  outline: 1px solid red;
+}
+#+end_src
+** [0/5] Otimizações
+- [ ] Animações
+- [ ] Melhorar separação de responsabilidades
+- [ ] Responsividade
+- [ ] Back-End em Django
+- [ ] Deploy
