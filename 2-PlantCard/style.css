@@ -64,7 +64,7 @@ footer{
     margin-left: 30px;
 }
 
-.Share{
+.share{
     width: 524px;
     height: 112px;
     display: flex;
@@ -105,6 +105,7 @@ h2{
     .container{
     display: flex;
     flex-direction: column;
+    height: 876px;
 }
 
 /* Ajusta o tamanho da box pra tela mobile */
@@ -115,6 +116,34 @@ h2{
     height: 548px;
 }
 
+/* Ajusta o tamanho do header pra tela mobile */
+    header{
+        height: 107px;
+    }
+
+/* Ajusta o tamanho da main pra tela mobile */
+    main{
+        width: 290px;
+        height: 286px;
+    }
+
+/* Ajusta o tamanho do footer pra tela mobile */
+    
+    footer{
+        margin-top: 25px;
+        width: 290px;
+        height: 155px;
+    }
+
+    .share{
+        width: 290px;
+        height: 57px;
+    }
+
+    .rodape{
+        width: 290px;
+    }
+
 /* Troca a imagem da versão desktop para a versão mobile */
     .imgPlantaDesktop{
     display: none;
@@ -123,5 +152,4 @@ h2{
     .imgPlantaMobile{
     display: block;
 }
-
 }
