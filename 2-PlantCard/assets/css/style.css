@@ -20,7 +20,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 20px;
+    padding: 10px;
 
     background-color: var(--bg-principal);
 }
@@ -107,19 +107,21 @@ main {
 
     gap: 15px;
     padding: 8px 12px;
-    border-radius: 16px;
+    border-radius: 22px;
 
     background-color: var(--bg-social-med9a);
     position: absolute;
 
     bottom: 0;
-    right: -100%;
+    right: -200%;
+    visibility: hidden;
 
-    transition: right .5s, top .5s;
+    transition: right .2s, top .2s;
 }
 
 .section_info-socialmedia-position {
     right: 5px;
+    visibility: initial;
 }
 
 .section_info-socialmedia span {
@@ -161,10 +163,43 @@ main {
     }
 
     .section_info{
-        padding: 25px 30px 25px 30px;
+        padding: 20px 20px 25px 20px;
     }
 
     .section_info h1{
-        text-align: center;
+        text-align: left;
+    }
+
+    .section_info p{
+        margin-bottom: 35px;
+        text-align: left;
+    }
+
+    .section_info-socialmedia{
+        padding: 0 12px;
+    }
+
+    .section_info-socialmedia{
+        margin: 0;
+    }
+}
+
+@media screen and (max-width:400px){
+    .section_info h1{
+        font-size: 
+        36px;
+    }
+
+    .section_info p{
+        margin-bottom: 20px;
+
+    }
+
+    .section_info-text{
+        gap: 10px;
+    }
+
+    .section_info-socialmedia{
+        bottom: -15px;
     }
 }
