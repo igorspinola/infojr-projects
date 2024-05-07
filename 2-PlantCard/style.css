@@ -70,7 +70,6 @@ footer{
     display: flex;
     justify-content: flex-end;
     align-items: flex-end;
-    background-color: blue;
 }
 
 .rodape{
@@ -79,7 +78,6 @@ footer{
     margin-top: 7px;
     display: flex;
     justify-content: space-between;
-    background-color: red;
 }
 
 .imgBotao{
@@ -114,6 +112,7 @@ h2{
     flex-wrap: wrap;
     width: 350px;
     height: 548px;
+    border-radius: 0px 0px 30px 30px;
 }
 
 /* Ajusta o tamanho do header pra tela mobile */
@@ -128,7 +127,6 @@ h2{
     }
 
 /* Ajusta o tamanho do footer pra tela mobile */
-    
     footer{
         margin-top: 25px;
         width: 290px;
