@@ -178,7 +178,11 @@ footer{
 
 }
 
-.menu{
+#menu{
+    display:none;
+}
+
+#menu.active{
 
     align-self: flex-end;
     display: flex;
@@ -200,6 +204,8 @@ footer{
     z-index: 2;
 
 }
+
+
 
 .bottom {
     display: flex;
@@ -260,7 +266,7 @@ footer{
         text-align: left;
     }
 
-    .menu{
+    #menu{
 
         width: 221.02px;
         height: 34px;

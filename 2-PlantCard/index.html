@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css" />
     <title>PlantCard</title>
+    <script src="script.js"></script>
 </head>
 <body>
     <main class="card">
@@ -19,12 +20,13 @@
             </div>
 
             <div class="bottom">
-                <nav class="menu"> 
-                    <img src="assets/share-name.png">
-                    <img src="assets/facebook.png">
-                    <img src="assets/twitter.png">
-                    <img src="assets/pinterest.png">
-                </nav>
+
+                    <div id="menu">
+                        <img src="assets/share-name.png">
+                        <img src="assets/facebook.png">
+                        <img src="assets/twitter.png">
+                        <img src="assets/pinterest.png">
+                    </div>
 
                 <footer>
 
@@ -40,12 +42,12 @@
 
                     </div>
 
-                    <img src="assets/share.png">  
+                    <img id="share" src="assets/share.png" onclick="toggleMenu()">  
                     
 
                 </footer>
             </div>
-            
+
         </section>
 
     </main>
