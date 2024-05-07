@@ -1,9 +1,11 @@
-*{
-    margin: 0;
-    padding: 0;
-}
 body{
     background-color: #BCCDD0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin-block: 0;
+    margin-inline: 0;
 }
 h1{
     font-family: 'Josefin Sans',sans-serif;
@@ -11,23 +13,47 @@ h1{
     text-align: left;
     padding-top: 50px;
     font-size: 36px;
+    margin-top: 0;
 }
 p{
     font-family: 'Open Sans',sans-serif;
+    font-size: 16px;
     font-weight: 400;
+    margin-right: 20px;
+    text-align: justify;
 }
 .card{
     display: flex;
     background:#DFDFD6;
-    width: 875px;
-    height: 492px;
-    justify-content: space-between;
+    max-height: 492px;
+    max-width: 875px;
     border-radius: 30px;
-    align-self: center;
-    margin-top: 150px;
     
 }
 .descricao{
-    justify-content: flex-end;
-    padding-left: 30px
+    padding-left: 30px;
+}
+.autor{
+    padding-top: 100px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+}
+.identificacao{
+    font-family: 'Overpass',sans-serif;
+    font-weight: 500;
+}
+.compartilhar{
+    background-color:#696F5A;
+    padding: 8px;
+    border-radius: 30px;
+}
+.hamburguer{
+    margin-left: 305px;
+}
+.botao{
+    border: none;
+    background-color:#DFDFD6;
+    cursor: pointer;
 }
