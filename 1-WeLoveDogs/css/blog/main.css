@@ -17,7 +17,9 @@ body{
 
 .container-one-text{
     display: block;
+    width: fit-content;
 }
+
 .container-one-text h2{
     font-family: "Open Sans", sans-serif;
     font-weight: bold;
@@ -37,6 +39,7 @@ body{
 
 .container-two-text{
     display: block;
+    width: fit-content;
 }
 
 .container-two-text h2{
