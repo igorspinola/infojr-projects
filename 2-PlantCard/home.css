@@ -11,7 +11,7 @@
     justify-content: center;
 }
 
-.bloco1, .texto{
+.bloco1, .texto, .bloco2, .dados{
     
     display: flex;
     justify-content: center;
@@ -19,13 +19,15 @@
     border-radius: 30px;
 }
 
-.texto{
+.texto, .bloco2{
     display: flex;
     flex-direction: column;
     margin-left: 30px;
     margin-right: 30px;
     
 }
+
+
 
 p{
     background-color: transparent;
@@ -39,15 +41,39 @@ h1{
     text-align: justify;
     background-color: transparent;
     font-size: 30px;
-    margin-top: -160px;
+    margin-top: -120px;
 
 }
 
+h2{
+    font-family: Overpass;
+    font-size: 24px;
+    background-color: transparent;
+
+}
+
+h3{
+    font-family: Overpass;
+    font-size: 16px;
+    background-color: transparent;
+    margin-top: -2px;
+}
 
 picture{
     width: 100%;
     height: 100%;
 }
+
+.bloco2{
+    width: 160px;
+    height: 60px;
+}
+.dados{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
 
 @media screen and (max-width: 1120px){ 
 
@@ -72,8 +98,6 @@ picture{
     
     }
 
-    p{
-        margin-top: 2px;
-    }
+
     
 }
