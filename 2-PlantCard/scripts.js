@@ -5,4 +5,5 @@ share.addEventListener("click", showSocials);
 
 function showSocials() {
   iconBar.classList.toggle('show');
+  this.classList.toggle('clicked');
 }
