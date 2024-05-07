@@ -106,4 +106,8 @@ h2{
         display: block;
     }
 
+    .box{
+        width: 350px;
+        height: 548px;
+    }
 }
