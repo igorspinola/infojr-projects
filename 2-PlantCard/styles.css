@@ -1,0 +1,86 @@
+body{
+    width: 100vw;
+    height: 100vh;
+    font-family: "Open Sans", sans-serif;
+}
+
+.main{
+    background: #BCCDD0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+.main__article{
+    display: flex;
+    width: 45%;
+    height: 45%;
+}
+
+.main__article__image{
+    overflow: hidden;
+    width: 33%;
+    border-radius: 10px 0 0 10px;
+}
+
+.leaves-image{
+    object-fit: contain;
+    height: 100%;
+}
+
+.main__article__content{
+    background: #DFDFD6;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 67%;
+    padding: 10px;
+    border-radius: 0 10px 10px 0;
+}
+
+.post-title{
+    padding-top: 20px;
+    font-family: "Josefin Sans", sans-serif;
+    font-size: 1.8rem;
+}
+
+.post-text{
+    font-size: 0.8rem;
+}
+
+.post-data{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.post-data__profile{
+    display: flex;
+    align-items: center;
+}
+
+.post-data__profile__image{
+    overflow: hidden;
+    height: 60px;
+    width: 60px;
+    border-radius: 60px;
+    margin-right: 10px;
+}
+
+.profile-image{
+    object-fit: contain;
+    width: 100%;
+}
+
+.post-data__profile__info{
+
+}
+
+.post-data__button{
+    height: 46px;
+    width: 46px;
+    border-radius: 50%;
+    font-size: 1rem;
+}
