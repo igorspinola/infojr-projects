@@ -1,5 +1,4 @@
-/* share.css */
-
+@import url('https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,100..900;1,100..900&display=swap');
 :root {
     --green: #696F5A;
 }
@@ -14,28 +13,27 @@
 
 .conteudo-share {
     display: none;
+    text-align: center;
     position: absolute;
     top: auto; 
     left: auto; 
     background-color: var(--green);
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
-    border-radius: 5px;
+    border-radius: 15px 15px 15px 15px ;
+    height: 35px;
 }
 
-.btn-share:focus + .conteudo-share, 
-.conteudo-share:focus-within {
-    display: flex;
-    flex-direction: column;
-}
+
+
 .conteudo-share p {
     width: 100%;
     color: #DFDFD6;
-    font-family: Over pass;
+    font-family:Overpass;
     font-size: 20px;
     font-weight: 500;
     line-height: 25.32px;
-    text-align: center;
+    text-align: center center;
     margin: 0;
     align-items: flex-end;
 
@@ -43,16 +41,49 @@
 
 
 .conteudo-share img {
+    margin-top: auto;
     margin-right: 10px;
-    width: 30px;
-    height: 30px;
+    width: 24px;
+    height: 24px;
+}
+
+section {
+    position: relative;
 }
 
 #conteudo {
-    position: relative;
+    width: 80%; 
+    max-width: 300px; 
+    position: absolute;
+    right: 40px;
+   
 }
+
+
 
 .item {
     position: absolute;
     right: auto;
 }
+@media (max-width: 542px) {
+
+    
+#conteudo {
+    width: 80%; 
+    max-width: 300px; 
+    position: absolute;
+    right: 10px;
+   
+}
+
+}
+
+
+@media (max-width: 884px) {
+
+.conteudo-share {
+    right: 30%;
+}
+}
+
+
