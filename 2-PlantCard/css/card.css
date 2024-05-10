@@ -8,8 +8,8 @@ main {
 }
 section {
 	display:flex;
-	width: 34vw;
-	height: 30vw;
+	width: 40vw;
+	height: 34vw;
 
 }
 img {
@@ -18,19 +18,24 @@ img {
 }
 
 article {
+	box-sizing: border-box;
 	display: flex;
 	flex-direction: column;
 	background-color: #DFDFD6;
 	height:60%;
 	border-radius: 0 5% 5% 0;
-	padding:0 20px 0 20px;
+	padding:20px 20px 20px 20px;
 }
 
 h1 {
 	font-size: 2rem;
 	font-family: "Josefin Sans";
+	margin:1rem 0 1rem 0;
 }
 
 p {
 	font-family: "Open Sans";
+	font-size: 0.8rem;
+	margin: 0;
+	width:90%;
 }
