@@ -55,28 +55,29 @@ body {
 }   
 main, section, div {
     display: flex;
-    flex-direction: column;
-    
-    justify-content: center;
-    align-content: center;
-    align-items: center;
+    flex-direction: column;    
 }
     main {
+        justify-content: center;
+        align-content: center;
+        align-items: center;
+        
         margin: auto;
 }
     .div-principal {
         background: #DFDFD6;
         padding: 1.5rem 1.875rem;
-        border-radius: 0 0 30px 30px;
+        border-radius: 0 0 1.875rem 1.875rem;
 }
     .div-sub2 {
         flex-direction: row;
         justify-content: space-between;
 }
     .div-perfil {
-        display: flex;
         flex-direction: row;
+
         width: fit-content;
+        gap: 0.75rem;
 }
 
 
@@ -91,16 +92,16 @@ button {
     align-self: flex-end;
     visibility: hidden;
 
-    display: flex;
+    display: flex;https://special-waddle-r47p59rjpjj9c5qg-5500.app.github.dev/images/img2_plantas(d).png
     flex-direction: row;
     flex-wrap: nowrap;
     align-items: center;
 
     width: fit-content;
     gap: 1rem;
-    padding: 0.625rem 0 1rem 0;
+    padding: 0.625rem 1rem;
     margin: 4.25rem 0 0.5rem 0;
-    border-radius: 15px;
+    border-radius: 1rem;
     background-color: #696F5A;
 }
 
@@ -109,7 +110,7 @@ button {
 /* IMAGENS */
 
 #imagem-mobile, .div-principal {
-    width: 94vw;
+    max-width: 94vw;
 }
 #imagem-desktop {
     display: none;
@@ -128,12 +129,12 @@ button {
     }
     
     .div-principal {
-        width: 36.625rem;
-        border-radius: 0 30px 30px 0;
+        max-width: 55rem;
+        border-radius: 0 1.875rem 1.875rem 0;
     }
 
-    #imagem-desktop, .div-principal {
-        height: 30.625rem;
+    .div-principal, #imagem-desktop {
+        max-height: 30.625rem;
     }
     #imagem-mobile {
         display: none;
