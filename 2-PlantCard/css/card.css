@@ -80,15 +80,23 @@ img.share {
 
 .menu {
 	font-family: "Josefin Sans";
+	align-self: flex-end;
 
 }
 
 .menu_off {
 	display: none;
+	align-self: flex-end;
 }
 
 .plant_mobile {
 	display: none;
+}
+
+.footer {
+	display: flex;
+	flex-direction: column;
+
 }
 
 @media (max-width: 1680px) {
@@ -118,10 +126,6 @@ img.share {
 		font-size: 1.6rem;
 	}
 
-	.bar {
-		width: 90%;
-		height: 14%;
-	}
 
 }
 
@@ -165,4 +169,24 @@ img.share {
 	.plant_mobile {
 		display: block;
 	}
+	.share_bar {
+		display:flex;
+		flex-direction:column;
+		gap: 17px;
+	}
+	.bar {
+		display:flex;
+	}
+	
+	span {
+		alig
+	}
+}
+
+@media (max-width: 415px) {
+	span img {
+		width: 132px;
+		height: 25px;
+	}
+
 }
