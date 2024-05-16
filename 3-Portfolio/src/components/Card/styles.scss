@@ -1,0 +1,29 @@
+@import '../../styles/index.scss';
+
+#card {
+  @include flex(column, 1.25rem, 2.5rem);
+
+  div {
+    @include flex (column, 0.5rem, 0.5rem);
+
+    .button {
+      align-self: stretch;
+      margin-top: 1rem;
+    }
+  }
+
+  @media (min-width: 768px) {
+    flex-direction: row;
+
+    .reverso {
+      flex-direction: row-reverse;
+      gap: 0 2.5rem;
+    }
+
+    img {
+      width: 45vw;
+    }
+  }
+}
+
+

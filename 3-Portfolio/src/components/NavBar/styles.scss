@@ -1,0 +1,10 @@
+@import '../../styles/variables.scss/';
+
+#navbar {
+  display: flex;
+  visibility: visible;
+  color: black;
+
+  position: absolute;
+  top: 100px;
+}
