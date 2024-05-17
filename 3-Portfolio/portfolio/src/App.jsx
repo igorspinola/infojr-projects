@@ -2,10 +2,10 @@ import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import avatar from './assets/Avatar.svg'
+import circle from './assets/check-circle.svg'
 import './App.css'
 
 function App() {
-  const [count, setCount] = useState(0)
   const name = "Kevin"
 
   return (
@@ -13,10 +13,13 @@ function App() {
       <div class="avatar-div">
         <img src={avatar} className="avatar" alt="avatar" />
       </div>
+
       <h1>Hello.</h1>
       <h1>My name is {name}.</h1>
       <hr/>
+
       <div className="card">
+
         <p>
           I'm a Digital Product and UI Designer – creating digital experiences that are intuitive for real people and making complex processes easy to use.
         </p>
@@ -26,17 +29,15 @@ function App() {
         <p>
           I've got some <span>work on Dribbble</span>, some previous work at <span>Saga</span> and you can find me over on twitter and sometimes <span>on Medium too</span>. I also take <span>too many photos</span>.
         </p>
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
+        
+        <div class="work">
+          <img src={circle}  alt="circle" />
+          <div>
+            Available for work and general design goodness – <span>say hello</span>
+          </div>
+        </div>
       </div>
       <hr/>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
     </div>
   )
 }

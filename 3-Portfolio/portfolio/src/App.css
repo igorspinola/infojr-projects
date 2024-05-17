@@ -15,14 +15,11 @@
   --main--color: #0065FF;
 }
 
-.card {
-}
-
 h1 {
   font-family: "EB Garamond";
   margin: 0;
   color: var(--main--color);
-  font-size:4rem;
+  font-size:3.9rem;
 }
 
 span {
@@ -30,7 +27,7 @@ span {
 }
 
 p {
-  font-size:1.2rem;
+  font-size:1.1rem;
 }
 
 hr:first-of-type {
@@ -51,3 +48,16 @@ avatar-div {
 
 .avatar {
 }
+
+.work {
+  display: flex;
+  width:max-content;
+  margin: 2.5rem 0rem 3rem 0rem;
+  background-color: #F8F9FA;
+  border-radius: 1rem;
+  padding: 0.9rem;
+  justify-content: flex-start;
+  align-items:center;
+  gap:0.7rem;
+}
+
