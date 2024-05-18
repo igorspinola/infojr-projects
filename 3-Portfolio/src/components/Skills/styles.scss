@@ -1,32 +1,39 @@
-@import '../../styles/index.scss/';
+@import '../../styles/variables.scss/';
 
 #skills {
+  display: flex;
+  flex-direction: column;
+  place-items: center;
+  gap: 1.5rem;
 
   div {
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-  }
-
-  table {
-    display: inline-flex;
     flex-direction: column;
+    gap: 2rem;
 
-    
-    padding: 1rem;
-    gap: 0.5rem 0;
-    width: 14rem;
-    border: 0.125rem solid $azulzim;
-    border-radius: 1rem;
+    table {
+      display: inline-flex;
+      width: 18rem;
+      min-width: 18rem;
+
+      tr {
+        display: flex;
+        justify-content: space-between;
+      }
+    }
   }
 
+  // -- RESPONSIVITY
+  @media (min-width: 821px) {
+    align-items: stretch;
 
-  tr {
-    display: inline-flex;
-    justify-content: space-between;
-  }
+    section {
+      flex-direction: row;
+      justify-content: space-around;
 
-  .habilidade {
-    min-width: 13rem;
+      table {
+        width: 25vw;
+      }
+    }
   }
 }

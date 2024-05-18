@@ -1,22 +1,15 @@
-// -- HEADER
-#header {
-  display: flex;
-  justify-content: space-between;
-  width: 100vw;
-
-  height: 5rem;
-  padding: 0 6.25vw;
-  box-shadow: 0 1.5rem 4rem 0 #00000026;
-}
+@import './variables.scss';
 
 // -- MAIN
 #main { 
   display: flex;
   flex-direction: column;
   align-items: center;
+
+  padding: 2.5rem 0;
 }
 
-// -- DEMAIS SECTIONs
+// -- DEMAIS SECTIONS
 :where(#resumo, #sobre, #projetos) {
   @include flex(column, 1.5rem, 2.5rem);
   @include width;

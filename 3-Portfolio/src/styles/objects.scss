@@ -1,3 +1,5 @@
+@import './variables.scss';
+
 // -- SCROLLBAR
 html {
   overflow-x: hidden;
@@ -24,39 +26,47 @@ html {
   border-radius: 3rem;
   
   font-size: 0.75rem;
+  text-align: center;
 
   &:hover {
     background-color: $azulzim;
     color: $claro;
   }
 }
-.pseudo-button {
-  display: flex;
-  place-items: center;
-
-  width: max-content;
-  padding: 1.25rem;
-  gap: 0.625rem;
-  border-radius: 0.5rem;
-
-  font-size: 0.75rem;
-}
-
 
 // -- LINHA DIVISORIA
-hr {
-  @include width;
-  margin: 2.5rem 0 1.25rem 0;
-  border-color: $azulzim;
-  
-}
 
 // -- IMAGENS
 img {
   max-width: 82.5vw;
 }
+.foto-perfil {
+  width: 26.5vw;
+  max-width: 15rem;
+  border-radius: 100%;
+  box-shadow: 0 15.rem 4rem 0 #00000026;
+}
+
+// -- CAIXA
+.caixa {
+  display: flex;
+  flex-direction: column;
+  align-items:stretch;
+  justify-items: center;
+  
+  gap: 1rem;
+  padding: 1.5rem;
+  border: 0.125rem solid $azulzim;
+  border-radius: 1rem;
+  box-shadow: 0 1.5rem 4rem 0 #00000026;
+}
 
 // -- OUTROS
+hr {
+  @include width;
+  margin: 5rem 0 3rem 0;
+  border-color: $azulzim;
+}
 nav ul{
   list-style: none;
 }

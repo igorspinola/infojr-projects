@@ -12,24 +12,21 @@ $escuro-2: hsl(40, 3%, 23%);
   place-items: center;
   gap: $gap-1;
 
-  @media (min-width: 768px) {
+  @media (min-width: 821px) {
     gap: $gap-2;
     place-items: flex-start;
   }
 }
 @mixin width {
   width: 82.5vw;
-  @media (min-width: 768px) {
+  @media (min-width: 821px) {
     width: 67vw;
-}
+  }
 }
 @mixin nav-desktop($gap) {
   display: flex;
-  visibility: visible;
   align-items: center;
-
+  
   gap: $gap;
-
-  list-style: none;
 }
 

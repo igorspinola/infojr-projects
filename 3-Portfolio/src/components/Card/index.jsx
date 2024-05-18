@@ -1,21 +1,18 @@
+// -- STYLES
 import './styles.scss/';
 
-
-
+// -- FUNCTION
 function Card(props) {
-  if (props.tipo == 'reverso') {
-    document.getElementById('card').classList.add('reverso')
-  };
 
   return (
-    <section id='card'>
+    <section id='card' className={props.tipo || 'card'}>
 
-      <img className='imagem-projeto' src={props.imagem} alt='/'/>
+      <img className='imagem-projeto' src={props.imagem} alt={props.desc || 'imagem do projeto'} />
 
       <div>
         <h4>{props.nome}</h4>
         <p>{props.texto}</p>
-        <button className='button'>Mais</button>
+        <a className='button' href={props.link} target='_blank'>Mais</a>
       </div>
 
     </section>

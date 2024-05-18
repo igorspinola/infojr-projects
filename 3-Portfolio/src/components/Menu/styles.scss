@@ -6,7 +6,7 @@
   button {
     align-self: flex-start;
 
-    margin: 1.5rem 1rem;
+    margin: 1.5rem;
     background-color: transparent;
     border: none;
   }
@@ -20,8 +20,8 @@
 
       gap: 1.5rem;
 
-      animation: aparecer 1s alternate;
-      // animation-duration: 1s;
+      animation-name: aparecer;
+      animation-duration: 1s;
     }
     
     .hmenu-1 ul {
@@ -40,7 +40,6 @@
   
           &:hover {
             background-color: hsla(216, 100%, 50%, 0.2);
-            color: $azulzim;
           }
       }
     }
@@ -50,16 +49,15 @@
       align-items: center;
       justify-content: space-around;
       }
-    
   }
-}
 
-@media (min-width: 768px) {
-  #h-menu {
+  // -- RESPONSIVITY
+  @media (min-width: 821px) {
     display: none;
   }
 }
 
+// -- ANIMATION
 @keyframes aparecer {
   from {
     opacity: 0
@@ -67,5 +65,4 @@
   to {
     opacity: 1;
   }
-
 }

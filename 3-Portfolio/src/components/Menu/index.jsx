@@ -1,26 +1,44 @@
 // -- REACT
 import { useState } from 'react';
-// -- STYLE
+// -- STYLES
 import './styles.scss';
-// -- IMAGES
-import menuHamburger1 from '../../assets/hmenu-1.svg/';
-import menuHamburger2 from '../../assets/hmenu-2.svg/';
-import linkedin from '../../assets/iconeLinkedin.svg/';
-import github from '../../assets/iconeGithub.svg/';
-import figma from '../../assets/iconeFigma.svg/';
+// -- ASSETS
+import imagem_fechado from '../../assets/hmenu-1.svg/';
+import imagem_aberto from '../../assets/hmenu-2.svg/';
+// -- COMPONENTS
+import ILinkedin from '../../Icons/ILinkedin';
+import IGithub from '../../Icons/IGithub';
+import IInsta from '../Icons/IInsta';
 
 // -- FUNCTION
 function Menu() {
-  const [icone, setIcone] = useState(menuHamburger1)
+  const [icone, setIcone] = useState(imagem_fechado);
+  const [hMenu, setHMenu] = useState(false);
 
   const hMenuToggle = () => {
-    const hMenu = document.getElementById('menu-hamburger');
-    const main = document.getElementById('main');
+    setHMenu(!hMenu);
+  };
 
-    hMenu.classList.toggle('aberto');
-    main.classList.toggle('white-out');
-    icone == menuHamburger1? setIcone(menuHamburger2): setIcone(menuHamburger1);
-  }
+  const resetHMenu = () => {
+    if (window.innerWidth > 768) {
+      setHMenu(false);
+  }};
+  
+  useEffect(() => {
+    const menuHamburgerRef = document.getElementById('menu-hamburger');
+    const mainRef = document.getElementById('main');
+    
+    setIcone(icone == imagem_fechado? imagem_aberto: imagem_fechado);
+    menuHamburgerRef.classList.toggle('aberto');
+    mainRef.classList.toggle('white-out');
+  }, [hMenu]);
+
+  useEffect(() => {
+    window.addEventListener('resize', resetHMenu);
+    resetHMenu();
+    return () => {
+      window.removeEventListener('resize', resetHMenu);
+  };},[]);
 
   return (
     <div id='h-menu'>
@@ -32,25 +50,24 @@ function Menu() {
       <section id='menu-hamburger'>
 
         <nav className='hmenu-1'><ul>
-          <li><a href="/">Sobre</a></li>
-          <li><a href="/">Skills</a></li>
-          <li><a href="/">Projetos</a></li>
+          <li><a href="#sobre">Sobre</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projetos">Projetos</a></li>
         </ul></nav>
 
         <nav className='hmenu-2'><ul>
-          <li><a href="https://www.linkedin.com/in/teles-pedro/" target="_blank">
-              <img src={linkedin} alt="icone do linkedin"/>
-          </a></li>
-          <li><a href="https://github.com/eusouopeu" target="_blank">
-              <img src={github} alt="icone do github"/>
-          </a></li>
-          <li><a href="https://figma.com/@eusouopeu" target="_blank">
-              <img src={figma} alt="icone do figma"/>
-          </a></li>
+          <li>
+            <ILinkedin link="https://www.linkedin.com/in/teles-pedro/" />
+          </li>
+          <li>
+            <IGithub link="https://github.com/eusouopeu" />
+          </li>
+          <li>
+            <IInsta link="https://www.instagram.com/eusouopeu" />
+          </li>
         </ul></nav>
 
       </section>
-
 
     </div>
   )

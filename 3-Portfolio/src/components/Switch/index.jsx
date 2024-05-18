@@ -1,24 +1,24 @@
-import { useState } from 'react';
-import { useEffect } from 'react';
+// -- REACT
+import { useState, useEffect } from 'react';
+// -- STYLES
 import './styles.scss';
 
-function Switch() {
-  const [tema, setTema] = useState('claro');
+function Switch(props) {
+  const [tipo, setTipo] = useState(props.tipo1);
 
-  document.body.setAttribute('tema-atual', tema);
+  document.body.setAttribute(props.classe, tipo);
   
-  function switchMode() {
-    const novoTema = tema == 'claro'? 'escuro': 'claro';
-    setTema(novoTema);
+  function switchTipo() {
+    setTipo(tipo == props.tipo1? props.tipo2 : props.tipo1);
   };
 
   useEffect(() => {
-    document.body.setAttribute('tema-atual', tema);
-  }, [tema]);
+    document.body.setAttribute(props.classe, tipo);
+  }, [tipo]);
 
   return (
     <div id='switch'>
-      <input type='checkbox' id='checkbox' onChange={switchMode}/>
+      <input type='checkbox' id='checkbox' onChange={switchTipo}/>
       <label htmlFor='checkbox'></label>
     </div>
   );
