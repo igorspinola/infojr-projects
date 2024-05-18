@@ -93,6 +93,7 @@ function App() {
       {/* DESKTOP END */}
 
       {/* MOBILE */}
+          <div className="some_cont">
           <Bmenu />            
           <div className="top_mobile">
             <div className="avatar-div">
@@ -169,6 +170,7 @@ function App() {
 
             </div>
             
+          </div>
           </div>
           {/* MOBILE END */}
 
