@@ -6,8 +6,8 @@ import './styles.scss';
 import imagem_fechado from '../../assets/hmenu-1.svg/';
 import imagem_aberto from '../../assets/hmenu-2.svg/';
 // -- COMPONENTS
-import ILinkedin from '../../Icons/ILinkedin';
-import IGithub from '../../Icons/IGithub';
+import ILinkedin from '../Icons/ILinkedin';
+import IGithub from '../Icons/IGithub';
 import IInsta from '../Icons/IInsta';
 
 // -- FUNCTION

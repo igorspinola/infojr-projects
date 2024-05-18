@@ -4,9 +4,9 @@ import './styles.scss';
 import NavBar from '../NavBar/index';
 import Switch from '../Switch/index.jsx/';
 // -- IMAGES
-import linkedin from '../../assets/iconeLinkedin.svg/';
-import github from '../../assets/iconeGithub.svg/';
-import figma from '../../assets/iconeFigma.svg/';
+import ILinkedin from '../Icons/ILinkedin';
+import IGithub from '../Icons/IGithub';
+import IInsta from '../Icons/IInsta';
 
 
 // -- FUNCTION
