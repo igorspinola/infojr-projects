@@ -3,6 +3,7 @@ import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import avatar from './assets/photo.jpeg'
 import image from './assets/print.png'
+import imagef from './assets/printf.png'
 import circle from './assets/check-circle.svg'
 import Images from  './components/SocialMedia'
 import Bmenu from './components/Bmenu.jsx'
@@ -85,7 +86,7 @@ function App() {
             </span>
           </span>
 
-          <img src={image} className="image" alt="image" />
+          <img src={imagef} className="image" alt="image" />
 
         </div>
         
