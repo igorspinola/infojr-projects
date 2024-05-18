@@ -106,3 +106,13 @@ input:checked + .slider:before {
 .slider.round:before {
   border-radius: 50%;
 }
+
+@media (max-width: 1030px) {
+  .sections {
+    display:none;
+  }
+
+  .right nav {
+    display:none;
+  }
+}
