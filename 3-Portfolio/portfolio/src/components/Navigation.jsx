@@ -5,7 +5,7 @@ function Navigation() {
   return (
     <header>
       <div className="left">
-        <h2>Kevin Bennett</h2>
+        <h2>Igor Spínola</h2>
         <div className="sections">
           <div>Section two</div>
           <div>Section three</div>

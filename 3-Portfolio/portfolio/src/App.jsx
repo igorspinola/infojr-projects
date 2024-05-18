@@ -1,16 +1,17 @@
 import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
-import avatar from './assets/Avatar.svg'
+import avatar from './assets/photo.jpeg'
+import image from './assets/print.png'
 import circle from './assets/check-circle.svg'
 import './App.css'
 
 function App() {
-  const name = "Kevin"
+  const name = "Igor"
 
   return (
-    <div class="article">
-      <div class="avatar-div">
+    <div className="article">
+      <div className="avatar-div">
         <img src={avatar} className="avatar" alt="avatar" />
       </div>
 
@@ -30,14 +31,58 @@ function App() {
           I've got some <span>work on Dribbble</span>, some previous work at <span>Saga</span> and you can find me over on twitter and sometimes <span>on Medium too</span>. I also take <span>too many photos</span>.
         </p>
         
-        <div class="work">
+        <div className="work">
           <img src={circle}  alt="circle" />
           <div>
             Available for work and general design goodness – <span>say hello</span>
           </div>
         </div>
+
       </div>
+
       <hr/>
+
+      <div className="the-container">
+        <span className="title"><h3>Title</h3></span>
+        <p className="title_text">
+          Line of copy in here to decribe this section. Line of copy in here to decribe this section. Line of copy in here to decribe this section. Line of copy in here to decribe this section. 
+        </p>
+
+        <div className="image_container">
+
+          <img src={image} className="image" alt="image" />
+
+          <span className="one">
+            <h3>Title</h3>
+            <p>
+              Leading, implementing and evolving engaging customer experiences and UI foundations for every touch-point across various platforms.
+            </p>
+            <span>
+              Button Primary Light
+            </span>
+
+          </span>
+
+        </div>
+
+        <div className="image_container">
+          
+          <span className="two">
+            <h3>Title</h3>
+            <p>
+              Leading, implementing and evolving engaging customer experiences and UI foundations for every touch-point across various platforms.
+            </p>
+            <span>
+              Button Primary Light
+            </span>
+          </span>
+
+          <img src={image} className="image" alt="image" />
+
+        </div>
+        
+      </div>
+
     </div>
   )
 }

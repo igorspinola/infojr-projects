@@ -22,7 +22,23 @@ h1 {
   font-size:3.9rem;
 }
 
-span {
+p span {
+  color: var(--main--color);
+}
+
+.work span {
+  color: var(--main--color);
+}
+
+.title h3 {
+  color: var(--main--color);
+}
+
+.one span {
+  color: var(--main--color);
+}
+
+.two span {
   color: var(--main--color);
 }
 
@@ -47,6 +63,60 @@ avatar-div {
 }
 
 .avatar {
+  width: 100px;
+  height: 100px;
+  border-radius:50%;
+}
+
+.image {
+  width: 640px;
+  height: 370px;
+}
+
+.image_container {
+  width:100%;
+  display:flex;
+  justify-content:flex-start;
+  margin-bottom: 2rem;
+}
+
+.one {
+  display:flex;
+  width:30%;
+  padding: 0rem 1.5rem 1.5rem 1.5rem;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.two {
+  display:flex;
+  width:30%;
+  padding: 0rem 1.5rem 1.5rem 1.5rem;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.image_container div h3 {
+  width:max-content;
+  margin:0;
+}
+
+.image_container div p {
+  width:50%;
+}
+
+.image_container div span {
+  width:max-content;
+  border: 1px solid #0065FF;
+  border-radius: 1rem;
+  padding:1rem;
+}
+
+.image_container span span {
+  width:max-content;
+  border: 1px solid #0065FF;
+  border-radius: 1rem;
+  padding:1rem;
 }
 
 .work {
@@ -61,3 +131,14 @@ avatar-div {
   gap:0.7rem;
 }
 
+h3 {
+  font-size: 1.5rem;
+}
+
+.title_text {
+  width:80%;
+}
+
+.the-container: {
+  width:100%;
+}
