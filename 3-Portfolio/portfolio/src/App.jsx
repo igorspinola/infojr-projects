@@ -4,6 +4,8 @@ import viteLogo from '/vite.svg'
 import avatar from './assets/photo.jpeg'
 import image from './assets/print.png'
 import circle from './assets/check-circle.svg'
+import Images from  './components/SocialMedia'
+import Bmenu from './components/Bmenu.jsx'
 import './App.css'
 
 function App() {
@@ -91,8 +93,8 @@ function App() {
       {/* DESKTOP END */}
 
       {/* MOBILE */}
+          <Bmenu />            
           <div className="top_mobile">
-
             <div className="avatar-div">
               <img src={avatar} className="avatar" alt="avatar" />
               <h1>Hello.</h1>

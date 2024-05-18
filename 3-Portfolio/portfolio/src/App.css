@@ -205,6 +205,10 @@ h3 {
 
 @media (max-width: 1030px) {
 
+  .burger {
+    align-self:flex-start;
+  }
+
   .top_mobile {
     display:flex;
     flex-direction:column;
