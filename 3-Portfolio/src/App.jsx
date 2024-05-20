@@ -1,12 +1,10 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
 import instagramLogo from './assets/instagram-img.svg'
 import Twitter from './assets/twitter-img.svg'
 import figma from './assets/figma-img.svg'
 import eu from './assets/GabrielLeal.jpg'
 import verificado from './assets/verificado-img.svg'
 import x from './assets/X-img.svg'
-
+import Menu from './Menu'
 
 
 
@@ -14,8 +12,11 @@ export default function MyApp() {
 
   return (
 
+
+  
   
     <main className='container'>
+      <Menu/>
       <div className='content-div'>
       <header className="Cabecalho">
         <div className="Cabecalho-esquerda">
@@ -35,7 +36,23 @@ export default function MyApp() {
           </div>
           <p>Dark mode</p>
           </div>
+          
         </header>
+        <div className="menu">
+        <div className="menuListras">
+            
+        </div>
+        <div className="menu-mobile">
+          <div className="opcoes-mobile">
+          </div>
+          <div className="imagens-mobile">
+          <img src={Twitter}></img>
+          <img src={figma}></img>
+          <img src={instagramLogo}></img>
+          </div>
+        </div>
+        </div>
+       
 
       
     
