@@ -1,5 +1,10 @@
+@font-face {
+  font-family: Hermit;
+  src: url(./assets/HurmitNerdFont-Regular.otf);
+}
+
 :root {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  font-family: Hermit, Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
   font-weight: 400;
 
@@ -22,12 +27,26 @@ a:hover {
   color: #535bf2;
 }
 
-body {
+.root {
   margin: 0;
   display: flex;
   place-items: center;
   min-width: 320px;
   min-height: 100vh;
+}
+
+html {
+  padding: 0;
+  margin: 0;
+  height:100%;
+  background-color: #c4ac7c;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  height:100%;
+  background-color: #c4ac7c;
 }
 
 h1 {
@@ -36,10 +55,10 @@ h1 {
 }
 
 button {
-  border-radius: 8px;
+  border-radius: 12px;
   border: 1px solid transparent;
-  padding: 0.6em 1.2em;
-  font-size: 1em;
+  padding: 0.8em 1.7em;
+  font-size: 1.7em;
   font-weight: 500;
   font-family: inherit;
   background-color: #1a1a1a;
