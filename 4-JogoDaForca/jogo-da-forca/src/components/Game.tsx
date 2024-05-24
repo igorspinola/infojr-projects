@@ -1,28 +1,39 @@
 import { useState } from 'react'
-import image from '../assets/images/0.jpg'
+import {Zero, One, Two, Three, Four, Five, Six} from '../assets/images/index.ts'
 
 export default function Game(params:type) {
-  const [count, setCount] = useState(0)
+  const [index, setIndex] = useState(0)
   const [startGame, setStartGame] = useState(false)
+  const imagesArray = [Zero, One, Two, Three, Four, Five, Six]
 
   const handleStart = () => {
-    const newCount = count + 1
-    setCount(newCount)
-
     setStartGame(true)
   }
-    
+
+  const handleSubmit = () => {
+    const newIndex = index + 1
+    setIndex(newIndex)
+
+    const input = document.querySelector("input")
+    input.value = ""
+  }
 
 
   if (startGame) {
     return(
       <>
         <h1>Começou o jogo</h1>
-        <img src={image} alt="hangman"/>
+        <img src={imagesArray[index]} alt="hangman"/>
         <div className="card">
-          <input type="text" maxlength="1" name="letter" className="myInput"/>
+          <form onSubmit={ e => { 
+            e.preventDefault()
+            handleSubmit()
+            }
+          }>
+            <input type="text" maxlength="1" name="letter" className="myInput"/>
+          </form>
         </div>
-        count is {count}
+        index is {index}
       </>
     )
   }
@@ -31,13 +42,13 @@ export default function Game(params:type) {
   return(
     <>
       <h1>Jogo da Forca</h1>
-      <img src={image} alt="hangman"/>
+      <img src={imagesArray[index]} alt="hangman"/>
       <div className="card">
         <button className="myInput" onClick={handleStart}>
           Jogar
         </button>
       </div>
-      count is {count}
+      index is {index}
     </>
   )
   
