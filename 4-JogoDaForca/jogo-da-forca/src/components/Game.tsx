@@ -8,7 +8,8 @@ export default function Game(params:type) {
   const [lettersArray, setLettersArray] = useState([])
   const [gameWon, setGameWon] = useState(false)
   const [gameLost, setGameLost] = useState(false)
-  const [text, setText] = useState("")
+  const [wonNumber, setWonNumber] = useState(0)
+  const [lostNumber, setLostNumber] = useState(0)
   const imagesArray = [Zero, One, Two, Three, Four, Five, Six]
   const word = "tomada"
 
@@ -45,13 +46,13 @@ export default function Game(params:type) {
     }
     if (array.join("") == word) {
       setGameWon(true)
-      setText("") 
+      setWonNumber(wonNumber + 1)
     }
 
     if (!word.includes(input.value)) {
       if (index == 5) {
         setGameLost(true)
-        setText("") 
+        setLostNumber(lostNumber + 1)
       }
       const newIndex = index + 1
       setIndex(newIndex) 
@@ -80,7 +81,6 @@ export default function Game(params:type) {
 
           <Word lettersArray={lettersArray} />
         </div>
-        <h1>{text}</h1>
       </>
     )
   }
@@ -95,7 +95,8 @@ export default function Game(params:type) {
           </button>
           <Word lettersArray={lettersArray} />
         </div>
-        <h1>{text}</h1>
+        <p>Partidas ganhas: {wonNumber}</p>
+        <p>Partidas perdidas: {lostNumber}</p>
       </>
     )
   }
@@ -110,7 +111,9 @@ export default function Game(params:type) {
           </button>
           <Word lettersArray={lettersArray} />
         </div>
-        <h1>{text}</h1>
+        <p>Partidas ganhas: {wonNumber}</p>
+        <p>Partidas perdidas: {lostNumber}</p>
+        
       </>
     )
   }
@@ -125,6 +128,8 @@ export default function Game(params:type) {
           Jogar
         </button>
       </div>
+      <p>Partidas ganhas: {wonNumber}</p>
+      <p>Partidas perdidas: {lostNumber}</p>
     </>
   )
   
