@@ -1,7 +1,7 @@
 export default function Word(props) {
 
   return(
-    <div>
+    <div className="word-container">
       {props.lettersArray.map((letter) => {
               return <div className="letter">{letter}</div>
             })}
