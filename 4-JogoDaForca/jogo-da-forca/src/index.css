@@ -109,10 +109,6 @@ button:focus-visible {
 }
 
 @media only screen and (max-width: 2708px) and (min-width: 1921px)  {
-  main {
-    max-width: 1380px;
-  }
-
   h1 {
     font-size: 4em;
   }
@@ -139,6 +135,12 @@ button:focus-visible {
 
 }
 
+@media (max-width: 500px) {
+  h1 {
+    font-size: 2em;
+  }
+
+}
 @media (max-width: 385px) {
   .myInput {
     width:180px;
@@ -154,6 +156,15 @@ button:focus-visible {
     border: 1px solid transparent;
     padding: 0.6em 1.5em;
     font-size: 1.2em;
+  }
+
+  .letter {
+    min-width:9px;
+    font-size:0.9rem;
+  }
+
+  h1 {
+    font-size: 1.6em;
   }
 
 }
