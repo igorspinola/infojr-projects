@@ -2,18 +2,44 @@ import { useState } from 'react'
 import {Zero, One, Two, Three, Four, Five, Six} from '../assets/images/index.ts'
 import Word from './Word.tsx'
 
-export default function Game(params:type) {
-  const [index, setIndex] = useState(0)
-  const [startGame, setStartGame] = useState(false)
+export default function Game() {
+  const [index, setIndex] = useState<number>(0)
+  const [startGame, setStartGame] = useState<boolean>(false)
   const [lettersArray, setLettersArray] = useState([])
-  const [gameWon, setGameWon] = useState(false)
-  const [gameLost, setGameLost] = useState(false)
-  const [wonNumber, setWonNumber] = useState(0)
-  const [lostNumber, setLostNumber] = useState(0)
+  const [wrongArray, setWrongArray] = useState([])
+  const [gameWon, setGameWon] = useState<boolean>(false)
+  const [gameLost, setGameLost] = useState<boolean>(false)
+  const [wonNumber, setWonNumber] = useState<number>(0)
+  const [lostNumber, setLostNumber] = useState<number>(0)
   const imagesArray = [Zero, One, Two, Three, Four, Five, Six]
-  const word = "tomada"
+
+  const words = [
+  "lento",
+  "vento",
+  "raquete",
+  "segurança",
+  "sol",
+  "nuvem",
+  "tempo",
+  "tempestade",
+  "furacão",
+  "bode",
+  "cachorro",
+  "gato",
+  "cavalo",
+  "presidente",
+  "vaca",
+  "folha",
+  "explosão",
+  "sapato",
+  "placas",
+  "crocodilo"
+  ]
+
+  const [word, setWord] = useState<string>("")
 
   const handleStart = () => {
+    setWord(words[Math.floor(Math.random() * 10)])
     setStartGame(true)
   }
 
@@ -21,13 +47,16 @@ export default function Game(params:type) {
     setIndex(0)
     setStartGame(false)
     setLettersArray([])
+    setWrongArray([])
     setGameWon(false)
     setGameLost(false)
+    setWord("")
   }
 
   const handleSubmit = () => {
     const input = document.querySelector("input")
     const array = []
+    const newArray = [...wrongArray]
     for (let i = 0; i < word.length; i++) {
       const letter = word.charAt(i)
       if (lettersArray.length == 0) {
@@ -50,6 +79,9 @@ export default function Game(params:type) {
     }
 
     if (!word.includes(input.value)) {
+      const wrong = input.value
+      newArray.push(wrong)
+
       if (index == 5) {
         setGameLost(true)
         setLostNumber(lostNumber + 1)
@@ -59,7 +91,7 @@ export default function Game(params:type) {
     }
 
     setLettersArray(array)
-
+    setWrongArray(newArray)
 
     input.value = ""
   }
@@ -80,6 +112,10 @@ export default function Game(params:type) {
           </form>
 
           <Word lettersArray={lettersArray} />
+
+          <div className="wrong-container">
+            <Word lettersArray={wrongArray} />
+          </div>
         </div>
       </>
     )

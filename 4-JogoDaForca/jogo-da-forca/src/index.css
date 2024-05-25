@@ -103,6 +103,61 @@ button:focus-visible {
   border-bottom: black 3px solid;
 }
 
+.wrong-container .letter {
+  color:red;
+  border: transparent;
+}
+
+@media only screen and (max-width: 2708px) and (min-width: 1921px)  {
+  main {
+    max-width: 1380px;
+  }
+
+  h1 {
+    font-size: 4em;
+  }
+
+  .myInput {
+    width:300px;
+    border-radius: 12px;
+    border: 1px solid transparent;
+    padding: 0.9em 1.7em;
+    font-size: 2.3em;
+  }
+
+  .myInputAgain {
+    width:300px;
+    border-radius: 12px;
+    border: 1px solid transparent;
+    padding: 0.9em 1.7em;
+    font-size: 1.6em;
+  }
+
+  p {
+    font-size: 1.6em;
+  }
+
+}
+
+@media (max-width: 385px) {
+  .myInput {
+    width:180px;
+    border-radius: 12px;
+    border: 1px solid transparent;
+    padding: 0.6em 1.5em;
+    font-size: 1.4em;
+  }
+
+  .myInputAgain {
+    width:180px;
+    border-radius: 12px;
+    border: 1px solid transparent;
+    padding: 0.6em 1.5em;
+    font-size: 1.2em;
+  }
+
+}
+
 @media (prefers-color-scheme: light) {
   :root {
     color: #213547;
