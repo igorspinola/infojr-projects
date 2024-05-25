@@ -39,7 +39,7 @@ export default function Game() {
   const [word, setWord] = useState<string>("")
 
   const handleStart = () => {
-    setWord(words[Math.floor(Math.random() * 10)])
+    setWord(words[Math.floor(Math.random() * 20)])
     setStartGame(true)
   }
 
