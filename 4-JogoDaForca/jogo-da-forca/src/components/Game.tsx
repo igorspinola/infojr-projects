@@ -147,6 +147,8 @@ export default function Game() {
           </button>
           <Word lettersArray={lettersArray} />
         </div>
+
+        <p>Palavra certa: {word}</p>
         <p>Partidas ganhas: {wonNumber}</p>
         <p>Partidas perdidas: {lostNumber}</p>
         
