@@ -5,8 +5,8 @@ import eu from './assets/GabrielLeal.jpg'
 import verificado from './assets/verificado-img.svg'
 import x from './assets/X-img.svg'
 import Menu from './Menu'
-
-
+import welovedogs from './assets/welovedogs.png'
+import plantcard from './assets/plantcard.png'
 
 export default function MyApp() {
 
@@ -86,7 +86,7 @@ export default function MyApp() {
               <p>Line of copy in here to decribe this section. Line of copy in here to decribe this section. Line of copy in here to decribe this section. Line of copy in here to decribe this section. </p>
               </div>
             <div className="imagem-x">
-            <img src={x}></img>
+            <img src={welovedogs}></img>
               <div className="imagem-x-direita">
                 <h4>Title</h4>
               <div className="paragrafo2">
@@ -108,7 +108,7 @@ export default function MyApp() {
               
                 </div>
               </div>
-              <img src={x}></img>
+              <img src={plantcard}></img>
             </div>
 
 
