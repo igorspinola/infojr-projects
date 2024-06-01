@@ -1,5 +1,6 @@
 import './blog.css'
 import Image from 'next/image'
+import Link from 'next/link'
 
 export default function BlogLayout({
   children, // will be a page or nested layout
@@ -12,12 +13,24 @@ export default function BlogLayout({
       <nav></nav>
 
       <header>
-        <Image
-          src="/today.svg"
-          alt="AITODAY"
-          width={209}
-          height={59}
-        />
+        <Link href="/blog">
+          <Image
+            className="todaydesktop"
+            src="/today.svg"
+            alt="AITODAY"
+            width={209}
+            height={59}
+          />
+        </Link>
+        <Link href="/blog">
+          <Image
+            className="todaymobile"
+            src="/todaymobile.svg"
+            alt="AITODAY"
+            width={105}
+            height={30}
+          />
+        </Link>
         <input name="myInput" />
       </header> 
 
