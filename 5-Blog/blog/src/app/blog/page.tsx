@@ -1,29 +1,43 @@
 import styles from './home.module.css';
 import Image from 'next/image'
 import Link from 'next/link'
+import { createClient } from "../../prismicio"
+import { asHTML } from "@prismicio/client"
+import { PrismicNextImage } from '@prismicio/next'
 
-export default function Blog() {
+export default async function Blog() {
+  const prismic = createClient()
+  const home = await prismic.getByUID('home' , 'home')
+
+  console.log(JSON.stringify(home.data, null, 2))
+
+  const title = asHTML(home.data.title)
+  const subtitle = asHTML(home.data.subtitle)
+  const text = asHTML(home.data.text)
+
   return (
     <main className={styles.homemain}>
       <article className={styles.first}>
-        <h1 className={styles.title}>Sua dose diária de informação</h1>
+        <h1 className={styles.title}>
+          <div dangerouslySetInnerHTML={{__html: title}} />
+        </h1>
         <div className={styles.text}>
           <Link href="/blog/post">
-            <h2>Incrível crescimento das IAs</h2>
+            <div dangerouslySetInnerHTML={{__html: subtitle}} />
           </Link>
           <Link href="/blog/post">
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. In posuere, turpis cursus elementum commodo, lorem leo dignissim mi, eget tempus elit metus vel libero. Quisque finibus, tellus nec tempor cursus, nisi lorem vulputate quam, eu sodales orci ligula et metus. Ut eget posuere metus. Mauris porttitor consequat eros, nec porttitor libero egestas sed. Nullam laoreet enim ac risus semper convallis. Integer efficitur viverra purus, a bibendum magna commodo non. Aliquam tempus mauris scelerisque scelerisque vestibulum. Curabitur metus libero, ullamcorper a euismod a, maximus non felis. Praesent eget est venenatis, malesuada ipsum non, lacinia lorem. Proin malesuada ex luctus accumsan maximus. 
-          </p>
+            <div dangerouslySetInnerHTML={{__html: text}} />
           </Link>
         </div>
-        <Image
-          className={styles.imagedesktop}
-          src="/astronaut.png"
-          alt="astronaut"
-          width={540}
-          height={370}
-        />
+        {
+        // <Image
+        //   className={styles.imagedesktop}
+        //   src="/astronaut.png"
+        //   alt="astronaut"
+        //   width={540}
+        //   height={370}
+        // />
+        }
         <Image
           className={styles.imagemobile}
           src="/astronautmobile.png"
@@ -31,6 +45,7 @@ export default function Blog() {
           width={308}
           height={205}
         />
+        <PrismicNextImage className={styles.imagedesktop} field={home.data.image} />
 
       </article>
       <article className={styles.second}>
