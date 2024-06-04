@@ -1,13 +1,13 @@
-import '../app/page.module.css'
-import Image from 'next/image'
-import Robo from './img/Robo.jpeg'
 
-function informacao1() {
+import Image from 'next/image'
+import Robo from '../../../components/img/Robo.jpeg'
+
+function informacao2() {
 
   return (
     <>
     <div className='Titulo1'>
-   <h1>Sua dose diária de informação</h1>
+   <h1>Incrível crescimento das IA</h1>
    </div>
     <div className='Informacao1'>
    <div className='Paragrafo1'>
@@ -18,11 +18,9 @@ function informacao1() {
     <Image src={Robo} alt =""></Image>
    </div>
    </div>
-   <div>
-   </div>
 
     </>
   )
 }
 
-export default informacao1
+export default informacao2

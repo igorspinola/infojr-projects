@@ -157,6 +157,77 @@ padding-left: 10px;
   color: white;
 }
 
+.Informacao2{
+  display: flex;
+  padding-left: 600px;
+  padding-right: 600px;
+}
+
+.Informacao2 p{
+  font-size: 20px
+}
+
+.Imagens{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-around;
+  padding-left: 600px;
+  padding-right: 600px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.Fulano{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.NomeData{
+  height: 40px;
+  padding-bottom: 50px;
+  padding-left: 20px;
+}
+
+.TituloFulano{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 30px;
+  color: darkslategrey;
+}
+
+.TextoFulano p{
+font-size: 20px;
+padding-left: 25px;
+}
+
+.paragrafoFulano{
+  padding-left: 400px;
+  padding-right: 400px;
+}
+
+.paragrafoFulano p{
+  font-size: 20px;
+  padding-left: 25px;
+}
+
+.InformacaoFulano{
+  padding-left: 400px;
+  padding-right: 400px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.imgRedes{
+  padding-top: 30px;
+  padding-bottom: 30px;
+  display: flex;
+  justify-content: space-around;
+  width: 250px;
+}
+
+
 @media(max-width: 1500px){
     
 .Header{
@@ -178,6 +249,12 @@ padding-left: 10px;
   justify-content: center;
   align-items: center;
 }
+.TituloFulano h1{
+  font-size: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
 .Informacao1{
   padding-left: 0%;
@@ -186,6 +263,26 @@ padding-left: 10px;
   flex-direction: column-reverse;
 }
 
+.Informacao2{
+  padding-left: 0%;
+  padding-right: 0%;
+  display: flex;
+}
+.Informacao2 p{
+  font-size: 15px;
+}
+
+.Imagens{
+  padding-left: 0%;
+  padding-right: 0%;
+}
+
+.Imagens img{
+  height: 120px;
+  width: 185px;
+  justify-content: space-around;
+
+}
 .Imagem{
   display: flex;
   align-items: center;
@@ -284,4 +381,54 @@ font-size: 6px;
 .INFORMACOES p{
   font-size: 4px;
 }
+
+.Redes h2{
+  font-size: 15px;
+}
+
+.Redes img{
+  padding-top: 0%;
+}
+
+.Fulano img{
+  width: 60px;
+  height: 60px;
+}
+
+.Fulano p{
+  margin: 0%;
+}
+
+.InformacaoFulano{
+  padding-left: 0%;
+  padding-right: 0%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.InformacaoFulano img{
+width: 200px;
+height: 200px;
+}
+
+.TextoFulano p{
+  font-size: 15px;
+}
+
+.imgRedes{
+  display: none;
+}
+
+.paragrafoFulano{
+  padding-left: 0%;
+  padding-right: 0%;
+}
+
+.paragrafoFulano p{
+  font-size: 15px;
+}
+
+
 }
