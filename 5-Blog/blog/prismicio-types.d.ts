@@ -9,48 +9,48 @@ type Simplify<T> = { [KeyType in keyof T]: T[KeyType] };
  */
 interface BloggDocumentData {
   /**
-   * linkedin field in *blogg*
+   * Titulo field in *blogg*
    *
-   * - **Field Type**: Link to Media
+   * - **Field Type**: Text
    * - **Placeholder**: *None*
-   * - **API ID Path**: blogg.linkedin
+   * - **API ID Path**: blogg.Titulo
    * - **Tab**: Main
-   * - **Documentation**: https://prismic.io/docs/field#link-content-relationship
+   * - **Documentation**: https://prismic.io/docs/field#key-text
    */
-  linkedin: prismic.LinkToMediaField;
+  Titulo: prismic.KeyTextField;
 
   /**
-   * youtube field in *blogg*
+   * Subtitulo field in *blogg*
    *
-   * - **Field Type**: Link to Media
+   * - **Field Type**: Text
    * - **Placeholder**: *None*
-   * - **API ID Path**: blogg.youtube
+   * - **API ID Path**: blogg.Subtitulo
    * - **Tab**: Main
-   * - **Documentation**: https://prismic.io/docs/field#link-content-relationship
+   * - **Documentation**: https://prismic.io/docs/field#key-text
    */
-  youtube: prismic.LinkToMediaField;
+  Subtitulo: prismic.KeyTextField;
 
   /**
-   * github field in *blogg*
-   *
-   * - **Field Type**: Link to Media
-   * - **Placeholder**: *None*
-   * - **API ID Path**: blogg.github
-   * - **Tab**: Main
-   * - **Documentation**: https://prismic.io/docs/field#link-content-relationship
-   */
-  github: prismic.LinkToMediaField;
-
-  /**
-   * content field in *blogg*
+   * Paragrafo field in *blogg*
    *
    * - **Field Type**: Rich Text
    * - **Placeholder**: *None*
-   * - **API ID Path**: blogg.content
+   * - **API ID Path**: blogg.paragrafo
    * - **Tab**: Main
    * - **Documentation**: https://prismic.io/docs/field#rich-text-title
    */
-  content: prismic.RichTextField;
+  paragrafo: prismic.RichTextField;
+
+  /**
+   * ImagemRobo field in *blogg*
+   *
+   * - **Field Type**: Image
+   * - **Placeholder**: *None*
+   * - **API ID Path**: blogg.imagemrobo
+   * - **Tab**: Main
+   * - **Documentation**: https://prismic.io/docs/field#image
+   */
+  imagemrobo: prismic.ImageField<never>;
 }
 
 /**

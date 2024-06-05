@@ -13,37 +13,35 @@
           "placeholder": ""
         }
       },
-      "linkedin": {
-        "type": "Link",
+      "Titulo": {
+        "type": "Text",
         "config": {
-          "label": "linkedin",
-          "placeholder": "",
-          "select": "media"
+          "label": "Titulo",
+          "placeholder": ""
         }
       },
-      "youtube": {
-        "type": "Link",
+      "Subtitulo": {
+        "type": "Text",
         "config": {
-          "label": "youtube",
-          "placeholder": "",
-          "select": "media"
+          "label": "Subtitulo",
+          "placeholder": ""
         }
       },
-      "github": {
-        "type": "Link",
-        "config": {
-          "label": "github",
-          "placeholder": "",
-          "select": "media"
-        }
-      },
-      "content": {
+      "paragrafo": {
         "type": "StructuredText",
         "config": {
-          "label": "content",
+          "label": "Paragrafo",
           "placeholder": "",
           "allowTargetBlank": true,
           "multi": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl"
+        }
+      },
+      "imagemrobo": {
+        "type": "Image",
+        "config": {
+          "label": "ImagemRobo",
+          "constraint": {},
+          "thumbnails": []
         }
       }
     }
