@@ -13,14 +13,10 @@ async function informacao1() {
 
   console.log(JSON.stringify(blogg.data, null, 2))
 
-  // const Titulo = asHTML(blogg.data.Titulo)
-  // const Subtitulo = asHTML(blogg.data.Subtitulo)
-  // const Paragrafo = asHTML(blogg.data.paragrafo)
   
   return (
     <>
     <div className='Titulo1'>
-    {/* <div dangerouslySetInnerHTML={{html: Titulo}} /> */}
     <PrismicRichText field={blogg.data.titulo} />
    </div>
     <div className='Informacao1'>
