@@ -11,24 +11,24 @@ interface BloggDocumentData {
   /**
    * Titulo field in *blogg*
    *
-   * - **Field Type**: Text
+   * - **Field Type**: Rich Text
    * - **Placeholder**: *None*
-   * - **API ID Path**: blogg.Titulo
+   * - **API ID Path**: blogg.titulo
    * - **Tab**: Main
-   * - **Documentation**: https://prismic.io/docs/field#key-text
+   * - **Documentation**: https://prismic.io/docs/field#rich-text-title
    */
-  Titulo: prismic.KeyTextField;
+  titulo: prismic.RichTextField;
 
   /**
    * Subtitulo field in *blogg*
    *
-   * - **Field Type**: Text
+   * - **Field Type**: Rich Text
    * - **Placeholder**: *None*
-   * - **API ID Path**: blogg.Subtitulo
+   * - **API ID Path**: blogg.subtitulo
    * - **Tab**: Main
-   * - **Documentation**: https://prismic.io/docs/field#key-text
+   * - **Documentation**: https://prismic.io/docs/field#rich-text-title
    */
-  Subtitulo: prismic.KeyTextField;
+  subtitulo: prismic.RichTextField;
 
   /**
    * Paragrafo field in *blogg*
@@ -65,57 +65,7 @@ interface BloggDocumentData {
 export type BloggDocument<Lang extends string = string> =
   prismic.PrismicDocumentWithUID<Simplify<BloggDocumentData>, "blogg", Lang>;
 
-/**
- * Content for Page documents
- */
-interface PageDocumentData {
-  /**
-   * Meta Title field in *Page*
-   *
-   * - **Field Type**: Text
-   * - **Placeholder**: A title of the page used for social media and search engines
-   * - **API ID Path**: page.meta_title
-   * - **Tab**: SEO & Metadata
-   * - **Documentation**: https://prismic.io/docs/field#key-text
-   */
-  meta_title: prismic.KeyTextField;
-
-  /**
-   * Meta Description field in *Page*
-   *
-   * - **Field Type**: Text
-   * - **Placeholder**: A brief summary of the page
-   * - **API ID Path**: page.meta_description
-   * - **Tab**: SEO & Metadata
-   * - **Documentation**: https://prismic.io/docs/field#key-text
-   */
-  meta_description: prismic.KeyTextField;
-
-  /**
-   * Meta Image field in *Page*
-   *
-   * - **Field Type**: Image
-   * - **Placeholder**: *None*
-   * - **API ID Path**: page.meta_image
-   * - **Tab**: SEO & Metadata
-   * - **Documentation**: https://prismic.io/docs/field#image
-   */
-  meta_image: prismic.ImageField<never>;
-}
-
-/**
- * Page document from Prismic
- *
- * - **API ID**: `page`
- * - **Repeatable**: `true`
- * - **Documentation**: https://prismic.io/docs/custom-types
- *
- * @typeParam Lang - Language API ID of the document.
- */
-export type PageDocument<Lang extends string = string> =
-  prismic.PrismicDocumentWithoutUID<Simplify<PageDocumentData>, "page", Lang>;
-
-export type AllDocumentTypes = BloggDocument | PageDocument;
+export type AllDocumentTypes = BloggDocument;
 
 declare module "@prismicio/client" {
   interface CreateClient {
@@ -126,12 +76,6 @@ declare module "@prismicio/client" {
   }
 
   namespace Content {
-    export type {
-      BloggDocument,
-      BloggDocumentData,
-      PageDocument,
-      PageDocumentData,
-      AllDocumentTypes,
-    };
+    export type { BloggDocument, BloggDocumentData, AllDocumentTypes };
   }
 }

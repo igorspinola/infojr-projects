@@ -3,27 +3,33 @@ import Image from 'next/image'
 import Robo from './img/Robo.jpeg'
 import { PrismicNextImage } from '@prismicio/next'
 import { createClient } from '../prismicio'
+import { asHTML } from "@prismicio/client"
 import { PrismicRichText } from '@prismicio/react'
 
 async function informacao1() {
   const prismic = createClient()
 
-  const blogg = prismic.getByID('blogg',"gabriel")
+  const blogg = await prismic.getByUID('blogg','blog')
 
-  console.log(blogg)
+  console.log(JSON.stringify(blogg.data, null, 2))
 
+  // const Titulo = asHTML(blogg.data.Titulo)
+  // const Subtitulo = asHTML(blogg.data.Subtitulo)
+  // const Paragrafo = asHTML(blogg.data.paragrafo)
+  
   return (
     <>
     <div className='Titulo1'>
-   <PrismicRichText field={gabriel.data.Titulo} />
+    {/* <div dangerouslySetInnerHTML={{html: Titulo}} /> */}
+    <PrismicRichText field={blogg.data.titulo} />
    </div>
     <div className='Informacao1'>
    <div className='Paragrafo1'>
-    <PrismicRichText field={gabriel.data.Subtiulo} />
-    <PrismicRichText field={gabriel.data.Paragrafo} />
+   <PrismicRichText field={blogg.data.subtitulo} />
+   <PrismicRichText field={blogg.data.paragrafo} />
    </div>
    <div className='Imagem'>
-    <PrismicNextImage field={gabriel.data.ImagemRobo} />
+    <PrismicNextImage field={blogg.data.imagemrobo} />
    </div>
    </div>
    <div>

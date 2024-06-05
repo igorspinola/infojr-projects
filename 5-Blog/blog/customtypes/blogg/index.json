@@ -13,18 +13,22 @@
           "placeholder": ""
         }
       },
-      "Titulo": {
-        "type": "Text",
+      "titulo": {
+        "type": "StructuredText",
         "config": {
           "label": "Titulo",
-          "placeholder": ""
+          "placeholder": "",
+          "allowTargetBlank": true,
+          "multi": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl"
         }
       },
-      "Subtitulo": {
-        "type": "Text",
+      "subtitulo": {
+        "type": "StructuredText",
         "config": {
           "label": "Subtitulo",
-          "placeholder": ""
+          "placeholder": "",
+          "allowTargetBlank": true,
+          "multi": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl"
         }
       },
       "paragrafo": {
