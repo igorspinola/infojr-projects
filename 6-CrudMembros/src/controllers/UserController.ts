@@ -1,6 +1,7 @@
 import { Request, Response,request,response } from "express"
 import {prisma} from '../database'
 
+
 export default{
     async createUser(request: Request, response: Response) {
         try {
@@ -106,7 +107,7 @@ export default{
         }
     },
 
-    async getbyName(request: Request, res: Response) {
+    async  getbyName(request: Request, res: Response) {
         try {
             const { name } = request.params;
 

@@ -10,9 +10,9 @@ const port = 3000
 
 app.post('/createUser', UserController.createUser)
 app.get('/user/:id', UserController.getById)
-app.get('/user/:email', UserController.getByEmail)
-app.get('/user/:nome', UserController.getbyName)
-app.delete('delete/:id', UserController.DeletebyId)
+app.get('/user/email/:email', UserController.getByEmail)
+app.get('/user/name/:name', UserController.getbyName)
+app.delete('/user/delete/:id', UserController.DeletebyId)
 
 app.listen(port, () => {
   console.log(`Server is runing ${port}`)
