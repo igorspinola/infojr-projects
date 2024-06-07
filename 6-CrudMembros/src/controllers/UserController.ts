@@ -46,5 +46,136 @@ export default{
             console.error("Erro ao criar usuário:", error);
             return response.status(500).json({ error: true, message: error.message });
         }
+    },
+    async getById(request: Request, response: Response) {
+        try {
+            const { id } = request.params;
+
+            const user = await prisma.user.findUnique({
+                where: {
+                    id: parseInt(id)
+                }
+            });
+            if (!user) {
+                return response.status(404).json({
+                    message: "Erro: Usuário não encontrado!"
+                });
+            }
+
+            return response.status(200).json({
+                user
+            });
+        } catch (error: any) {
+            console.error("Erro ao buscar usuário:", error);
+            return response.status(500).json({ error: true, message: error.message });
+        }
+    },
+
+    async getByEmail(request: Request, response: Response) {
+        try {
+            const { email } = request.params;
+
+            if (!email) {
+                return response.status(400).json({
+                    error: true,
+                    message: "Erro: Endereço de email não fornecido!"
+                });
+            }
+
+            const user = await prisma.user.findUnique({
+                where: {
+                    email: email
+                }
+            });
+
+            if (!user) {
+                return response.status(404).json({
+                    error: true,
+                    message: "Erro: Endereço de email não encontrado na base de dados!"
+                });
+            }
+
+            return response.status(200).json({
+                success: true,
+                message: "Sucesso: Usuário encontrado!",
+                user
+            });
+        } catch (error: any) {
+            console.log("Erro ao buscar email:", error);
+            return response.status(500).json({ error: true, message: error.message });
+        }
+    },
+
+    async getbyName(request: Request, res: Response) {
+        try {
+            const { name } = request.params;
+
+            if (!name) {
+                return res.status(400).json({
+                    error: true,
+                    message: "Erro, nome não encontrado"
+                });
+            }
+
+            const users = await prisma.user.findMany({
+                where: {
+                    name: name
+                }
+            });
+
+            if (users.length === 0) {
+                return res.status(404).json({
+                    error: true,
+                    message: "Erro, nome não encontrado"
+                });
+            }
+
+            return res.status(200).json({
+                success: true,
+                message: "Sucesso, usuários com este nome encontrado(s).",
+                users: users
+            });
+        } catch (error: any) {
+            console.log("Erro ao buscar nome:", error);
+            return res.status(500).json({
+                error: true,
+                message: error.message
+            });
+        }
+    },
+
+
+    async DeletebyId(request: Request, res: Response) {
+        try {
+            const { id } = request.params;
+
+            const user = await prisma.user.delete({
+                where: {
+                    id: parseInt(id)
+                }
+            });
+
+            return res.status(200).json({
+                success: true,
+                message: "Sucesso, o usuário foi excluído.",
+                user: user
+            });
+        } catch (error: any) {
+
+            if (error.code === 'P2025') {
+                return res.status(404).json({
+                    error: true,
+                    message: "Erro: usuário não encontrado."
+                });
+            }
+            console.log("Erro ao deletar usuário:", error);
+            return res.status(500).json({
+                error: true,
+                message: error.message
+            });
+        }
     }
-}; 
+
+
+};
+
