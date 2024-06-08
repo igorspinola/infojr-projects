@@ -70,7 +70,7 @@ app.delete('/user/:id/delete', async (req: Request, res: Response) => {
 app.put('/user/:id/update', async (req: Request, res: Response) => {
   const id = parseInt(req.params.id)
   const email = typeof(req.query.email) == 'string' ? req.query.email : 'email'
-  const name = typeof(req.query.name) == 'string' ? req.query.name : 'name'
+  const name = typeof(req.query.password) == 'string' ? req.query.password : 'password'
   const password = typeof(req.query.password) == 'string' ? req.query.password : 'password'
   const city = typeof(req.query.city) == 'string' ? req.query.city : 'city'
   const state = typeof(req.query.state) == 'string' ? req.query.state : 'state'
@@ -82,7 +82,7 @@ app.put('/user/:id/update', async (req: Request, res: Response) => {
     },
     data: {
       email: email, 
-      name: name, 
+      name: name,
       password: password,
       city: city,
       state: state,
