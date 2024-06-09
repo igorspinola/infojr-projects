@@ -15,13 +15,13 @@ const Main = styled.main`
   flex-direction: column;
   margin: 0 1rem;
   width: full;
+  gap: 5rem;
   align-items: center;
   justify-content: space-between;
   
   p {
-    font-family: "Poppins";
     font-size: 1rem;
-    line-height: 1.5rem;
+    line-height: 1.25rem;
   }
 `
 
@@ -53,6 +53,7 @@ const Card = styled.div`
 `;
 const CardHead = styled.div`
   display: flex;
+  align-items: center;
   justify-content: space-between;
 `;
 const CardBody = styled.div`
@@ -68,6 +69,11 @@ const Lista = styled.section`
   gap: 1.5rem;
   color: hsl(31, 90%, 20%);
   font-weight: 700;
+`;
+const AddBoxLink = styled.a`
+  font-size: 1rem;
+  font-weight: 700;
+  text-decoration: none;
 `;
 const Itens
  = styled.div`
@@ -94,43 +100,60 @@ const ItensBody = styled.div`
 
 //-- ADD BOX
 const AddBox = styled.div`
-  display: hidden;
+  display: flex;
+  visibility: invisible
   flex-direction: column;
   justify-content: space-between;
   width: 600px;
   height: 350px;
+  padding: 1rem 1.5rem;
+  gap: 3.75rem;
   background-color: hsl(0, 0%, 100%);
   border-radius: 0.5rem;
   box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
   color: hsl(31, 90%, 20%);
-`
+`;
 const AddHead = styled.p`
   font-weight: 700;
-`
+  margin-bottom: 1.5rem;
+`;
+const AddForm = styled.form`
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+`;
 const AddInput = styled.input`
   width: full;
   height: 50px;
-`
+  padding: 0 1rem;
+  border-radius: 0.5rem;
+  border: hidden;
+  background-color: hsla(0, 0%, 96%, 1);
+`;
 const AddButton = styled.button`
   display: flex;
-  place-content: center;
+  align-items: center;
+  justify-content: center;
   width: 260px;
   height: 60px;
   background-color: hsl(31, 69%, 35%);
+  border: hidden;
+  border-radius: 0.5rem;
   color: hsl(0, 0%, 100%);
+  font-size: 1rem;
 
   &.cancelar{
     background-color: transparent;
-    border: 1px solid hsl(0, 76%, 49%);
+    border: 2px solid hsl(0, 76%, 49%);
     color: hsl(0, 76%, 49%);
   }
-`
+`;
 
 
 //-- PÁGINA HOME
 export default function Home() {
   return (
-    <main className="flex flex-col w-5/6 gap-20">
+    <Main className="flex flex-col w-5/6 gap-20">
 
       <GrupoCard>
         <Card>
@@ -183,17 +206,17 @@ export default function Home() {
 
 
 
-      <AddBox>
+    <AddBox>
 
       <div>
         <AddHead>Adicionar pessoa à fila</AddHead>
-        <form id='form-add'>
+        <AddForm id='form-add'>
           <AddInput type='text' placeholder='Nome completo do cliente' />
           <AddInput type='number' placeholder='Total de pães:' />
-        </form>
+        </AddForm>
       </div>
 
-      <div className='flex justify-between'>
+      <div style={{display: `flex`, justifyContent: `space-between`}}>
         <AddButton form='form-add' type='submit'>
           Enviar
         </AddButton>
@@ -204,6 +227,6 @@ export default function Home() {
       
     </AddBox>
 
-    </main>
+    </Main>
   );
 }
