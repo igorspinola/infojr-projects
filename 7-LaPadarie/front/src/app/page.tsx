@@ -188,7 +188,7 @@ export default function Home() {
       <div>
         <AddHead>Adicionar pessoa à fila</AddHead>
         <form id='form-add'>
-          <AddInput className= type='text' placeholder='Nome completo do cliente' />
+          <AddInput type='text' placeholder='Nome completo do cliente' />
           <AddInput type='number' placeholder='Total de pães:' />
         </form>
       </div>
