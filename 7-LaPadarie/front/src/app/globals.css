@@ -1,0 +1,13 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  h2 {
+    @apply text-4xl;
+  };
+  p {
+    @apply text-base;
+    color: hsl(0, 76%, 49%);
+  };
+}
