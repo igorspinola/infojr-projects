@@ -1,8 +1,11 @@
 "use client"
 
+import { useState } from "react";
 import Image from "next/image";
 import styled from "styled-components";
+import clsx from "clsx";
 //-- ASSETs
+import logoLapad from '@/assets/logoLapad.svg';
 import iconC1 from "@/assets/iconC1.svg";
 import iconC2 from '@/assets/iconC2.svg';
 import iconC3 from '@/assets/iconC3.svg';
@@ -11,19 +14,18 @@ import iconTrash from '@/assets/iconTrash.svg';
 
 //-- MAIN
 const Main = styled.main`
+  box-sizing: border-box;
   display: flex;
   flex-direction: column;
-  margin: 0 1rem;
-  width: full;
-  gap: 5rem;
   align-items: center;
   justify-content: space-between;
-  
-  p {
-    font-size: 1rem;
-    line-height: 1.25rem;
+  width: 100%;
+  padding: 5rem 2rem;
+  gap: 5rem;
+  &.opaco {
+    background-color: hsla(0, 0%, 100%, 0.5);
   }
-`
+`;
 
 
 //-- CARDs
@@ -33,7 +35,10 @@ const GrupoCard = styled.div`
   align-items: center;
   justify-content: space-between;
   gap: 1.5rem;
-
+  &.opaco {
+    opacity: 0.5;
+    z-index: 0;
+  }
   @media (min-width: 1280px) {
     flex-direction: row;
   }
@@ -53,7 +58,7 @@ const Card = styled.div`
 `;
 const CardHead = styled.div`
   display: flex;
-  align-items: center;
+  align-content: start;
   justify-content: space-between;
 `;
 const CardBody = styled.div`
@@ -66,21 +71,24 @@ const CardBody = styled.div`
 const Lista = styled.section`
   display: flex;
   flex-direction: column;
+  width: 100%;
   gap: 1.5rem;
   color: hsl(31, 90%, 20%);
   font-weight: 700;
+  &.opaco {
+    opacity: 0.5;
+    z-index: 0;
+  }
 `;
-const AddBoxLink = styled.a`
+const AddItem = styled.a`
   font-size: 1rem;
   font-weight: 700;
   text-decoration: none;
 `;
-const Itens
- = styled.div`
+const Itens = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: full;
   min-height: 5rem;
   padding: 0 1rem;
   background-color: hsla(0, 0%, 100%, 0.8);
@@ -99,13 +107,22 @@ const ItensBody = styled.div`
 
 
 //-- ADD BOX
+const Stickyness = styled.div`
+  position: absolute;
+  z-index:1;
+  height: 150vh;
+  @media (min-width: 765px) {
+    height: 100vh;
+  }
+`;
 const AddBox = styled.div`
   display: flex;
-  visibility: invisible
   flex-direction: column;
   justify-content: space-between;
-  width: 600px;
-  height: 350px;
+  position: sticky;
+  top: 5rem;
+  width: 24rem;
+  height: 24rem;
   padding: 1rem 1.5rem;
   gap: 3.75rem;
   background-color: hsl(0, 0%, 100%);
@@ -123,7 +140,7 @@ const AddForm = styled.form`
   gap: 1rem;
 `;
 const AddInput = styled.input`
-  width: full;
+  width: auto;
   height: 50px;
   padding: 0 1rem;
   border-radius: 0.5rem;
@@ -134,14 +151,13 @@ const AddButton = styled.button`
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 260px;
+  width: 48%;
   height: 60px;
   background-color: hsl(31, 69%, 35%);
   border: hidden;
   border-radius: 0.5rem;
   color: hsl(0, 0%, 100%);
   font-size: 1rem;
-
   &.cancelar{
     background-color: transparent;
     border: 2px solid hsl(0, 76%, 49%);
@@ -152,13 +168,26 @@ const AddButton = styled.button`
 
 //-- PÁGINA HOME
 export default function Home() {
-  return (
-    <Main className="flex flex-col w-5/6 gap-20">
+  // BOTÃO "ADD CLIENTEs"
+  const [visBox, setVisBox] = useState<boolean>(false);
+  function toggleBox() {
+    setVisBox(!visBox);
+  };
 
-      <GrupoCard>
+
+  return (
+    <Main className={clsx(
+      visBox && 'opaco'
+    )}>
+
+      <Image src={logoLapad} alt="." />
+
+      <GrupoCard className={clsx(
+        visBox && 'opaco'
+      )}>
         <Card>
           <CardHead>
-            <p>Pessoas na fila</p>
+            Pessoas na fila
             <Image src={iconC1} alt="." />
           </CardHead>
 
@@ -167,7 +196,7 @@ export default function Home() {
 
         <Card>
           <CardHead>
-            <p>Pães vendidos</p>
+            Pães vendidos
             <Image src={iconC2} alt="." />
           </CardHead>
 
@@ -176,7 +205,7 @@ export default function Home() {
 
         <Card style={{backgroundColor: `hsl(31, 90%, 20%)`, color: `hsl(0, 0%, 100%)`}}>
           <CardHead>
-            <p>Entrada</p>
+            Entrada
             <Image src={iconC3} alt="." />
           </CardHead>
 
@@ -185,12 +214,14 @@ export default function Home() {
       </GrupoCard>
 
 
-      <Lista>
-        <p> + Adicionar pessoa à fila </p>
+      <Lista className={clsx(
+        visBox && 'opaco'
+      )}>
+        <AddItem onClick={toggleBox}> + Adicionar pessoa à fila </AddItem>
 
         <Itens>
           <div>
-            <p>Alexandre Shyjada Sousa</p>
+            <AddItem>Alexandre Shyjada Sousa</AddItem>
 
             <ItensBody>
               <p>Total de pães: <span>50 pães</span></p>
@@ -204,29 +235,28 @@ export default function Home() {
 
 
 
+    {visBox &&
+      (<Stickyness>
+        <AddBox>
+          <div>
+            <AddHead>Adicionar pessoa à fila</AddHead>
+            <AddForm id='form-add'>
+              <AddInput type='text' placeholder='Nome completo do cliente' />
+              <AddInput type='number' placeholder='Total de pães' />
+            </AddForm>
+          </div>
 
-
-    <AddBox>
-
-      <div>
-        <AddHead>Adicionar pessoa à fila</AddHead>
-        <AddForm id='form-add'>
-          <AddInput type='text' placeholder='Nome completo do cliente' />
-          <AddInput type='number' placeholder='Total de pães:' />
-        </AddForm>
-      </div>
-
-      <div style={{display: `flex`, justifyContent: `space-between`}}>
-        <AddButton form='form-add' type='submit'>
-          Enviar
-        </AddButton>
-        <AddButton form='form-add' className='cancelar' type='submit'>
-          Cancelar
-        </AddButton>
-      </div>
-      
-    </AddBox>
-
+          <div style={{display: `flex`, justifyContent: `space-between`}}>
+            <AddButton form='form-add' type='submit'>
+              Enviar
+            </AddButton>
+            <AddButton className='cancelar' onClick={toggleBox}>
+              Cancelar
+            </AddButton>
+          </div>
+        </AddBox>
+      </Stickyness>)
+    }
     </Main>
   );
 }
