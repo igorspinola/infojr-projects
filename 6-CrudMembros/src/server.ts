@@ -13,6 +13,7 @@ app.get('/user/:id', UserController.getById)
 app.get('/user/email/:email', UserController.getByEmail)
 app.get('/user/name/:name', UserController.getbyName)
 app.delete('/user/delete/:id', UserController.DeletebyId)
+app.put('/user/:id', UserController.editById)
 
 app.listen(port, () => {
   console.log(`Server is runing ${port}`)
