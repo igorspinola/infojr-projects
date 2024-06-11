@@ -31,6 +31,8 @@
   background-color: white;
   height: 106px;
   width: 295px;
+  display: flex;
+  justify-content: space-between;
 }
 
 .NaFila h5{
@@ -38,9 +40,16 @@
   margin-left: 20px;
 }
 
+.NaFila img{
+  margin-top: 10px;
+  margin-right: 10px;
+}
+
 .paesVendidos{  background-color: white;
   height: 106px;
   width: 295px;
+  display: flex;
+  justify-content: space-between;
 }
 
 .paesVendidos h5{
@@ -48,14 +57,26 @@
   margin-left: 20px;
 }
 
+.paesVendidos img{
+  margin-top: 10px;
+  margin-right: 10px;
+}
+
 .entrada{ 
   background: #5F3305;
   height: 106px;
   width: 295px;
+  display: flex;
+  justify-content: space-between;
 }
 
 .entrada h5{
   color: white;
   margin-top:20px ;
   margin-left: 20px;
+}
+
+.entrada img{
+  margin-top: 10px;
+  margin-right: 10px;
 }
