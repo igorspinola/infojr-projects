@@ -9,7 +9,7 @@ a {
 }
 
 h1 {
-    font-size: 38px;
+    font-size: 48px;
 }
 
 h2 {
@@ -31,11 +31,11 @@ h2 {
 }
 
 .marca{
-    font-size: 38px;
+    font-size: 48px;
     align-self: center;
-    font-weight: 500;
+    font-weight: 700;
     text-align: left; 
-    width: 180px;
+    width: 280px;
 }
 
 strong{
@@ -52,10 +52,6 @@ strong{
 
 .nav-botão{
     justify-self: end;
-    font-size: 16px;
-    font-weight: 500;    
-    line-height: 21.79px;   
-    text-align: center;
     background: rgb(45, 219, 30);
     border-radius: 15px;
     width: 150px;

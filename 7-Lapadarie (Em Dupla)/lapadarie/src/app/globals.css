@@ -1,0 +1,45 @@
+.logo{
+  background: #965A1B;
+  height: 244px;
+  display: flex;
+  justify-content: center;
+  padding-top: 20px;
+}
+
+.center{
+  background-color: #E5CF94;
+  height: 1200px;
+}
+
+.elements{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 136px; 
+ 
+}
+
+.quadros{
+  display: flex;
+  justify-content: space-around ;
+  margin-top: -140px;
+  width: 955px;
+  height: 136px;
+}
+
+.NaFila{
+  background-color: white;
+  height: 106px;
+  width: 295px;
+}
+
+.paesVendidos{  background-color: white;
+  height: 106px;
+  width: 295px;
+}
+
+.entrada{ 
+  background: #5F3305;
+  height: 106px;
+  width: 295px;
+}
