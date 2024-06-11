@@ -1,3 +1,7 @@
+body{ 
+  background-color: #E5CF94;
+}
+
 .logo{
   background: #965A1B;
   height: 244px;
@@ -8,7 +12,6 @@
 
 .center{
   background-color: #E5CF94;
-  height: 1200px;
 }
 
 .elements{
@@ -33,6 +36,7 @@
   width: 295px;
   display: flex;
   justify-content: space-between;
+  border-radius: 10px;
 }
 
 .NaFila h5{
@@ -50,6 +54,7 @@
   width: 295px;
   display: flex;
   justify-content: space-between;
+  border-radius: 10px;
 }
 
 .paesVendidos h5{
@@ -68,6 +73,7 @@
   width: 295px;
   display: flex;
   justify-content: space-between;
+  border-radius: 10px;
 }
 
 .entrada h5{
@@ -77,6 +83,65 @@
 }
 
 .entrada img{
+  margin-top: 10px;
+  margin-right: 10px;
+}
+
+.AdicionarNaFila{
+  
+  background-color: #E5CF94;
+}
+
+.AdicionarNaFila h4{
+  color: #5F3305;
+  display: flex;
+  margin-top: -50px;
+  margin-left: 380px;
+}
+
+.Lista{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.Cliente1{
+  width: 955px;
+  display: flex;
+  flex-direction: column;
+
+}
+
+.Cliente1 h5{
+  margin-top: 13px;
+  margin-left: 10px;
+  margin-bottom: 0;
+  color: #5F3305;
+
+}
+
+.InformacaoInferior{
+  display: flex;
+  justify-content: space-between;
+  width: 200px;
+}
+
+.InformacaoInferior h6{
+  margin-top: 13px;
+  margin-left: 10px;
+  color: #5F3305;
+}
+
+.Cliente{
+  background: #FFFFFFCC;
+  display: flex;
+  justify-content: space-between;
+  height: 70px;
+  width: 940px;
+  border-radius: 20px;
+}
+
+.Cliente img{
   margin-top: 10px;
   margin-right: 10px;
 }
