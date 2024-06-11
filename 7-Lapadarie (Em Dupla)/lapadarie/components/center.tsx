@@ -5,6 +5,7 @@ import Image from 'next/image'
 
 export default function center(){
     return(
+        <div>
         <div className="center">
             <div className="elements">
                 <div className="quadros">
@@ -22,6 +23,10 @@ export default function center(){
                 </div>
                 </div>
             </div>
+        </div>
+        <div className="AdicionarNaFila">
+            <h4>+ Adicionar pessoas na fila</h4>
+        </div>
         </div>
     )
 }

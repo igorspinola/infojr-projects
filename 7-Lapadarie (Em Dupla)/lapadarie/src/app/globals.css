@@ -103,6 +103,7 @@ body{
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
 }
 
 .Cliente1{
@@ -138,7 +139,8 @@ body{
   justify-content: space-between;
   height: 70px;
   width: 940px;
-  border-radius: 20px;
+  border-radius: 10px;
+  margin-top: 15px;
 }
 
 .Cliente img{
