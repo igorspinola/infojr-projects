@@ -5,7 +5,7 @@ const prisma = new PrismaClient()
 
 const express = require('express')
 const app = express()
-const port = 3000
+const port = 3003
 
 app.use(express.json());
 
@@ -113,5 +113,18 @@ app.delete('/remove/:id', async (req: Request, res: Response) => {
     }   
   )
 
+})
+
+app.get('/dashboard', async (req: Request, res: Response) => {
+  const dashboard = await prisma.dashboard.findUnique({
+  where: {
+    id: 1,
+  },
+})
+  res.send(
+    {
+      dashboard: dashboard
+    }   
+  )
 })
 
