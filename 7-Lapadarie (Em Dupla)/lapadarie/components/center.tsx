@@ -2,6 +2,7 @@ import IconePessoas from '../img/iconepessoas.png'
 import CarrinhoCompras from '../img/carrinhoCompras.png'
 import IconeDinheiro from '../img/IconeDinheiro.png'
 import Image from 'next/image'
+import Modall from '../components/modal'
 
 export default function center(){
     return(
@@ -25,7 +26,7 @@ export default function center(){
             </div>
         </div>
         <div className="AdicionarNaFila">
-            <h4>+ Adicionar pessoas na fila</h4>
+           <Modall/>
         </div>
         </div>
     )
