@@ -18,7 +18,7 @@ model Person {
 
 model Dashboard {
   id    Int     @id @default(autoincrement())
-  revenue  Int
+  revenue  Float
   breads_sold Int
   people_on_line Int
 }
