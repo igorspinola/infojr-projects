@@ -1,8 +1,14 @@
+"use client"
 import Image from 'next/image'
 import Lixo from '../img/Lixo.png'
 import axios from 'axios'
 
 export default async function content(){
+
+    async function remove(id: any) {
+
+         const addPerson = await axios.delete(`http://localhost:3003/remove/${id}`)
+         }
 
     const people = await axios.get('http://localhost:3003/line')
     console.log(people.data)
@@ -18,7 +24,9 @@ export default async function content(){
                     <h6>Total a pagar: R$ {item.bread_total * 0.5}</h6>
                 </div>
             </div>
-            <Image src={Lixo} alt=""></Image>
+            <Image src={Lixo} alt="" onClick={() => {
+               remove(item.id) 
+            }}></Image>
             </div>
     
     );

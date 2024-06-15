@@ -79,14 +79,14 @@ app.post('/person', async (req: Request, res: Response) => {
 
 // retirar pessoa da fila
 
-//app.delete('/remove/:id', async (req: Request, res: Response) => {
-app.delete('/remove', async (req: Request, res: Response) => {
-  //const id = parseInt(req.params.id)
+app.delete('/remove/:id', async (req: Request, res: Response) => {
+//app.delete('/remove', async (req: Request, res: Response) => {
+  const id = parseInt(req.params.id)
   console.log(req.body)
-  const myId = req.body.id
-  console.log(myId.body)
-  const id = parseInt(myId) 
-  console.log(id)
+  //const myId = req.body.id
+  //console.log(myId.body)
+  //const id = parseInt(myId) 
+  //console.log(id)
   const removePerson = await prisma.person.delete({
     where: {
       id: id
