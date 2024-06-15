@@ -2,6 +2,7 @@
 import React from 'react';
 import Modal from 'react-modal';
 import content from './content';
+import axios from 'axios';
     
 
   export default  function modall() {
@@ -21,6 +22,8 @@ import content from './content';
         setModalIsOpen(false);
       }
     
+      //const people = axios.get('http://localhost:3003/line')
+
       return (
         <div>
             <div>

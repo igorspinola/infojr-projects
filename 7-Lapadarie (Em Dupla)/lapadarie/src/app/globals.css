@@ -35,13 +35,22 @@ body{
   height: 136px;
 }
 
-.NaFila{
+.fila-container {
   background-color: white;
   height: 106px;
   width: 295px;
+  border-radius: 10px;
+}
+
+.fila-container h2 {
+  margin:0;
+  padding-left:20px;
+  padding-bottom:60px;
+}
+
+.NaFila{
   display: flex;
   justify-content: space-between;
-  border-radius: 10px;
 }
 
 .NaFila h5{
@@ -54,12 +63,21 @@ body{
   margin-right: 10px;
 }
 
-.paesVendidos{  background-color: white;
+.vendidos-container {
+  background-color: white;
   height: 106px;
   width: 295px;
+  border-radius: 10px;
+}
+.vendidos-container h2 {
+  margin:0;
+  padding-left:20px;
+  padding-bottom:60px;
+}
+
+.paesVendidos{  
   display: flex;
   justify-content: space-between;
-  border-radius: 10px;
 }
 
 .paesVendidos h5{
@@ -72,13 +90,26 @@ body{
   margin-right: 10px;
 }
 
-.entrada{ 
+.entrada-container{ 
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
   background: #5F3305;
   height: 106px;
   width: 295px;
+  border-radius: 10px;
+}
+
+.entrada-container h2 { 
+  margin:0;
+  padding-left:20px;
+  padding-bottom:60px;
+  color:white;
+}
+
+.entrada{ 
   display: flex;
   justify-content: space-between;
-  border-radius: 10px;
 }
 
 .entrada h5{
@@ -128,8 +159,9 @@ body{
 
 .InformacaoInferior{
   display: flex;
-  justify-content: space-between;
-  width: 200px;
+  justify-content: flex-start;
+  gap:10px;
+  width: 300px;
 }
 
 .InformacaoInferior h6{
@@ -266,18 +298,26 @@ font-size: 12px;
 
 }
 
-.NaFila{
+.fila-container{
   height: 88px;
   width: 270px;
 }
-.paesVendidos{
+.vendidos-container{
   height: 88px;
   width: 270px;
 
 }
 
-.entrada{
+.entrada-container{
   height: 88px;
   width: 270px;
 }
+
+.fila-container h2 {
+  margin:0;
+  padding-left:20px;
+  padding-bottom:20px;
+  margin-bottom: 20px
+}
+
 }

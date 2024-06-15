@@ -1,88 +1,37 @@
 import Image from 'next/image'
 import Lixo from '../img/Lixo.png'
+import axios from 'axios'
 
-export default function content(){
+export default async function content(){
+
+    const people = await axios.get('http://localhost:3003/line')
+    console.log(people.data)
+    const arr = people.data
+    const for_of = []
+    for (let item of arr) {
+      for_of.push(
+<div className="Cliente" key={item.id}>
+            <div className="Cliente1">
+                <h5>{item.name}</h5>
+                <div className="InformacaoInferior">
+                    <h6>Total de pães: {item.bread_total} pães</h6>
+                    <h6>Total a pagar: R$ {item.bread_total * 0.5}</h6>
+                </div>
+            </div>
+            <Image src={Lixo} alt=""></Image>
+            </div>
+    
+    );
+     }
+
     return(
         <div>
         
 
         <div className="Lista">
-            <div className="Cliente">
-            <div className="Cliente1">
-                <h5>Alexandre Shyjada Sousa</h5>
-                <div className="InformacaoInferior">
-                    <h6>Total de pães:</h6>
-                    <h6>Total a pagar:</h6>
-                </div>
-            </div>
-            <Image src={Lixo} alt=""></Image>
-            </div>
-
-            <div className="Cliente">
-            <div className="Cliente1">
-                <h5>Matheus Novais</h5>
-                <div className="InformacaoInferior">
-                    <h6>Total de pães:</h6>
-                    <h6>Total a pagar:</h6>
-                </div>
-            </div>
-            <Image src={Lixo} alt=""></Image>
-            </div>
-
-            <div className="Cliente">
-            <div className="Cliente1">
-                <h5>Victor Peixoto</h5>
-                <div className="InformacaoInferior">
-                    <h6>Total de pães:</h6>
-                    <h6>Total a pagar:</h6>
-                </div>
-            </div>
-            <Image src={Lixo} alt=""></Image>
-            </div>
-
-            <div className="Cliente">
-            <div className="Cliente1">
-                <h5>Kennedy Anderson</h5>
-                <div className="InformacaoInferior">
-                    <h6>Total de pães:</h6>
-                    <h6>Total a pagar:</h6>
-                </div>
-            </div>
-            <Image src={Lixo} alt=""></Image>
-            </div>
-
-            <div className="Cliente">
-            <div className="Cliente1">
-                <h5>João Victor</h5>
-                <div className="InformacaoInferior">
-                    <h6>Total de pães:</h6>
-                    <h6>Total a pagar:</h6>
-                </div>
-            </div>
-            <Image src={Lixo} alt=""></Image>
-            </div>
-
-            <div className="Cliente">
-            <div className="Cliente1">
-                <h5>Thales Brito</h5>
-                <div className="InformacaoInferior">
-                    <h6>Total de pães:</h6>
-                    <h6>Total a pagar:</h6>
-                </div>
-            </div>
-            <Image src={Lixo} alt=""></Image>
-            </div>
-
-            <div className="Cliente">
-            <div className="Cliente1">
-                <h5>Ivens Joris</h5>
-                <div className="InformacaoInferior">
-                    <h6>Total de pães:</h6>
-                    <h6>Total a pagar:</h6>
-                </div>
-            </div>
-            <Image src={Lixo} alt=""></Image>
-            </div>
+            
+            {for_of}
+           
         </div>
         </div>
     )
