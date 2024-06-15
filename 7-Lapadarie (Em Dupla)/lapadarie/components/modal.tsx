@@ -1,4 +1,5 @@
 "use client"
+import {useState } from 'react'
 import React from 'react';
 import Modal from 'react-modal';
 import content from './content';
@@ -21,13 +22,26 @@ import axios from 'axios';
       function closeModal() {
         setModalIsOpen(false);
       }
-    
-      //const people = axios.get('http://localhost:3003/line')
+
+
+      const [name, setName] =useState<string>('');
+      const [total, setTotal] =useState<number>(0);
+
+      async function send(e: any) {
+        e.preventDefault()
+
+      const addPerson = await axios.post('http://localhost:3003/person' ,
+        {
+          name:name,
+          bread_total: total
+        }
+      )
+      }
 
       return (
         <div>
             <div>
-          <button onClick={openModal}>+Adicionar pessoas na fila</button>
+          <button onClick={openModal} type='button'>+Adicionar pessoas na fila</button>
           <Modal className="Black"
             isOpen={modalIsOpen}
             onRequestClose={closeModal}
@@ -35,18 +49,23 @@ import axios from 'axios';
           >
             
             <h4>Adicionar pessoas na fila</h4>
+          <form onSubmit={send}>
             <div className='Formulario'>
-            <input placeholder='Nome completo do cliente'></input>
-            <input placeholder='Total de pães'></input>
+            <input placeholder='Nome completo do cliente'  onChange={(e:any)=>setName(e.target.value)} ></input>
+            <input placeholder='Total de pães'  onChange={(e:any)=>{
+              
+              setTotal(e.target.value)}} ></input>
             </div>
             <div className='Botoes'>
               <div className='Botao1'>
-            <button onClick={closeModal}>Enviar</button>
+            <button type='submit'>Enviar</button>
             </div>
             <div className='Botao2'>
-            <button onClick={closeModal}>Cancelar</button>
+            <button onClick={closeModal} type='button'>Cancelar</button>
             </div>
             </div>
+
+          </form>
           </Modal>
           </div>
         </div>
