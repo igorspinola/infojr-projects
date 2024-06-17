@@ -1,13 +1,9 @@
-"use client"
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import styled from 'styled-components';
 import axios from 'axios';
-//-- COMPONENTs
-import Text from './Text';
 
-
-//-- STYLED COMPONENTs
-const Container = styled.div`
+//-- Styled Components
+const ContainerForms = styled.div`
   display: flex;
   justify-self: center;
   flex-direction: column;
@@ -23,16 +19,19 @@ const Container = styled.div`
   box-shadow: 0 10px 15px -3px hsla(0, 0%, 0%, 0.1), 0 4px 6px -4px hsla(0, 0%, 0%, 0.1);
   color: hsl(31, 90%, 20%);
 `;
-const Head = styled.h3`
+
+const FormsHead = styled.h3`
   font-weight: 700;
   margin-bottom: 1.5rem;
 `;
-const Form = styled.form`
+
+const Forms = styled.form`
   display: flex;
   flex-direction: column;
   gap: 1rem;
 `;
-const Input = styled.input`
+
+const InputForms = styled.input`
   width: auto;
   height: 50px;
   padding: 0 1rem;
@@ -41,7 +40,8 @@ const Input = styled.input`
   background-color: hsla(0, 0%, 96%, 1);
   font-size: 1rem;
 `;
-const Button = styled.button`
+
+const BotaoForms = styled.button`
   display: flex;
   align-items: center;
   justify-content: center;
@@ -53,76 +53,76 @@ const Button = styled.button`
   color: hsl(0, 0%, 100%);
   font-size: 1rem;
 
-  &.cancelar{
+  &.cancelar {
     background-color: transparent;
     border: 2px solid hsl(0, 76%, 49%);
     color: hsl(0, 76%, 49%);
   }
 `;
 
+//-- Tipagens
+interface Props {
+  fechar: () => void;
+  gatilho: () => void;
+}
 
-//-- TYPEs
-interface IProps {
-  onClick: any
-};
-//-- FUNCTION
-export default function Formulario({
-  onClick
-}: IProps) {
-  //
-  const [nome, setNome] = useState<string>("");
-  const[paes, setPaes] = useState<number>(0);
-  //
-  const fNome = (e: React.FormEvent)=>{
-    setNome(e.target.value);
+//-- Componente Formulario
+const Formulario: React.FC<Props> = ({ fechar, gatilho }) => {
+  const [nome, setNomeCliente] = useState<string>("");
+  const [paes, setPaes] = useState<number>(0);
+
+  const fNomeCliente = (e: React.ChangeEvent<HTMLInputElement>) => {
+    setNomeCliente(e.target.value);
   };
-  const fPaes = (e: React.FormEvent)=>{
-    const paesInt = parseInt(e.target.value, 10); 
-    setPaes(paesInt);
+
+  const fPaes = (e: React.ChangeEvent<HTMLInputElement>) => {
+    const numPaes = parseInt(e.target.value, 10);
+    setPaes(numPaes);
   };
-  //- Função "enviar formulário"
-  const envForm = (e: React.FormEvent) => {
+
+  axios.get
+
+  const enviarFormulario = (e: React.FormEvent) => {
     e.preventDefault();
-    const formData = {
+    const DadosFormulario = {
       nome,
       paes,
       dinheiros: paes * 0.5,
     };
-    axios.post('http://localhost:1080/', formData) 
+    axios.post('http://localhost:1080/novoCliente', DadosFormulario)
       .then(response => {
-        alert(response.data.message);
+        console.log(response.data.message);
       })
       .catch(error => {
-        console.error('Erro ao enviar os dados: ', error);
+        console.error('Erro ao enviar os dados:', error);
         alert('Erro ao enviar os dados');
-    });
+      });
+    gatilho();
+    fechar();
   };
-  //
+
   return (
-    <Container>
+    <ContainerForms>
       <div>
-        <Head>Adicionar pessoa à fila</Head>
+        <FormsHead>Adicionar pessoa à fila</FormsHead>
         
-        <Form id='add-form'>
-
-          <Input type='text' name='nome' value={nome} onChange={fNome} placeholder='Nome completo do cliente' />
-          <Input type='number' name='paes' value={paes} onChange={fPaes} placeholder='Total de pães' />
-
-        </Form>
+        <Forms id="forms" method="post" onSubmit={enviarFormulario}>
+          <InputForms type="text" name="cliente" value={nome} onChange={fNomeCliente} placeholder="Nome completo do cliente" />
+          <InputForms type="number" name="cliente" value={paes} onChange={fPaes} placeholder="Total de pães" />
+        </Forms>
       </div>
 
-      <div style={{display: `flex`, justifyContent:`space-between`}}>
-
-        <Button form='add-form' onClick={envForm}>
+      <div style={{ display: 'flex', justifyContent: 'space-between' }}>
+        <BotaoForms type="submit" form="forms">
           Enviar
-        </Button>
+        </BotaoForms>
 
-        <Button className='cancelar' onClick={onClick}>
+        <BotaoForms className="cancelar" onClick={fechar}>
           Cancelar
-        </Button>
-
+        </BotaoForms>
       </div>
-
-    </Container>
-  )
+    </ContainerForms>
+  );
 };
+
+export default Formulario;

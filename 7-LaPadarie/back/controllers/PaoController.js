@@ -37,54 +37,36 @@ var __generator = (this && this.__generator) || function (thisArg, body) {
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 var client_1 = require("@prisma/client");
-var FilaController_1 = require("./controllers/FilaController");
-// const express = require('express');
-var bodyParser = require('body-parser');
 var express = require('express');
-var cors = require('cors');
-var app = express();
+var rapp = express();
 var prisma = new client_1.PrismaClient();
-var port = 1080;
-app.use(bodyParser.json());
-app.use(bodyParser.urlencoded({
-    extended: false,
-}));
-app.use(cors());
-app.use(function (req, res, next) {
-    res.header("Access-Control-Allow-Origin", "*");
-    res.header("Access-Control-Allow-Methods", "GET, PUT, POST, DELETE");
-    res.header("Access-Control-Allow-Headers", "Content-Type");
-    app.use(cors());
-    next();
-});
-//metodos Get
-app.get('/clientes', FilaController_1.default.listarPedidos);
-app.get('/pedidos/:id', FilaController_1.default.listarPedidos);
-//metodos post
-app.post('/novoCliente', FilaController_1.default.criarCliente);
-app.get('/novoPreco');
-//metodos delete
-app.delete('/deletar/:id', FilaController_1.default.deletarCliente);
-//-- PAGINA INICIAL DA API
-app.get('/', function (req, res) { return __awaiter(void 0, void 0, void 0, function () {
-    var clientes, _a;
-    return __generator(this, function (_b) {
-        switch (_b.label) {
-            case 0:
-                _b.trys.push([0, 2, , 3]);
-                return [4 /*yield*/, prisma.clientes.findMany()];
-            case 1:
-                clientes = _b.sent();
-                res.json(clientes);
-                return [3 /*break*/, 3];
-            case 2:
-                _a = _b.sent();
-                res.send('Banco de dados vazio');
-                return [3 /*break*/, 3];
-            case 3: return [2 /*return*/];
-        }
-    });
-}); });
-app.listen(port, function () {
-    console.log("Servidor rodando na porta ".concat(port));
-});
+exports.default = {
+    // Rota para atualizar o valor do pão
+    alterarValor: function (req, res) {
+        return __awaiter(this, void 0, void 0, function () {
+            var novoValor, error_1;
+            return __generator(this, function (_a) {
+                switch (_a.label) {
+                    case 0:
+                        novoValor = req.body;
+                        _a.label = 1;
+                    case 1:
+                        _a.trys.push([1, 3, , 4]);
+                        return [4 /*yield*/, prisma.valorPao.update({
+                                where: { id: 1 },
+                                data: { valor: novoValor }
+                            })];
+                    case 2:
+                        _a.sent();
+                        res.json({ message: 'Preço do pão atualizado com sucesso!' });
+                        return [3 /*break*/, 4];
+                    case 3:
+                        error_1 = _a.sent();
+                        res.status(500).json({ error: 'Erro ao atualizar o preço do pão!' });
+                        return [3 /*break*/, 4];
+                    case 4: return [2 /*return*/];
+                }
+            });
+        });
+    },
+};

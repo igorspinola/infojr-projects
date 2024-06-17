@@ -2,7 +2,7 @@
 //-- GERAL
 import axios from "axios";
 import { useEffect, useState } from "react";
-import Image from "next/image";
+import dynamic from "next/dynamic";
 import styled from "styled-components";
 import clsx from "clsx";
 //-- COMPONENTs
@@ -16,59 +16,65 @@ import logoLapad from '@/assets/logoLapad.svg';
 
 
 //-- STYLED COMPONENTs
-const Main = styled.main`
+const ContainerPrincipal = styled.div`
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
-  width: 100%;
-  padding: 5rem 2rem;
-  gap: 5rem;
   align-items: center;
   justify-content: space-between;
+  
+  width: 100%;
+  padding: 5rem 0;
+  gap: 5rem;
   transition: opacity 1s ease;
 
-  &.bg-opaco {
-    background-color: hsla(0, 0%, 100%, 0.5);
-  };
   .opaco {
+    background-color: hsla(0, 0%, 100%, 0.5);
     z-index: 0;
   }
 `;
-const Stickiness = styled.div`
+const ContainerModal = styled.div`
   position: absolute;
   height: 120vh;
   z-index: 1; 
   @media (min-width: 765px) {
-    height: 100vh;
+    height: 95vh;
   }
 `;
 
+const Lista = dynamic(() => import('../components/Lista'), { ssr: false });
 
+//-- Página principal
+const Home: React.FC = () => {
+  const [visibilidade, setVisibilidade] = useState<boolean>(false);
+  const [fetch, setFetch] = useState<number>(0);
 
-//-- PÁGINA HOME
-export default function Home() {
-  //- Botão "add clientes"
-  const [visBox, setVisBox] = useState<boolean>(false);
-  function toggleBox() {
-    setVisBox(!visBox);
+  const alternarVisibilidade = () => {
+    setVisibilidade(!visibilidade);
   };
-  
+
+  const atualizarComponentes = () => {
+    setFetch(prev => prev + 1);
+    console.log(fetch);
+  };
+
 
   return (
-    <Main className={clsx(visBox && 'bg-opaco')}>
+    <ContainerPrincipal className={clsx(visibilidade && 'bg-opaco')}>
+      <Header />
+      <Contadores className={clsx(visibilidade && 'opaco')} atualizar={fetch} />
+ 
+      <Lista className={clsx(visibilidade && 'opaco')} atualizar={fetch} onClick={alternarVisibilidade} gatilho={atualizarComponentes} />
 
-      <Image src={logoLapad} alt='.' />
+      {visibilidade && 
+        <ContainerFixo>
+          <Formulario gatilho={atualizarComponentes} fechar={alternarVisibilidade} />
+        </ContainerFixo>
+      }
 
-      <Contadores className={clsx(visBox && 'opaco')} />
-     
-      <Lista className={clsx(visBox && 'opaco')} onClick={toggleBox} />
-
-      {visBox && (
-        <Stickiness> 
-          <Formulario onClick={toggleBox} />
-        </Stickiness>
-      )}
-
-    </Main>
+      <Footer />
+    </ContainerPrincipal>
   );
 };
+
+export default Home;

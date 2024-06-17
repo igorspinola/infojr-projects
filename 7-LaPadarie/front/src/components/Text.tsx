@@ -2,7 +2,6 @@ import React from 'react';
 import styled from 'styled-components';
 
 
-//-- STYLED COMPONENTs
 const Heading1 = styled.h1`
   margin: 0;
   font-size: 2.5rem;
@@ -28,12 +27,10 @@ const Parag = styled.p`
 `
 
 
-//-- TYPEs
 interface IProps {
   type?: string;
   children: React.ReactNode;
 };
-//-- FUNCTION
 export default function Text({
   type,
   children,
@@ -49,4 +46,4 @@ export default function Text({
     default:
       return(<Parag {...restProps}>{children}</Parag>);
   }
-}
+};
