@@ -1,0 +1,151 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+}
+
+body {
+  min-height: 100vh;
+  color: rgb(var(--foreground-rgb));
+  background-image: url('../assets/cinema.jpg');
+  /* ajuste a imagem de fundo */
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+
+#movie-language, #movie-gender {
+  @apply grid fixed backdrop-blur-sm bg-gradient-to-bl from-slate-300/30 to-slate-400/30 shadow-lg rounded-2xl list-none;
+}
+  #movie-language {
+    @apply grid-cols-4 top-4 inset-x-1/2 -translate-x-1/2 w-max  h-12 px-20 pt-3 gap-[5rem];
+  }
+  #movie-gender {
+    @apply grid-rows-4 top-[14rem] left-4 h-fit -translate-y-1/2 w-24 py-10 px-3 gap-[1rem];
+  }
+
+/* -- ESCOLHA IDIOMA -- */
+:where(#spanish, #italian, #french, #german) {
+  @apply hidden;
+
+  + label {
+    @apply z-50 flex flex-col items-center;
+    h2 {
+      @apply absolute text-transparent text-sm font-bold duration-500;
+    }
+    span {
+    @apply flex place-content-center duration-500;
+    }
+  }
+
+  &:checked + label, + label:hover {
+    h2 {
+    @apply text-white duration-500;
+    };
+
+    span {
+    @apply translate-y-12 duration-500;
+    }
+  }
+}
+/*-- INDICADOR IDIOMA --*/
+.indicador-idioma {
+  @apply absolute z-40 top-8 left-[3.5rem] w-20 h-20 bg-gradient-to-tr from-red-500 to-red-900 border-8 border-black rounded-full;
+}
+.indicador-idioma::before {
+  content: '';
+  @apply absolute flex top-[-4px] left-[-12px] w-5 h-3 rounded-br-2xl;
+  box-shadow: 2px 3px 0 0 #000;
+  }
+.indicador-idioma::after {
+  content: '';
+  @apply absolute flex top-[-4px] right-[-12px] w-5 h-3 rounded-bl-2xl;
+  box-shadow: -2px 3px 0 0 #000;
+}
+
+/* -- MOVIMENTO INDICADOR IDIOMA -- */
+#spanish:checked ~ .indicador-idioma {
+  @apply translate-x-[initial] duration-500;
+}
+#italian:checked ~ .indicador-idioma {
+  @apply translate-x-[7rem] duration-500;
+}
+#french:checked ~ .indicador-idioma {
+  @apply translate-x-[14rem] duration-500;
+}
+#german:checked ~ .indicador-idioma {
+  @apply translate-x-[21rem] duration-500;
+}
+
+/* -- ESCOLHA GENERO -- */
+:where(#adventure, #comedy, #drama, #thriller) {
+  @apply hidden;
+
+  + label {
+    @apply z-50 flex flex-col py-3 gap-8 duration-500 text-xs;
+  }
+
+  &:checked + label, + label:hover {
+    @apply text-sm text-white font-bold translate-x-6;
+  }
+}
+/* -- INDICADOR GENERO -- */
+.indicador-genero {
+  @apply absolute z-10 top-[2.4rem] left-[0.8rem] w-[8rem] h-[3rem] bg-gradient-to-br from-red-500 to-red-900 border-8 border-black rounded-full;
+}
+.indicador-genero::before {
+  content: '';
+  @apply absolute flex top-[-1.8rem] left-[3.5rem] w-5 h-5 rounded-br-2xl;
+  box-shadow: 4px 6px 6px 0 #000;
+  }
+.indicador-genero::after {
+  content: '';
+  @apply absolute flex bottom-[-1.8rem] left-[3.4rem] w-5 h-5 rounded-tr-2xl;
+  box-shadow: 4px -6px 6px 0 #000;
+}
+/* -- MOVIMENTO INDICADOR GENERO -- */
+#adventure:checked ~ .indicador-genero {
+  @apply translate-y-[initial] duration-500;
+}
+#comedy:checked ~ .indicador-genero {
+  @apply translate-y-[3.7rem] duration-500;
+}
+#drama:checked ~ .indicador-genero {
+  @apply translate-y-[7.4rem] duration-500;
+}
+#thriller:checked ~ .indicador-genero {
+  @apply translate-y-[11.2rem] duration-500;
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+
+.modal-head {
+  @apply absolute flex flex-col w-screen min-h-max
+}
+.preenchimento {
+  position: relative;
+  flex: 1 1 0;
+}
