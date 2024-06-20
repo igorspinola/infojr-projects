@@ -1,0 +1,3 @@
+.lista {
+  @apply flex gap-4 my-[12rem] pl-[11rem] pr-[6rem];
+}
