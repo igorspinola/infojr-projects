@@ -2,7 +2,7 @@ import React from "react";
 //-- COMPONENTS
 import Idiomas from "@/components/Idiomas";
 import Generos from "@/components/Generos";
-import NavBar from "@/components/Navbar";
+import NavBar from "@/components/NavBar";
 import Lista from "@/components/Lista";
 
 

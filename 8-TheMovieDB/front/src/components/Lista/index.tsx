@@ -3,6 +3,7 @@ import React from 'react';
 import { useFiltro } from "@/contexts/FiltroContext"
 //-- COMPONENTS
 import Cards from '../Cards';
+import SearchBar from "@/components/SearchBar";
 //-- ASSETS
 import adelman from '../../assets/adelman.jpg';
 import lavitaebella from '../../assets/lavitaebella.jpg';
