@@ -8,7 +8,7 @@ const prisma = new PrismaClient()
 
 const express = require('express')
 const app = express()
-const port = 3003
+const port = 3004
 
 app.use(express.json());
 app.use(cors())
@@ -21,6 +21,16 @@ app.get('/movie_list', async (req: Request, res: Response) => {
 
   const list = await axios.get('https://api.themoviedb.org/3/discover/movie?sort_by=popularity.desc&api_key=04c35731a5ee918f014970082a0088b1&page=1')
   console.log(list)
+  res.send(list.data)
+})
+
+app.get('/movie_by_genre', async (req: Request, res: Response) => {
+  const genre = req.query.genre
+  const language = req.query.language
+  console.log(genre)
+  console.log(language)
+  const url = `https://api.themoviedb.org/3/discover/movie?api_key=04c35731a5ee918f014970082a0088b1&with_original_language=${language}&with_genres=${genre}`
+  const list = await axios.get(url)
   res.send(list.data)
 })
 
