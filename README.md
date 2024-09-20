@@ -4,8 +4,7 @@ Olá, pessoas! Bem-vindos ao Núcleo Web! Este é o local de acesso às atividad
 
 Neste texto seguem algumas explicações importantes a respeito de como funcionará a sua trajetória aqui dentro.
 
-- **Orientadores:** Turma  [Fábio Santos Matos de Oliveira](https://gitlab.com/Fabio-Matos1303) | Turma  [Djair Maykon](https://gitlab.com/djairmaykon) | Turma  [Márcio R. Júnior m](https://gitlab.com/marciojunior2109) 
-- **Coorientadores gerais:** [Raissa Luna](https://gitlab.com/raissalunana) | [Lucas Júlio](https://gitlab.com/LucasJulio)
+
 
 ## Configuração do ambiente
 
@@ -25,9 +24,7 @@ Por exemplo, se seu nome é Fulano de Tal e você está na turma 2, você dever�
 
 ## Entrega das atividades
 
-### Issues
-
-As atividades deste núcleo, juntamente com seus requisitos e materiais de apoio, estão listadas nas [issues](https://gitlab.com/InfoJrUFBA/nucleos/2023/2-ciclo/web/-/issues) deste repositório. 
+### Issues 
 
 ### Pastas
 
@@ -45,7 +42,6 @@ Seus commits deverão ser contínuos e explicativos, então nada de fazer a ativ
 
 ### Merge Requests
 
-Quando terminar uma atividade, certifique-se de que todos os requisitos foram atendidos, e em seguida realize um [merge request](https://gitlab.com/InfoJrUFBA/nucleos/2023/2-ciclo/web/-/merge_requests) (MR) para a main, a fim de sinalizar para o orientador que finalizou sua atividade. 
 
 O merge request deve seguir o padrão de título `[nº da atividade]: [título da atividade]`.
 
